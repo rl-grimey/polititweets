@@ -3,32 +3,32 @@
 # along with other metrics.
 #
 # I plan on writing the toCSV function, along with another logic loop to
-# run the script over every .txt file in a directory. 
+# run the script over every .txt file in a directory.
 
 # Libraries
 import json
 from time import strftime, strptime
 
 # data dir stuff....
-# to be continues...
+# Eventually, this will have loop comprehension for every file within a directory
+fClinton = '../data/external/clinton/hillaryclinton_1477094400.txt'
+fTrump = '../data/external/trump/donaldtrump_1477699200.txt'
 
 # Define a global twitter dictionairy
 twitterDict = {}
 
 
-
-# Helper function to take a string and return a python datetime obj
-# Example formatting from twitter: u'Fri Dec 04 00:00:32 +0000 2015'
 def tweetTime(created_at):
+    # Helper function to take a string and return a python datetime obj
+    # Example formatting from twitter: u'Fri Dec 04 00:00:32 +0000 2015'
     stamp = strptime(created_at, "%a %b %d %H:%M:%S +0000 %Y")
     return stamp
 
-# Function to take a tweet, and conditionally update the dictionairy
-# It takes a json input, and first checks if it's a API rate limit call
-#
-
 def updateDict(tweet):
+    # Function to take a tweet, and conditionally update the dictionairy
+    # It takes a json input, and first checks if it's a API rate limit call
 
+    global twitterDict
     # occasionally we'll get an API call from twitter showing up, pass those
     try:
         if tweet['limit']:
@@ -38,8 +38,7 @@ def updateDict(tweet):
 
     try:
         # Sanity check
-        if ((tweet['user']) and (tweet['user']['id'])):
-
+        if ((tweet['user']) and (tweet['user']['id_str'])):
             user = tweet['user']
             userID = tweet['user']['id_str']
 
@@ -47,7 +46,9 @@ def updateDict(tweet):
             timestamp = tweetTime(tweet['created_at'])
 
             # dictionairy check
-            if twitterDict.has_key(userID):
+            # Python 3 removed has_key, use 'in' instead
+            #if (twitterDict.has_key(userID):
+            if (userID in twitterDict):
                 # Compare if this tweet is newer than existing data
                 if (timestamp > twitterDict[userID]['timestamp']):
 
@@ -73,19 +74,25 @@ def updateDict(tweet):
                 twitterDict[userID]['tweetsAll'] = user['statuses_count']
                 #and the timestamp!
                 twitterDict[userID]['timestamp'] = timestamp
-    except:
-        #print (tweet)
+    except Exception as e:
+        print (e)
         pass
 
 
-def readLine():
+def readLines(dayTweets):
     global twitterDict
     corruptedLines = 0
 
-    with open(trumpFull) as f:
+    with open(dayTweets) as f:
         for line in f:
             try:
                 updateDict(json.loads(line))
             except:
                 corruptedLines += 1
-    print (corruptedLines)
+
+    print ("The number of unreadable tweets was: {}".format(corruptedLines))
+    return twitterDict
+
+
+# Example that returns an aggregated day of tweets
+trumpAgg = readLines(fTrump)
