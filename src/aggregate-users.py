@@ -33,18 +33,11 @@ def commandline(arguments):
 			# Agg file
 			aggregateFile((dataDir + filename), aggDir)
 
-
-
-
-
-
-
 def createAggFName(fName):
 	# Function to format a new file name
 	noFileExt = fName[:-4]
 	aggFileName = noFileExt + '-agg.csv'
 	return aggFileName
-
 
 def createAggFolder(directory):
 	# Function to create a new folder that's similair to the input directory
@@ -59,14 +52,18 @@ def createAggFolder(directory):
 	# create folder
 	if not os.path.exists((parDir + aggDirName)):
 		os.makedirs(aggDirName)
+		print ("created {}!".format(aggDirName))
 
 	return aggDirName
-
 
 def tweetTime(created_at):
 	# Helper function to take a string and return a python datetime obj
 	# Example formatting from twitter: u'Fri Dec 04 00:00:32 +0000 2015'
 	stamp = strptime(created_at, "%a %b %d %H:%M:%S +0000 %Y")
+	return stamp
+
+def humanTime(timestamp):
+	stamp = strftime("%a %b %d %H:%M:%S +0000 %Y", timestamp)
 	return stamp
 
 def updateDict(tweet, tweets):
@@ -114,8 +111,10 @@ def updateDict(tweet, tweets):
 				tweets[userID]['following'] = user['friends_count']
 				tweets[userID]['followers'] = user['followers_count']
 				tweets[userID]['tweetsAll'] = user['statuses_count']
-				#and the timestamp!
+				#and the timestamp of the last seen tweet!
 				tweets[userID]['timestamp'] = timestamp
+				# User creation time
+				tweets[userID]['created'] = tweetTime(user['created_at'])
 	except:
 		#print (tweet)
 		pass
@@ -158,7 +157,7 @@ def writeOut(fName, tweets, lines):
 	fNameAgg = createAggFName(fName)
 
 	# column names from the twitter dictionairy
-	colNames = ['userID', 'tweetsDay', 'tweetsAll', 'timestamp', 'following', 'followers', 'corrupted']
+	colNames = ['userID', 'tweetsDay', 'tweetsAll', 'timestamp', 'following', 'followers', 'created', 'corrupted']
 
 	with open(fNameAgg, 'wb') as f:
 		writer = csv.DictWriter(f, fieldnames=colNames)
@@ -170,6 +169,8 @@ def writeOut(fName, tweets, lines):
 		#writer.writerows(tweets)
 
 		for key in tweets.keys():
+			tweets[key]['timestamp'] = humanTime(tweets[key]['timestamp'])
+			tweets[key]['created'] = humanTime(tweets[key]['created'])
 			writer.writerow(tweets[key])
 
 
