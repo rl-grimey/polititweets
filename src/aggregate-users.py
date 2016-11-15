@@ -36,16 +36,15 @@ class tweetParser:
 			print (dataDir + " dir exists!")
 		else:
 			return ("Couldn't find your directory, sorry.")
+		print "got here"
 
 		aggDir = self.createAggFolder(dataDir)
-
 		# add all of the filenames to a list
 		for filename in os.listdir(dataDir):
 			# only .csv files
 			files.append(filename)
-
 		# create a thread to process each file and add it to the threads pool.
-		for filname in files:
+		for filename in files:
 			if filename.endswith(".txt"):
 				path = (dataDir + filename)
 				threadName = "Thread-"+tid
@@ -90,7 +89,7 @@ class tweetParser:
 
 	def createAggFName(self, fName):
 		# Function to format a new file name
-		noFileExt = fName[:-4]
+		noFileExt = fName[:-4].rsplit('/',1)[0]
 		aggFileName = noFileExt + '-agg.csv'
 		return aggFileName
 
@@ -213,14 +212,16 @@ class tweetParser:
 		# This includes the number of corrupted lines that we're excluding
 
 		# Get parent
-		#parDir = os.path.abspath(os.path.join(fName, os.pardir))
-		#parDirAgg = parDir + '-agg'
+		parDir = os.path.abspath(os.path.join(fName, os.pardir))
+		parDirAgg = parDir + '-agg/'
 		fNameAgg = createAggFName(fName)
+
+		combined = parDirAg + fNameAgg
 
 		# column names from the twitter dictionairy
 		colNames = ['userID', 'tweetsDay', 'tweetsAll', 'timestamp', 'following', 'followers', 'created', 'corrupted']
 
-		with open(fNameAgg, 'wb') as f:
+		with open(combined, 'wb') as f:
 			writer = csv.DictWriter(f, fieldnames=colNames)
 
 			# lines
