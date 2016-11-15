@@ -42,14 +42,14 @@ class tweetParser:
 		# add all of the filenames to a list
 		for filename in os.listdir(dataDir):
 			# only .csv files
-			fileList.append(filename)
+			files.append(filename)
 
 		# create a thread to process each file and add it to the threads pool.
 		for filname in files:
 			if filename.endswith(".txt"):
 				path = (dataDir + filename)
 				threadName = "Thread-"+tid
-				thread = Thread(target = self.aggregateFile, args = path, aggDir)
+				thread = Thread(target = self.aggregateFile, args =(path, aggDir))
 				thread.name = threadName
 				threads.append(thread)
 				tid+=1
