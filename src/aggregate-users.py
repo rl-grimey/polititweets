@@ -3,8 +3,11 @@ import os
 import sys
 import csv
 import json
-from threading import Thread
+import time
+import pdb
+from threading import Thread, Lock, Condition
 from time import strftime, strptime
+
 
 '''
 This is a class to perform parsing operations of twitter tweets.
@@ -17,26 +20,31 @@ class tweetParser:
 		If it can't then it terminates. Best practices, check if directory exists
 	'''
 	def __init__(self):
+		self.lock = Lock()
+		self.cv  = Condition()
 		files = []
+		DEBUG = False
+		if DEBUG:
+			pdb.set_trace()
 
 		threadId = 0
 		tid = 0
 		threadsProcessed = 0
-		MAX_ACTIVE_THREADS = 24
+		MAX_ACTIVE_THREADS = 2
 
 		threads = []
 		activeThreads = []
-		threadDurationHistory = []
+		self.threadDurationHistory = {}
+		threadsActive = 0
 
 		print sys.argv[1]
 		dataDir = sys.argv[1]
 		print dataDir
-
 		if os.access(dataDir, os.F_OK):
 			print (dataDir + " dir exists!")
 		else:
 			return ("Couldn't find your directory, sorry.")
-		print "got here"
+
 
 		aggDir = self.createAggFolder(dataDir)
 		# add all of the filenames to a list
@@ -46,46 +54,68 @@ class tweetParser:
 		# create a thread to process each file and add it to the threads pool.
 		for filename in files:
 			if filename.endswith(".txt"):
+				print "filename: "+filename
+				print "tid: " + str(tid)
 				path = (dataDir + filename)
-				threadName = "Thread-"+tid
+				threadName = "Thread-"+str(tid)
 				thread = Thread(target = self.aggregateFile, args =(path, aggDir))
 				thread.name = threadName
 				threads.append(thread)
 				tid+=1
-		print "Added {} to threads pool".format(len(threads))
+
+		print "Added {} threads to the thread pool".format(len(threads))
 
 	    #enumerate over the threads
 		#This is a dumb queue for now.
 		#we run 24 threads, wait for them all to finish, then start 24 more
 		#TODO: We could possible do this with a queue and use futures and
-		#signalling to minimize waiting.
-		while (threadsProcessed < len(threads)):
-			timePair = []
-			while (activeThreads < MAX_ACTIVE_THREADS or
-				   threadsProcessed == len(threads)):
-				   threads[threadsProcessed].start()
+		#signalling to minimize waiting
+		lastThread = len(threads)
+		while (threadsProcessed < lastThread):
+			if (lastThread - threadsProcessed) < MAX_ACTIVE_THREADS:
+				MAX_ACTIVE_THREADS = (lastThread - threadsProcessed)
+			while threadsActive < MAX_ACTIVE_THREADS:
+				   activeThreads.append(threads[threadsProcessed])
+				   activeThreads[threadsActive].start()
 				   key = threads[threadsProcessed].name
-				   timePair.append(self.timeStampNow())
-				   threadDurationHistory[key] = timePair
-   				   activeThreads += 1
-   				   threadsProcessed += 1
-				   del timePair[:]
+				   self.asyncWriter(key, start = 'start')
+				   print self.threadDurationHistory
+				   threadsActive += 1
+				   threadsProcessed += 1
+
 			#wait for all threads to finish
 			for thread in activeThreads:
 				thread.join()
+				print "joined on thread {}".format(thread.name)
 				#no need to worry about thread protection of timeStamps
 				#were processing joins serially.
-				threadDurationHistory[thread.name].append(self.timeStampNow())
-				start = threadDurationHistory[thread.name][0]
-				stop = threadDurationHistory[thread.name][1]
-				print "{} \t\t Start Time: {} \t\t Stop Time {}".format(thread.name, start, stop)
+				self.asyncWriter(thread.name)
+				print self.threadDurationHistory
+				start = self.threadDurationHistory[thread.name][0]
+				stop = self.threadDurationHistory[thread.name][1]
+				print "{} \t \nStart Time: {} \t Stop Time: {}".format(thread.name, start, stop)
 			#reset the activeThreads pool and do it again
-			del activeThreads[:]
-			activeThreads = 0
 
-	def timeStampNow(self):
-		timestamp = time.ctime(time.time())
-		return timestamp
+			del activeThreads[:]
+ 			threadsActive = 0
+			print "threads processesd {}".format(threadsProcessed)
+
+	def asyncWriter(self, key, start = None):
+		while self.lock.locked():
+			self.cv.wait()
+		else:
+			self.lock.acquire()
+			self.cv.acquire()
+			if start != None:
+				print time.ctime(time.time())
+				self.threadDurationHistory[key] = [time.ctime(time.time())]
+			else:
+				print time.ctime(time.time())
+				self.threadDurationHistory[key].append(time.ctime(time.time()))
+
+			self.lock.release()
+			self.cv.notify_all()
+
 
 	def createAggFName(self, fName):
 		# Function to format a new file name
@@ -176,7 +206,7 @@ class tweetParser:
 					# User creation time
 					tweets[userID]['created'] = self.tweetTime(user['created_at'])
 		except:
-			#print (tweet)
+			print (tweet)
 			pass
 
 	def aggregateFile(self, fName, aggFolder):
@@ -192,20 +222,22 @@ class tweetParser:
 
 		# Now open it up
 		with open(fName) as f:
+			print "opened "+fName
 			# # #
 			# # # YOU COULD THREAD THIS FOR A FASTER PERFORMANCE
 			# # #
 			for line in f:
 				try:
-					updateDict(json.loads(line), twitterDict)
+					thread = Thread(target = self.updateDict, args =(json.loads(line), twitterDict))
+					thread.start()
 				except:
 					corruptedLines += 1
 
 		print ('\t{} unreadable lines\n\tWriting to dict'.format(corruptedLines))
 		# WRITE IT OUT
-		self.writeOut(fName, twitterDict, corruptedLines)
-
-		print ('\tWrittern to csv!')
+		thread = Thread(target = self.writeOut, args =(fName, twitterDict, corruptedLines))
+		thread.start()
+		print thread.name
 
 	def writeOut(self, fName, tweets, lines):
 		# Writes out a dictionairy to a csv file
@@ -214,9 +246,9 @@ class tweetParser:
 		# Get parent
 		parDir = os.path.abspath(os.path.join(fName, os.pardir))
 		parDirAgg = parDir + '-agg/'
-		fNameAgg = createAggFName(fName)
+		fNameAgg = self.createAggFName(fName)
 
-		combined = parDirAg + fNameAgg
+		combined = parDirAgg + fNameAgg
 
 		# column names from the twitter dictionairy
 		colNames = ['userID', 'tweetsDay', 'tweetsAll', 'timestamp', 'following', 'followers', 'created', 'corrupted']
@@ -228,12 +260,13 @@ class tweetParser:
 			writer.writerow({"corrupted": str(lines)})
 			# header
 			writer.writeheader()
-			#writer.writerows(tweets)
+			# writer.writerows(tweets)
 
 			for key in tweets.keys():
 				tweets[key]['timestamp'] = self.humanTime(tweets[key]['timestamp'])
 				tweets[key]['created'] = self.humanTime(tweets[key]['created'])
 				writer.writerow(tweets[key])
+			print ('\tWrittern to csv!')
 
 
 if __name__ == "__main__":
