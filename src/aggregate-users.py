@@ -26,7 +26,7 @@ class tweetParser:
 		self.keys = []
 		files = []
 		#Change Debug to 'True' for run time debug
-		DEBUG = False 
+		DEBUG = False
 		if DEBUG:
 			pdb.set_trace()
 
@@ -250,7 +250,7 @@ class tweetParser:
 		parDirAgg = parDir + '-agg/'
 		fNameAgg = self.createAggFName(fName)
 
-		combined = fNameAgg
+		combined = parDirAgg + fNameAgg
 		print parDirAgg
 
 		# column names from the twitter dictionairy
