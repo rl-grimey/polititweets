@@ -95,7 +95,7 @@ class tweetParser:
 				start = self.threadDurationHistory[thread.name][0]
 				stop = self.threadDurationHistory[thread.name][1]
 				threadingStats = "\n====================================================\n"
-				threadingStats += "{} - {}\t \nStart Time: {} \t Stop Time: {}".format(thread.name, start, stop)
+				threadingStats += "{} \t \nStart Time: {} \t Stop Time: {}".format(thread.name, start, stop)
 				print threadingStats
 			#reset the activeThreads pool and do it again
 
