@@ -69,7 +69,7 @@ class tweetParser:
 				threads.append(thread)
 				tid+=1
 
-		print "Added {} threads to the thread pool".format(len(threads))
+		print "Added {} threads to the cumulative thread pool".format(len(threads))
 
 	    #enumerate over the threads
 		#This is a dumb queue for now.
@@ -87,7 +87,7 @@ class tweetParser:
 				   self.asyncWriter(key, start = 'start')
 				   threadsActive += 1
 				   threadsProcessed += 1
-
+		    print "Active Thread: started {} threads"+str(threadsActive)
 			#wait for all threads to finish
 			for thread in activeThreads:
 				thread.join()
@@ -228,7 +228,6 @@ class tweetParser:
 
 		# Now open it up
 		with open(fName) as f:
-			print "opened "+fName
 			# # #
 			# # # YOU COULD THREAD THIS FOR A FASTER PERFORMANCE
 			# # #
