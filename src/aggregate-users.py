@@ -83,11 +83,12 @@ class tweetParser:
 			while threadsActive < MAX_ACTIVE_THREADS:
 				   activeThreads.append(threads[threadsProcessed])
 				   activeThreads[threadsActive].start()
+				   print "Starting {}".format(activeThreads[threadsActive].name)
 				   key = threads[threadsProcessed].name
 				   self.asyncWriter(key, start = 'start')
 				   threadsActive += 1
 				   threadsProcessed += 1
-		    print "Active Thread: started {} threads"+str(threadsActive)
+			print "Active Thread Pool: {} threads are started".format(threadsActive)
 			#wait for all threads to finish
 			for thread in activeThreads:
 				thread.join()
