@@ -26,7 +26,7 @@ class tweetParser:
 		self.keys = []
 		files = []
 		#Change Debug to 'True' for run time debug
-		DEBUG = False
+		DEBUG = False 
 		if DEBUG:
 			pdb.set_trace()
 
@@ -36,7 +36,7 @@ class tweetParser:
 		threadsProcessed = 0
 
 		#The max number of threads started at one time
-		MAX_ACTIVE_THREADS = 24
+		MAX_ACTIVE_THREADS = 16
 		#This is the thread pool
 		threads = []
 		#Threads limited by the number of cores
@@ -58,43 +58,39 @@ class tweetParser:
 		for filename in os.listdir(dataDir):
 			# only .csv files
 			files.append(filename)
-		# create a thread to process each file and add it to the threads pool.
-		for filename in files:
-			if filename.endswith(".txt"):
-				path = (dataDir + filename)
-				threadName = "Thread-"+str(tid)
-				print threadName+" - filename: "+str(filename)
-				thread = Thread(target = self.aggregateFile, args =(path, aggDir))
-				thread.name = threadName
-				threads.append(thread)
-				tid+=1
-
-		print "Added {} threads to the cumulative thread pool".format(len(threads))
-
-	    #enumerate over the threads
+	    	#enumerate over the threads
 		#This is a dumb queue for now.
 		#we run 24 threads, wait for them all to finish, then start 24 more
 		#TODO: We could possible do this with a queue and use futures and
 		#signalling to minimize waiting
-		lastThread = len(threads)
-		while (threadsProcessed < lastThread):
-			if (lastThread - threadsProcessed) < MAX_ACTIVE_THREADS:
-				MAX_ACTIVE_THREADS = (lastThread - threadsProcessed)
-			while threadsActive < MAX_ACTIVE_THREADS:
-				   activeThreads.append(threads[threadsProcessed])
-				   activeThreads[threadsActive].start()
-				   print "Starting {}".format(activeThreads[threadsActive].name)
-				   key = threads[threadsProcessed].name
-				   self.asyncWriter(key, start = 'start')
-				   threadsActive += 1
-				   threadsProcessed += 1
+		lastThread = len(files)
+		filesProcessed = 0
+		while (filesProcessed < len(files)):
+			if ((len(files) - filesProcessed) < MAX_ACTIVE_THREADS):
+				MAX_ACTIVE_THREADS = (len(files) - filesProcessed)
+			while(threadsActive < MAX_ACTIVE_THREADS):
+				filename = files[threadsActive]
+				if filename.endswith(".txt"):
+					path = (dataDir+filename)
+					threadName = "Thread-"+str(threadsActive)
+					print threadName+" - filename: "+str(filename)
+					thread = Thread(target = self.aggregateFile, args = (path, aggDir))
+					thread.name = threadName
+ 					threads.append(thread)
+					threads[threadsActive].start()
+				   	print "Starting {}".format(threads[threadsActive].name)
+				   	key = threads[threadsActive].name
+				   	self.asyncWriter(key, start = 'start')
+					threadsActive+=1
+					filesProcessed+=1
+					time.sleep(1)
 			print "Active Thread Pool: {} threads are started".format(threadsActive)
 			#wait for all threads to finish
-			for thread in activeThreads:
+			for thread in threads:
 				thread.join()
 				print "joined on thread {}".format(thread.name)
 				#no need to worry about thread protection of timeStamps
-				#were processing joins serially.
+				#we're processing joins serially.
 				self.asyncWriter(thread.name)
 				start = self.threadDurationHistory[thread.name][0]
 				stop = self.threadDurationHistory[thread.name][1]
@@ -103,9 +99,9 @@ class tweetParser:
 				print threadingStats
 			#reset the activeThreads pool and do it again
 
-			del activeThreads[:]
+			del threads[:]
  			threadsActive = 0
-			print "threads processesd {}".format(threadsProcessed)
+			print "threads processesd {}".format(filesProcessed)
 
 	''' func asyncWriter: lock writer so that the threadDurationHistory is protected
 	'''
@@ -254,7 +250,8 @@ class tweetParser:
 		parDirAgg = parDir + '-agg/'
 		fNameAgg = self.createAggFName(fName)
 
-		combined = parDirAgg + fNameAgg
+		combined = fNameAgg
+		print parDirAgg
 
 		# column names from the twitter dictionairy
 		colNames = ['userID', 'tweetsDay', 'tweetsAll', 'timestamp', 'following', 'followers', 'created', 'corrupted']
