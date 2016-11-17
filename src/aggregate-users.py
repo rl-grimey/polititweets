@@ -20,26 +20,33 @@ class tweetParser:
 		If it can't then it terminates. Best practices, check if directory exists
 	'''
 	def __init__(self):
+		#locks and condition variables for thread protection
 		self.lock = Lock()
 		self.cv  = Condition()
+		self.keys = []
 		files = []
+		#Change Debug to 'True' for run time debug
 		DEBUG = False
 		if DEBUG:
 			pdb.set_trace()
 
-		threadId = 0
+		#The unique id part of a thread id
 		tid = 0
+		#keeping track of each thread that is processed from the threads pool
 		threadsProcessed = 0
-		MAX_ACTIVE_THREADS = 2
 
+		#The max number of threads started at one time
+		MAX_ACTIVE_THREADS = 24
+		#This is the thread pool
 		threads = []
+		#Threads limited by the number of cores
 		activeThreads = []
+		#time stats per thread
 		self.threadDurationHistory = {}
-		threadsActive = 0
 
-		print sys.argv[1]
+		#The active thread count
+		threadsActive = 0
 		dataDir = sys.argv[1]
-		print dataDir
 		if os.access(dataDir, os.F_OK):
 			print (dataDir + " dir exists!")
 		else:
@@ -54,10 +61,9 @@ class tweetParser:
 		# create a thread to process each file and add it to the threads pool.
 		for filename in files:
 			if filename.endswith(".txt"):
-				print "filename: "+filename
-				print "tid: " + str(tid)
 				path = (dataDir + filename)
 				threadName = "Thread-"+str(tid)
+				print threadName+" - filename: "+str(filename)
 				thread = Thread(target = self.aggregateFile, args =(path, aggDir))
 				thread.name = threadName
 				threads.append(thread)
@@ -79,7 +85,6 @@ class tweetParser:
 				   activeThreads[threadsActive].start()
 				   key = threads[threadsProcessed].name
 				   self.asyncWriter(key, start = 'start')
-				   print self.threadDurationHistory
 				   threadsActive += 1
 				   threadsProcessed += 1
 
@@ -90,16 +95,19 @@ class tweetParser:
 				#no need to worry about thread protection of timeStamps
 				#were processing joins serially.
 				self.asyncWriter(thread.name)
-				print self.threadDurationHistory
 				start = self.threadDurationHistory[thread.name][0]
 				stop = self.threadDurationHistory[thread.name][1]
-				print "{} \t \nStart Time: {} \t Stop Time: {}".format(thread.name, start, stop)
+				threadingStats = "\n====================================================\n"
+				threadingStats += "{} - {}\t \nStart Time: {} \t Stop Time: {}".format(thread.name, start, stop)
+				print threadingStats
 			#reset the activeThreads pool and do it again
 
 			del activeThreads[:]
  			threadsActive = 0
 			print "threads processesd {}".format(threadsProcessed)
 
+	''' func asyncWriter: lock writer so that the threadDurationHistory is protected
+	'''
 	def asyncWriter(self, key, start = None):
 		while self.lock.locked():
 			self.cv.wait()
@@ -107,10 +115,8 @@ class tweetParser:
 			self.lock.acquire()
 			self.cv.acquire()
 			if start != None:
-				print time.ctime(time.time())
 				self.threadDurationHistory[key] = [time.ctime(time.time())]
 			else:
-				print time.ctime(time.time())
 				self.threadDurationHistory[key].append(time.ctime(time.time()))
 
 			self.lock.release()
