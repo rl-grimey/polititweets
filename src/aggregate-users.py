@@ -73,22 +73,22 @@ class tweetParser:
 				if filename.endswith(".txt"):
 					path = (dataDir+filename)
 					threadName = "Thread-"+str(threadsActive)
-					print threadName+" - filename: "+str(filename)
+					print(threadName+" - filename: "+str(filename))
 					thread = Thread(target = self.aggregateFile, args = (path, aggDir))
 					thread.name = threadName
  					threads.append(thread)
 					threads[threadsActive].start()
-				   	print "Starting {}".format(threads[threadsActive].name)
+				   	print("Starting {}".format(threads[threadsActive].name))
 				   	key = threads[threadsActive].name
 				   	self.asyncWriter(key, start = 'start')
 					threadsActive+=1
 					filesProcessed+=1
 					time.sleep(1)
-			print "Active Thread Pool: {} threads are started".format(threadsActive)
+			print("Active Thread Pool: {} threads are started".format(threadsActive))
 			#wait for all threads to finish
 			for thread in threads:
 				thread.join()
-				print "joined on thread {}".format(thread.name)
+				print("joined on thread {}".format(thread.name))
 				#no need to worry about thread protection of timeStamps
 				#we're processing joins serially.
 				self.asyncWriter(thread.name)
@@ -96,12 +96,12 @@ class tweetParser:
 				stop = self.threadDurationHistory[thread.name][1]
 				threadingStats = "\n====================================================\n"
 				threadingStats += "{} \t \nStart Time: {} \t Stop Time: {}".format(thread.name, start, stop)
-				print threadingStats
+				print(threadingStats)
 			#reset the activeThreads pool and do it again
 
 			del threads[:]
  			threadsActive = 0
-			print "threads processesd {}".format(filesProcessed)
+			print("threads processesd {}".format(filesProcessed))
 
 	''' func asyncWriter: lock writer so that the threadDurationHistory is protected
 	'''
@@ -122,9 +122,9 @@ class tweetParser:
 
 	def createAggFName(self, fName):
 		# Function to format a new file name
-		print "fname: "+fName
+		print("fname: "+fName)
 		noFileExt = fName[:-4].rsplit('/',1)[1]
-		print "noFileExt: "+ noFileExt
+		print("noFileExt: "+ noFileExt)
 		aggFileName = noFileExt + '-agg.csv'
 		return aggFileName
 
@@ -224,7 +224,6 @@ class tweetParser:
 		twitterDict = {}
 		# Counter for unreadable lines.
 		corruptedLines = 0
-		print aggFolder
 		# Now open it up
 		with open(fName) as f:
 			# # #
@@ -239,10 +238,8 @@ class tweetParser:
 
 		print ('\t{} unreadable lines\n\tWriting to dict'.format(corruptedLines))
 		# WRITE IT OUT
-		print "before writeout : "+ fName
 		thread = Thread(target = self.writeOut, args =(fName, twitterDict, corruptedLines))
 		thread.start()
-		print thread.name
 
 	def writeOut(self, fName, tweets, lines):
 		# Writes out a dictionairy to a csv file
@@ -252,10 +249,8 @@ class tweetParser:
 		parDir = os.path.abspath(os.path.join(fName, os.pardir))
 		parDirAgg = parDir + '-agg/'
 		fNameAgg = self.createAggFName(fName)
-		print "filename: "+fNameAgg
 
 		combined = parDirAgg + fNameAgg
-		print combined
 
 		# column names from the twitter dictionairy
 		colNames = ['userID', 'tweetsDay', 'tweetsAll', 'timestamp', 'following', 'followers', 'created', 'corrupted']
@@ -277,7 +272,6 @@ class tweetParser:
 
 
 if __name__ == "__main__":
-	print len(sys.argv)
 	if len(sys.argv) != 2:
 		print "You need to include a directory path when calling this file.\ne.g.\tpython scriptname.py path/to/directory"
 		exit()
