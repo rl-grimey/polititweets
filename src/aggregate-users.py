@@ -122,7 +122,9 @@ class tweetParser:
 
 	def createAggFName(self, fName):
 		# Function to format a new file name
-		noFileExt = fName[:-4].rsplit('/',1)[0]
+		print "fname: "+fName
+		noFileExt = fName[:-4].rsplit('/',1)[1]
+		print "noFileExt: "+ noFileExt
 		aggFileName = noFileExt + '-agg.csv'
 		return aggFileName
 
@@ -222,7 +224,7 @@ class tweetParser:
 		twitterDict = {}
 		# Counter for unreadable lines.
 		corruptedLines = 0
-
+		print aggFolder
 		# Now open it up
 		with open(fName) as f:
 			# # #
@@ -237,6 +239,7 @@ class tweetParser:
 
 		print ('\t{} unreadable lines\n\tWriting to dict'.format(corruptedLines))
 		# WRITE IT OUT
+		print "before writeout : "+ fName
 		thread = Thread(target = self.writeOut, args =(fName, twitterDict, corruptedLines))
 		thread.start()
 		print thread.name
@@ -249,14 +252,15 @@ class tweetParser:
 		parDir = os.path.abspath(os.path.join(fName, os.pardir))
 		parDirAgg = parDir + '-agg/'
 		fNameAgg = self.createAggFName(fName)
+		print "filename: "+fNameAgg
 
 		combined = parDirAgg + fNameAgg
-		print parDirAgg
+		print combined
 
 		# column names from the twitter dictionairy
 		colNames = ['userID', 'tweetsDay', 'tweetsAll', 'timestamp', 'following', 'followers', 'created', 'corrupted']
 
-		with open(combined, 'wb') as f:
+		with open(combined, 'w+b') as f:
 			writer = csv.DictWriter(f, fieldnames=colNames)
 
 			# lines
