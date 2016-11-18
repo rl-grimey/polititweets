@@ -36,7 +36,7 @@ class tweetParser:
 		threadsProcessed = 0
 
 		#The max number of threads started at one time
-		MAX_ACTIVE_THREADS = 16
+		MAX_ACTIVE_THREADS = 24
 		#This is the thread pool
 		threads = []
 		#Threads limited by the number of cores
