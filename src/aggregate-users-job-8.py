@@ -138,7 +138,7 @@ class tweetParser:
 	def createAggFolder(self, directory):
 
 		temp = directory[:-1]
-		aggDirName = temp + '-agg4/'
+		aggDirName = temp + '-agg8/'
 
 		# parent directory of direcotry from input
 		parDir = os.path.abspath(os.path.join(directory, os.pardir))
