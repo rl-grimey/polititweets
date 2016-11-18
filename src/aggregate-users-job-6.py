@@ -249,7 +249,7 @@ class tweetParser:
 
 		# Get parent
 		parDir = os.path.abspath(os.path.join(fName, os.pardir))
-		parDirAgg = parDir + '-agg/'
+		parDirAgg = parDir + '-agg6/'
 		fNameAgg = self.createAggFName(fName)
 
 		combined = parDirAgg + fNameAgg
