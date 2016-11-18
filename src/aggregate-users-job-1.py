@@ -58,7 +58,7 @@ class tweetParser:
 		for filename in os.listdir(dataDir):
 			# only .csv files
 			files.append(filename)
-		files = files[0:240]
+		files = files[0:120]
 	    	#enumerate over the threads
 		#This is a dumb queue for now.
 		#we run 24 threads, wait for them all to finish, then start 24 more

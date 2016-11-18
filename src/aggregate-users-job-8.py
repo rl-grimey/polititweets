@@ -58,7 +58,7 @@ class tweetParser:
 		for filename in os.listdir(dataDir):
 			# only .csv files
 			files.append(filename)
-		files = files[241:360]
+		files = files[841:len(files)]
 	    	#enumerate over the threads
 		#This is a dumb queue for now.
 		#we run 24 threads, wait for them all to finish, then start 24 more
@@ -138,7 +138,7 @@ class tweetParser:
 	def createAggFolder(self, directory):
 
 		temp = directory[:-1]
-		aggDirName = temp + '-agg/'
+		aggDirName = temp + '-agg4/'
 
 		# parent directory of direcotry from input
 		parDir = os.path.abspath(os.path.join(directory, os.pardir))
