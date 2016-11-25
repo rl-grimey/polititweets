@@ -12,6 +12,7 @@ from threading import Thread, Condition, Lock
 class tweetCheck:
     def __init__(self):
         self.userIds = []
+        self.filePath = os.path.abspath(__file__).split('tweetCheck.py')[0]
     #read in userNames
         self.userIdRange = []
         self.botOrNotResults = []
@@ -21,7 +22,9 @@ class tweetCheck:
         self.checkBotOrNot()
 
     def getUserIds(self):
-        csvdata = pandas.read_csv('filtered-users.csv')
+        filename = 'filtered-users.csv'
+        path = os.path.join(self.filePath,filename)
+        csvdata = pandas.read_csv(path)
         for users in csvdata.values:
             self.userIds.append(users[0])
         i = 0
@@ -39,7 +42,8 @@ class tweetCheck:
         rations = []
         screennames = []
         threads = []
-        with open('tokens.json', 'r') as f:
+        path = os.path.join(self.filePath, 'tokens.json')
+        with open(path, 'r') as f:
             tokens = json.load(f)
         tokenCounter = 0
         idBin = 0
@@ -115,7 +119,8 @@ class tweetCheck:
                 entry['userId'] = userId
                 entry['result'] = result
                 botOrNotData = {}
-                with open('botOrNotResults.json') as f:
+                path = os.path.join(self.filePath, 'botOrNotResults.json')
+                with open(path) as f:
                     try:
                         botOrNotData = json.load(f)
                     except Exception as e:
@@ -123,7 +128,7 @@ class tweetCheck:
                     f.close()
                 try:
                     botOrNotData['botOrNot'].append(entry)
-                    with open('botOrNotResults.json', 'w') as f:
+                    with open(path, 'w') as f:
                         try:
                             json.dump(botOrNotData, f, indent = 4, separators = (',',': '), sort_keys = True)
                             f.close()
