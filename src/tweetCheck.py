@@ -13,6 +13,7 @@ from threading import Thread, Condition, Lock
 class tweetCheck:
     def __init__(self):
         self.userIds = []
+        logging.basicConfig(filename='output.log', level = logging.INFO)
         self.filePath = os.path.abspath(__file__).split('tweetCheck.py')[0]
     #read in userNames
         self.userIdRange = []
@@ -51,7 +52,7 @@ class tweetCheck:
         while (idBin < len(self.userIdRange)):
             while tokenCounter < len(tokens['tokens']):
                 try:
-                    logging.logger('**** Token: '+str(tokenCounter)+'****')
+                    logging.info('**** Token: '+str(tokenCounter)+'****')
                     CONSUMER_KEY = tokens['tokens'][tokenCounter]['consumerKey']
                     CONSUMER_SECRET = tokens['tokens'][tokenCounter]['consumerSecret']
                     ACCESS_TOKEN = tokens['tokens'][tokenCounter]['accessToken']
@@ -84,7 +85,7 @@ class tweetCheck:
             #
             #
                 except Exception as e:
-                    logging.logger(e)
+                    logging.info(e)
                     tokenCounter+=1
                     idBin+=1
                     if idBin >= len(self.userIdRange):
@@ -92,13 +93,13 @@ class tweetCheck:
                 #start all of the threads
             for thread in threads:
                 thread.start()
-                logging.logger("*******Thread: started thread "+thread.name+"*******")
+                logging.info("*******Thread: started thread "+thread.name+"*******")
 
 
                 #join all of the threads and restart the token counter
             for thread in threads:
                 thread.join()
-                logging.logger("*******Thread: joining on thread "+thread.name+"*******")
+                logging.info("*******Thread: joining on thread "+thread.name+"*******")
             tokenCounter=0
             threads[:] = []
     def botOrNot(self, userIds, auth):
@@ -107,7 +108,7 @@ class tweetCheck:
         try:
             results = list(bon.check_accounts_in(userIds))
         except Exception as e:
-            logging.loger(e)
+            logging.info(e)
         self.asyncWriter(results)
 
     def asyncWriter(self, results):
@@ -125,7 +126,7 @@ class tweetCheck:
                     try:
                         botOrNotData = json.load(f)
                     except Exception as e:
-                        logging.logger(e)
+                        logging.info(e)
                     f.close()
                 try:
                     botOrNotData['botOrNot'].append(entry)
@@ -135,9 +136,9 @@ class tweetCheck:
                             f.close()
                         except Exception as e:
                             f.close()
-                            logging.logger(e)
+                            logging.info(e)
                 except Exception as e:
-                    logging.logger(e)
+                    logging.info(e)
             #Enter the critical section
             self.botOrNotResults.append(results)
             #exit critical section
