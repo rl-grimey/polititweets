@@ -5,6 +5,7 @@ import time
 import json
 import tweepy
 import pandas
+import logging
 import botornot
 from threading import Thread, Condition, Lock
 
@@ -50,7 +51,7 @@ class tweetCheck:
         while (idBin < len(self.userIdRange)):
             while tokenCounter < len(tokens['tokens']):
                 try:
-                    print '**********'+str(tokenCounter)+'******************'
+                    logging.logger('**** Token: '+str(tokenCounter)+'****')
                     CONSUMER_KEY = tokens['tokens'][tokenCounter]['consumerKey']
                     CONSUMER_SECRET = tokens['tokens'][tokenCounter]['consumerSecret']
                     ACCESS_TOKEN = tokens['tokens'][tokenCounter]['accessToken']
@@ -83,7 +84,7 @@ class tweetCheck:
             #
             #
                 except Exception as e:
-                    print e
+                    logging.logger(e)
                     tokenCounter+=1
                     idBin+=1
                     if idBin >= len(self.userIdRange):
@@ -91,13 +92,13 @@ class tweetCheck:
                 #start all of the threads
             for thread in threads:
                 thread.start()
-                print "*******Thread: started thread "+thread.name+"*******"
+                logging.logger("*******Thread: started thread "+thread.name+"*******")
 
 
                 #join all of the threads and restart the token counter
             for thread in threads:
                 thread.join()
-                print "*******Thread: joining on thread "+thread.name+"*******"
+                logging.logger("*******Thread: joining on thread "+thread.name+"*******")
             tokenCounter=0
             threads[:] = []
     def botOrNot(self, userIds, auth):
@@ -106,7 +107,7 @@ class tweetCheck:
         try:
             results = list(bon.check_accounts_in(userIds))
         except Exception as e:
-            print e
+            logging.loger(e)
         self.asyncWriter(results)
 
     def asyncWriter(self, results):
@@ -124,7 +125,7 @@ class tweetCheck:
                     try:
                         botOrNotData = json.load(f)
                     except Exception as e:
-                        print e
+                        logging.logger(e)
                     f.close()
                 try:
                     botOrNotData['botOrNot'].append(entry)
@@ -134,9 +135,9 @@ class tweetCheck:
                             f.close()
                         except Exception as e:
                             f.close()
-                            print e
+                            logging.logger(e)
                 except Exception as e:
-                    print e
+                    logging.logger(e)
             #Enter the critical section
             self.botOrNotResults.append(results)
             #exit critical section

@@ -5,6 +5,7 @@ import csv
 import json
 import time
 import pdb
+import logging
 from threading import Thread, Lock, Condition
 from time import strftime, strptime
 
@@ -48,7 +49,7 @@ class tweetParser:
 		threadsActive = 0
 		dataDir = sys.argv[1]
 		if os.access(dataDir, os.F_OK):
-			print (dataDir + " dir exists!")
+			logging.logger(dataDir + " dir exists!")
 		else:
 			return ("Couldn't find your directory, sorry.")
 
@@ -73,7 +74,7 @@ class tweetParser:
 				if filename.endswith(".txt"):
 					path = (dataDir+filename)
 					threadName = "Thread-"+str(threadsActive)
-					print(threadName+" - filename: "+str(filename))
+					logging.logger(threadName+" - filename: "+str(filename))
 					thread = Thread(target = self.aggregateFile, args = (path, aggDir))
 					thread.name = threadName
 					threads.append(thread)
@@ -84,7 +85,7 @@ class tweetParser:
 					threadsActive+=1
 					filesProcessed+=1
 					time.sleep(1)
-			print("Active Thread Pool: {} threads are started".format(threadsActive))
+			logging.logger("Active Thread Pool: {} threads are started".format(threadsActive))
 			#wait for all threads to finish
 			for thread in threads:
 				thread.join()
@@ -108,16 +109,16 @@ class tweetParser:
 	def asyncWriter(self, key, start = None):
 		while self.lock.locked():
 			self.cv.wait()
-		else:
-			self.lock.acquire()
-			self.cv.acquire()
-			if start != None:
-				self.threadDurationHistory[key] = [time.ctime(time.time())]
-			else:
-				self.threadDurationHistory[key].append(time.ctime(time.time()))
 
-			self.lock.release()
-			self.cv.notify_all()
+		self.lock.acquire()
+		self.cv.acquire()
+		if start != None:
+			self.threadDurationHistory[key] = [time.ctime(time.time())]
+		else:
+			self.threadDurationHistory[key].append(time.ctime(time.time()))
+
+		self.lock.release()
+		self.cv.notify_all()
 
 
 	def createAggFName(self, fName):
