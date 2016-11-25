@@ -76,11 +76,11 @@ class tweetParser:
 					print(threadName+" - filename: "+str(filename))
 					thread = Thread(target = self.aggregateFile, args = (path, aggDir))
 					thread.name = threadName
- 					threads.append(thread)
+					threads.append(thread)
 					threads[threadsActive].start()
-				   	print("Starting {}".format(threads[threadsActive].name))
-				   	key = threads[threadsActive].name
-				   	self.asyncWriter(key, start = 'start')
+					print("Starting {}".format(threads[threadsActive].name))
+					key = threads[threadsActive].name
+					self.asyncWriter(key, start = 'start')
 					threadsActive+=1
 					filesProcessed+=1
 					time.sleep(1)
@@ -100,7 +100,7 @@ class tweetParser:
 			#reset the activeThreads pool and do it again
 
 			del threads[:]
- 			threadsActive = 0
+			threadsActive = 0
 			print("threads processesd {}".format(filesProcessed))
 
 	''' func asyncWriter: lock writer so that the threadDurationHistory is protected
@@ -273,6 +273,6 @@ class tweetParser:
 
 if __name__ == "__main__":
 	if len(sys.argv) != 2:
-		print "You need to include a directory path when calling this file.\ne.g.\tpython scriptname.py path/to/directory"
+		print("You need to include a directory path when calling this file.\ne.g.\tpython scriptname.py path/to/directory")
 		exit()
 	tweetParser()
