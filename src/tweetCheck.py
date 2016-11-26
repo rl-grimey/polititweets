@@ -43,53 +43,54 @@ class tweetCheck:
             tokens = json.load(f)
         tokenCounter = 0
         userid = 0
-        while ((tokenCounter < len(tokens['tokens'])) and
-             (userid < len(self.userIds))):
-            try:
-                logging.info('**** Token: '+str(tokenCounter)+'****')
-                CONSUMER_KEY = tokens['tokens'][tokenCounter]['consumerKey']
-                CONSUMER_SECRET = tokens['tokens'][tokenCounter]['consumerSecret']
-                ACCESS_TOKEN = tokens['tokens'][tokenCounter]['accessToken']
-                ACCESS_TOKEN_SECRET = tokens['tokens'][tokenCounter]['accessTokenSecret']
+        while (userid < len(self.userIds)):
+            while ((tokenCounter < len(tokens['tokens']))):
 
-                twitter_app_auth = {
-                        'consumer_key': CONSUMER_KEY,
-                        'consumer_secret': CONSUMER_SECRET,
-                        'access_token': ACCESS_TOKEN,
-                        'access_token_secret': ACCESS_TOKEN_SECRET
-                }
+                try:
+                    logging.info('**** Token: '+str(tokenCounter)+'****')
+                    CONSUMER_KEY = tokens['tokens'][tokenCounter]['consumerKey']
+                    CONSUMER_SECRET = tokens['tokens'][tokenCounter]['consumerSecret']
+                    ACCESS_TOKEN = tokens['tokens'][tokenCounter]['accessToken']
+                    ACCESS_TOKEN_SECRET = tokens['tokens'][tokenCounter]['accessTokenSecret']
 
-                userIdsParam = self.userIds[userid]
+                    twitter_app_auth = {
+                            'consumer_key': CONSUMER_KEY,
+                            'consumer_secret': CONSUMER_SECRET,
+                            'access_token': ACCESS_TOKEN,
+                            'access_token_secret': ACCESS_TOKEN_SECRET
+                    }
 
-                # auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-                # auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-                # api = tweepy.API(auth)
+                    userIdsParam = self.userIds[userid]
 
-                #save off all of the threads to start later
-                thread = Thread(target = self.botOrNot, args = (userIdsParam, twitter_app_auth))
-                threads.append(thread)
-                tokenCounter+=1
-                userid+=1
+                    # auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+                    # auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+                    # api = tweepy.API(auth)
 
-        #
-        #
-            except Exception as e:
-                logging.info(e)
-                tokenCounter+=1
-                userid+=1
+                    #save off all of the threads to start later
+                    thread = Thread(target = self.botOrNot, args = (userIdsParam, twitter_app_auth))
+                    threads.append(thread)
+                    tokenCounter+=1
+                    userid+=1
 
-            #start all of the threads
-            for thread in threads:
-                thread.start()
-                logging.info("*******Thread: started thread "+thread.name+"*******")
+            #
+            #
+                except Exception as e:
+                    logging.info(e)
+                    tokenCounter+=1
+                    userid+=1
+
+                #start all of the threads
+                for thread in threads:
+                    thread.start()
+                    logging.info("*******Thread: started thread "+thread.name+"*******")
 
 
-            #join all of the threads and restart the token counter
-            for thread in threads:
-                thread.join()
-                logging.info("*******Thread: joining on thread "+thread.name+"*******")
-            tokenCounter=0
-            threads[:] = []
+                #join all of the threads and restart the token counter
+                for thread in threads:
+                    thread.join()
+                    logging.info("*******Thread: joining on thread "+thread.name+"*******")
+                tokenCounter=0
+                threads[:] = []
 
     def botOrNot(self, userIds, auth):
         results = None
