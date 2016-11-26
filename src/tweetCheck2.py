@@ -88,7 +88,7 @@ class tweetCheck:
 
             #join all of the threads and restart the token counter
             for thread in threads:
-                thread.join(timeout = 5.0)
+                thread.join(timeout = 10.0)
                 logging.info("*******Thread: joining on thread "+thread.name+"*******")
             tokenCounter=0
             threads[:] = []
@@ -117,7 +117,7 @@ class tweetCheck:
         try:
             for results in resultsList:
                 print "results"
-                print results  
+                print results
                 userId =  results['meta']['user_id']
                 screenName = results['meta']['screen_name']
                 entry = {}
