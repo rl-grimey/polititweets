@@ -109,7 +109,7 @@ class tweetCheck:
 
             except:
                 logging.info("**** waiting ****")
-                self.bonCv.wait()
+                self.bonCv.wait(timeout = 1.0)
                 logging.info("**** attempting to reconnect ****")
                 print results
 
