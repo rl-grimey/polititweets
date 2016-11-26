@@ -3,6 +3,7 @@ import os
 import csv
 import time
 import json
+import Queue
 import tweepy
 import pandas
 import logging
@@ -106,7 +107,12 @@ class tweetCheck:
         bon = botornot.BotOrNot(**auth)
         results = []
         try:
-            results = list(bon.check_accounts_in(userIds))
+            queue = Queue.Queue()
+            thread = Thread(target = bon.mod_check_accounts_in(userIds, queue))
+            thread.start()
+            thread.join()
+            logging.info("Thread BON: joined on "+thread.name)
+            results = list(queue.get())
         except Exception as e:
             logging.info(e)
         self.asyncWriter(results)
