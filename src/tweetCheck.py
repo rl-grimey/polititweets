@@ -87,7 +87,7 @@ class tweetCheck:
 
             #join all of the threads and restart the token counter
             for thread in threads:
-                thread.join(timeout = 90.0)
+                thread.join(timeout = 5.0)
                 logging.info("*******Thread: joining on thread "+thread.name+"*******")
             tokenCounter=0
             threads[:] = []
