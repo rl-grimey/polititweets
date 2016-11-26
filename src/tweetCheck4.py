@@ -116,7 +116,7 @@ class tweetCheck:
 
     def asyncWriter(self, resultsList):
         try:
-            for results in resultList:
+            for results in resultsList:
                 userId =  results['meta']['user_id']
                 screenName = results['meta']['screen_name']
                 entry = {}
