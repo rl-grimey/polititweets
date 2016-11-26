@@ -1,0 +1,29 @@
+{
+  "tokens":
+  [
+
+      {
+        "userName":"politictweet14",
+        "consumerKey":"0ZuOullliQ4CzU5828KG7UlXj",
+        "consumerSecret":"lLuYV0lMPnDkKC3aNsRifFWhhnQQOHNlNZ8JlhGxXa4p82NErJ",
+        "accessToken":"801865333632024576-uIHJDiHjvBsBKnuV7EgJYym1o0MVI1E",
+        "accessTokenSecret": "wCbj4OXZr8yoH9hkluyDdc6wKNZOucZudIluDHSGswThb"
+      },
+      {
+        "userName":"politictweet15",
+        "consumerKey":"rgZ164iBa9tGmtdtEi1BVsqjq",
+        "consumerSecret":"udcdeIqdOEeJ7WoeY9e32TKgpOYQHazF7HXWA1Gn1hBpxieFIl",
+        "accessToken":"801877762969653248-sgOATNrvYN5YLj8R0UJYZcnDUYjoX4d",
+        "accessTokenSecret": "T88OhhPcJtiyLNLzGO3iBrikPAvKcqrDYzmg8EE7Sc7aa"
+      },
+      {
+        "userName":"politictweet16",
+        "consumerKey":"iCg1rSCGt7W0YkpSoRcXBT6o0",
+        "consumerSecret":"XLRzlW39523qFd4NjZ9bpqpQF0WEWjptIHBedvHuSoJtVJOZYV",
+        "accessToken":"801878717907795968-5mQ9Qp43XbKYqGM5c6kRA1DzKLmShRd",
+        "accessTokenSecret": "OtigVGijmdPsaBkcvqh92wX9sVFcbyAs3yYMMMzys2ARI"
+      }
+
+  ]
+
+}
