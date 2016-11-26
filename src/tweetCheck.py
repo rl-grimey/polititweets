@@ -91,6 +91,9 @@ class tweetCheck:
                 logging.info("*******Thread: joining on thread "+thread.name+"*******")
             tokenCounter=0
             threads[:] = []
+            self.asyncWriter(self.botOrNotResults)
+            logging.info("*** procecesed bon logs")
+            self.botOrNotResults[:] = []
 
     def botOrNot(self, userIds, auth):
         results = None
@@ -101,8 +104,8 @@ class tweetCheck:
                 logging.info("**** bonCV ACQUIRED ****")
                 bon = botornot.BotOrNot(**auth)
                 results = bon.check_account(userIds)
-                self.asyncWriter(results)
-                logging.info("**** wrote to asyncwriter **** "+thread.name)
+                self.botOrNotResults.append(results)
+                logging.info("**** TOTAL USERS: "+str(len(self.botOrNotResults)))
                 self.bonCv.notify_all()
                 self.bonCv.release()
                 logging.info("**** bonCV RELEASED **** "+thread.name)
