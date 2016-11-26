@@ -87,7 +87,7 @@ class tweetCheck:
 
             #join all of the threads and restart the token counter
             for thread in threads:
-                thread.join()
+                thread.join(timeout = 30.0)
                 logging.info("*******Thread: joining on thread "+thread.name+"*******")
             tokenCounter=0
             threads[:] = []
@@ -103,7 +103,7 @@ class tweetCheck:
                 self.bonCv.acquire()
                 logging.info("**** bonCV ACQUIRED ****")
                 bon = botornot.BotOrNot(**auth)
-                results = bon.check_account(userIds)
+                results = bon.check_account(userIds, retries = 0)
                 self.botOrNotResults.append(results)
                 logging.info("**** TOTAL USERS: "+str(len(self.botOrNotResults)))
                 self.bonCv.notify_all()
