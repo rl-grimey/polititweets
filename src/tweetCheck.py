@@ -79,18 +79,18 @@ class tweetCheck:
                     tokenCounter+=1
                     userid+=1
 
-                #start all of the threads
-                for thread in threads:
-                    thread.start()
-                    logging.info("*******Thread: started thread "+thread.name+"*******")
+            #start all of the threads
+            for thread in threads:
+                thread.start()
+                logging.info("*******Thread: started thread "+thread.name+"*******")
 
 
-                #join all of the threads and restart the token counter
-                for thread in threads:
-                    thread.join()
-                    logging.info("*******Thread: joining on thread "+thread.name+"*******")
-                tokenCounter=0
-                threads[:] = []
+            #join all of the threads and restart the token counter
+            for thread in threads:
+                thread.join()
+                logging.info("*******Thread: joining on thread "+thread.name+"*******")
+            tokenCounter=0
+            threads[:] = []
 
     def botOrNot(self, userIds, auth):
         results = None
