@@ -76,15 +76,11 @@ class tweetCheck:
 
                     #save off all of the threads to start later
                     thread = Thread(target = self.botOrNot, args = (userIdsParam, twitter_app_auth))
-
                     threads.append(thread)
-
                     tokenCounter+=1
                     idBin+=1
                     if idBin >= len(self.userIdRange):
                         break
-            #
-            #
                 except Exception as e:
                     logging.info(e)
                     tokenCounter+=1
@@ -107,12 +103,7 @@ class tweetCheck:
         bon = botornot.BotOrNot(**auth)
         results = []
         try:
-            queue = Queue.Queue()
-            thread = Thread(target = bon.mod_check_accounts_in(userIds, queue))
-            thread.start()
-            thread.join()
-            logging.info("Thread BON: joined on "+thread.name)
-            results = list(queue.get())
+            results = list(bon.check_accounts_in(userIds))
         except Exception as e:
             logging.info(e)
         self.asyncWriter(results)
