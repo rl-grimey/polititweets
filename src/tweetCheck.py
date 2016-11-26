@@ -112,38 +112,39 @@ class tweetCheck:
                 self.bonCv.wait(timeout = 1.0)
                 print results
 
-    def asyncWriter(self, results):
+    def asyncWriter(self, resultsList):
         try:
-            userId =  results['meta']['user_id']
-            screenName = results['meta']['screen_name']
-            entry = {}
-            entry['user_id'] = userId
-            entry['screen_name'] = screenName
-            entry['score'] = results['score']
-            entry['categories'] = results['categories']
-            print entry
-            botOrNotData = {}
-            path = os.path.join(self.filePath, 'botOrNotResults.json')
-            with open(path) as f:
+            for results in resultList:
+                userId =  results['meta']['user_id']
+                screenName = results['meta']['screen_name']
+                entry = {}
+                entry['user_id'] = userId
+                entry['screen_name'] = screenName
+                entry['score'] = results['score']
+                entry['categories'] = results['categories']
+                print entry
+                botOrNotData = {}
+                path = os.path.join(self.filePath, 'botOrNotResults.json')
+                with open(path) as f:
+                    try:
+                        botOrNotData = json.load(f)
+                    except Exception as e:
+                        print e
+                        logging.info(e)
+                    f.close()
                 try:
-                    botOrNotData = json.load(f)
+                    botOrNotData['botOrNot'].append(entry)
+                    with open(path, 'w') as f:
+                        try:
+                            json.dump(botOrNotData, f, indent = 4, separators = (',',': '), sort_keys = True)
+                            f.close()
+                        except Exception as e:
+                            print e
+                            f.close()
+                            logging.info(e)
                 except Exception as e:
                     print e
                     logging.info(e)
-                f.close()
-            try:
-                botOrNotData['botOrNot'].append(entry)
-                with open(path, 'w') as f:
-                    try:
-                        json.dump(botOrNotData, f, indent = 4, separators = (',',': '), sort_keys = True)
-                        f.close()
-                    except Exception as e:
-                        print e
-                        f.close()
-                        logging.info(e)
-            except Exception as e:
-                print e
-                logging.info(e)
         except Exception as e:
             print e
             logging.info(e)
