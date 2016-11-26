@@ -16,31 +16,24 @@ class tweetCheck:
         self.userIds = []
         logging.basicConfig(filename='output.log', level = logging.INFO)
         self.filePath = os.path.abspath(__file__).split('tweetCheck.py')[0]
-    #read in userNames
-        self.userIdRange = []
+        #read in userNames
         self.botOrNotResults = []
         self.cv = Condition()
-        self.lock = Lock()
+        self.bonCv = Condition()
         self.getUserIds()
         self.checkBotOrNot()
 
     def getUserIds(self):
+        logging.info("getUserIds")
+
         filename = 'filtered-users.csv'
         path = os.path.join(self.filePath,filename)
         csvdata = pandas.read_csv(path)
         for users in csvdata.values:
             self.userIds.append(users[0])
-        i = 0
-        while(i < len(self.userIds)):
-            if ((len(self.userIds) -  i) < 180):
-                start = i
-                end = len(self.userIds) - i
-                self.userIdRange.append([start, end])
-            else:
-                self.userIdRange.append([i, i+180])
-            i+=180
 
     def checkBotOrNot(self):
+        logging.info("checkBotOrNot")
         tokens = []
         rations = []
         screennames = []
@@ -49,111 +42,113 @@ class tweetCheck:
         with open(path, 'r') as f:
             tokens = json.load(f)
         tokenCounter = 0
-        idBin = 0
-        while (idBin < len(self.userIdRange)):
-            while tokenCounter < len(tokens['tokens']):
-                try:
-                    logging.info('**** Token: '+str(tokenCounter)+'****')
-                    CONSUMER_KEY = tokens['tokens'][tokenCounter]['consumerKey']
-                    CONSUMER_SECRET = tokens['tokens'][tokenCounter]['consumerSecret']
-                    ACCESS_TOKEN = tokens['tokens'][tokenCounter]['accessToken']
-                    ACCESS_TOKEN_SECRET = tokens['tokens'][tokenCounter]['accessTokenSecret']
+        userid = 0
+        while ((tokenCounter < len(tokens['tokens'])) and
+             (userid < len(self.userIds))):
+            try:
+                logging.info('**** Token: '+str(tokenCounter)+'****')
+                CONSUMER_KEY = tokens['tokens'][tokenCounter]['consumerKey']
+                CONSUMER_SECRET = tokens['tokens'][tokenCounter]['consumerSecret']
+                ACCESS_TOKEN = tokens['tokens'][tokenCounter]['accessToken']
+                ACCESS_TOKEN_SECRET = tokens['tokens'][tokenCounter]['accessTokenSecret']
 
-                    twitter_app_auth = {
-                            'consumer_key': CONSUMER_KEY,
-                            'consumer_secret': CONSUMER_SECRET,
-                            'access_token': ACCESS_TOKEN,
-                            'access_token_secret': ACCESS_TOKEN_SECRET
-                    }
-                    start = self.userIdRange[idBin][0]
-                    end = self.userIdRange[idBin][1]
+                twitter_app_auth = {
+                        'consumer_key': CONSUMER_KEY,
+                        'consumer_secret': CONSUMER_SECRET,
+                        'access_token': ACCESS_TOKEN,
+                        'access_token_secret': ACCESS_TOKEN_SECRET
+                }
 
-                    userIdsParam = self.userIds[start:end]
+                userIdsParam = self.userIds[userid]
 
-                    # auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-                    # auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
-                    # api = tweepy.API(auth)
+                # auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+                # auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+                # api = tweepy.API(auth)
 
-                    #save off all of the threads to start later
-                    thread = Thread(target = self.botOrNot, args = (userIdsParam, twitter_app_auth))
+                #save off all of the threads to start later
+                thread = Thread(target = self.botOrNot, args = (userIdsParam, twitter_app_auth))
+                threads.append(thread)
+                tokenCounter+=1
+                userid+=1
 
-                    threads.append(thread)
+        #
+        #
+            except Exception as e:
+                logging.info(e)
+                tokenCounter+=1
+                userid+=1
 
-                    tokenCounter+=1
-                    idBin+=1
-                    if idBin >= len(self.userIdRange):
-                        break
-            #
-            #
-                except Exception as e:
-                    logging.info(e)
-                    tokenCounter+=1
-                    idBin+=1
-                    if idBin >= len(self.userIdRange):
-                        break
-                #start all of the threads
-            for thread in threads:
-                thread.start()
-                logging.info("*******Thread: started thread "+thread.name+"*******")
-
-
-                #join all of the threads and restart the token counter
-            for thread in threads:
-                thread.join()
-                logging.info("*******Thread: joining on thread "+thread.name+"*******")
-            tokenCounter=0
-            threads[:] = []
-    def botOrNot(self, userIds, auth):
-        queue = Queue.Queue()
-
-        bon = botornot.BotOrNot(**auth)
-        results = []
-        try:
-            thread = Thread(target = bon.mod_check_accounts_in, args = (userIds, queue))
+        #start all of the threads
+        for thread in threads:
             thread.start()
+            logging.info("*******Thread: started thread "+thread.name+"*******")
+
+
+        #join all of the threads and restart the token counter
+        for thread in threads:
             thread.join()
-            logging.info("**** Thread BON: joining on"+thread.name)
-            results = list(queue.get())
-        except Exception as e:
-            logging.info(e)
-        self.asyncWriter(results)
+            logging.info("*******Thread: joining on thread "+thread.name+"*******")
+        tokenCounter=0
+        threads[:] = []
+
+    def botOrNot(self, userIds, auth):
+        results = None
+        while results == None:
+
+            try:
+                self.bonCv.acquire()
+                print "**** ACK ****"
+                bon = botornot.BotOrNot(**auth)
+                results = bon.check_account(userIds)
+                print results 
+                self.asyncWriter(results)
+                self.bonCv.notify_all()
+                self.bonCv.release()
+
+            except:
+                print "**** WAIT ****"
+                self.bonCv.wait()
+                print results
+                print "**** trying to ack ****"
+
 
     def asyncWriter(self, results):
         try:
-            self.cv.acquire()
-            for result in results:
-                userId =  str(result[0])
-                result = result[1]
-                entry = {}
-                entry['userId'] = userId
-                entry['result'] = result
-                botOrNotData = {}
-                path = os.path.join(self.filePath, 'botOrNotResults.json')
-                with open(path) as f:
-                    try:
-                        botOrNotData = json.load(f)
-                    except Exception as e:
-                        logging.info(e)
-                    f.close()
+            print "asyncWriter"
+            userId =  results['meta']['user_id']
+            screenName = results['meta']['screen_name']
+            entry = {}
+            entry['user_id'] = userId
+            entry['screen_name'] = screenName
+            entry['score'] = results['score']
+            entry['categories'] = results['categories']
+            print entry
+            botOrNotData = {}
+            path = os.path.join(self.filePath, 'botOrNotResults.json')
+            with open(path) as f:
                 try:
-                    botOrNotData['botOrNot'].append(entry)
-                    with open(path, 'w') as f:
-                        try:
-                            json.dump(botOrNotData, f, indent = 4, separators = (',',': '), sort_keys = True)
-                            f.close()
-                        except Exception as e:
-                            f.close()
-                            logging.info(e)
+                    botOrNotData = json.load(f)
                 except Exception as e:
+                    print e
                     logging.info(e)
-            #Enter the critical section
+                f.close()
+            try:
+                botOrNotData['botOrNot'].append(entry)
+                with open(path, 'w') as f:
+                    try:
+                        json.dump(botOrNotData, f, indent = 4, separators = (',',': '), sort_keys = True)
+                        f.close()
+                    except Exception as e:
+                        f.close()
+                        logging.info(e)
+            except Exception as e:
+                print e
+                logging.info(e)
             self.botOrNotResults.append(results)
-            #exit critical section
-            self.cv.notify_all()
-            self.cv.release()
+            print self.botOrNotResults
         except Exception as e:
-            self.cv.wait()
-
+            print e
+            logging.info(e)
 
 
 def main():
