@@ -87,7 +87,7 @@ class tweetCheck:
 
             #join all of the threads and restart the token counter
             for thread in threads:
-                thread.join(timeout = 5.0)
+                thread.join(timeout = 10.0)
                 logging.info("*******Thread: joining on thread "+thread.name+"*******")
             tokenCounter=0
             threads[:] = []
@@ -101,24 +101,19 @@ class tweetCheck:
 
             try:
                 self.bonCv.acquire()
-                logging.info("**** bonCV ACQUIRED ****")
                 bon = botornot.BotOrNot(**auth)
                 results = bon.check_account(userIds, retries = 0)
                 self.botOrNotResults.append(results)
                 logging.info("**** TOTAL USERS: "+str(len(self.botOrNotResults)))
                 self.bonCv.notify_all()
                 self.bonCv.release()
-                logging.info("**** bonCV RELEASED **** "+thread.name)
 
             except:
-                logging.info("**** waiting ****")
-                self.bonCv.wait(timeout = 1.0)
-                logging.info("**** attempting to reconnect ****")
+                self.bonCv.wait(timeout = 3.0)
                 print results
 
     def asyncWriter(self, results):
         try:
-            print "entering asyncWriter"
             userId =  results['meta']['user_id']
             screenName = results['meta']['screen_name']
             entry = {}
@@ -149,8 +144,6 @@ class tweetCheck:
             except Exception as e:
                 print e
                 logging.info(e)
-            self.botOrNotResults.append(results)
-            print "exiting asyncWriter"
         except Exception as e:
             print e
             logging.info(e)
