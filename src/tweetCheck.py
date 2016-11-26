@@ -3,6 +3,7 @@ import os
 import csv
 import time
 import json
+import Queue
 import tweepy
 import pandas
 import logging
@@ -103,10 +104,16 @@ class tweetCheck:
             tokenCounter=0
             threads[:] = []
     def botOrNot(self, userIds, auth):
+        queue = Queue.Queue()
+
         bon = botornot.BotOrNot(**auth)
         results = []
         try:
-            results = list(bon.check_accounts_in(userIds))
+            thread = Thread(target = bon.mod_check_accounts_in, args = (userIds, queue))
+            thread.start()
+            thread.join()
+            logging.info("**** Thread BON: joining on"+thread.name)
+            results = list(queue.get())
         except Exception as e:
             logging.info(e)
         self.asyncWriter(results)
