@@ -96,7 +96,7 @@ class tweetCheck:
 
             #join all of the threads and restart the token counter
             for thread in threads:
-                thread.join(timeout = 5.0)
+                thread.join(timeout = 10.0)
                 logging.info("*******Thread: joining on thread "+thread.name+"*******")
             tokenCounter=0
             threads[:] = []
@@ -112,20 +112,19 @@ class tweetCheck:
                 self.bonCv.acquire()
                 bon = botornot.BotOrNot(**auth)
                 results = bon.check_account(userIds)
+                logging.info(results)
                 self.botOrNotResults.append(results)
                 logging.info("**** TOTAL USERS: "+str(len(self.botOrNotResults)))
                 self.bonCv.notify_all()
                 self.bonCv.release()
 
             except:
+                logging.info(results)
                 self.bonCv.wait(timeout = 1.0)
-                print results
 
     def asyncWriter(self, resultsList):
         try:
             for results in resultsList:
-                print "results"
-                print results
                 userId =  results['meta']['user_id']
                 screenName = results['meta']['screen_name']
                 entry = {}
@@ -133,7 +132,6 @@ class tweetCheck:
                 entry['screen_name'] = screenName
                 entry['score'] = results['score']
                 entry['categories'] = results['categories']
-                print entry
                 botOrNotData = {}
                 path = os.path.join(self.filePath, 'botOrNotResults6.json')
                 with open(path) as f:
