@@ -15,7 +15,7 @@ class tweetCheck:
     def __init__(self):
         self.userIds = []
         logging.basicConfig(filename='output2.log', level = logging.INFO)
-        self.filePath = os.path.abspath(__file__).split('tweetCheck1.py')[0]
+        self.filePath = os.path.abspath(__file__).split('tweetCheck2.py')[0]
         #read in userNames
         self.botOrNotResults = []
         self.cv = Condition()
