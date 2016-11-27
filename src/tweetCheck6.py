@@ -44,7 +44,6 @@ class tweetCheck:
             tokens = json.load(f)
         tokenCounter = 0
         userid = 0
-        queryCount = 1
         while (userid < len(self.userIds)):
             while ((tokenCounter < len(tokens['tokens']))):
 
@@ -69,17 +68,10 @@ class tweetCheck:
                     # api = tweepy.API(auth)
 
                     #save off all of the threads to start later
-                    if queryCount < 540:
-                        thread = Thread(target = self.botOrNot, args = (userIdsParam, twitter_app_auth))
-                        threads.append(thread)
-                        tokenCounter+=1
-                        userid+=1
-                        queryCount+=1
-                    else:
-                        logging.info('***** GOING TO SLEEP *****')
-                        queryCount = 1
-                        time.sleep(3000)
-                        logging.info('***** WOKE UP*****')
+                    thread = Thread(target = self.botOrNot, args = (userIdsParam, twitter_app_auth))
+                    threads.append(thread)
+                    tokenCounter+=1
+                    userid+=1
 
             #
             #
@@ -96,7 +88,7 @@ class tweetCheck:
 
             #join all of the threads and restart the token counter
             for thread in threads:
-                thread.join(timeout = 30.0)
+                thread.join(timeout = 20.0)
                 logging.info("*******Thread: joining on thread "+thread.name+"*******")
             tokenCounter=0
             threads[:] = []
