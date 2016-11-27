@@ -97,7 +97,7 @@ class tweetCheck:
 
             #join all of the threads and restart the token counter
             for thread in threads:
-                thread.join(timeout = 10.0)
+                thread.join(timeout = 30.0)
                 logging.info("*******Thread: joining on thread "+thread.name+"*******")
             tokenCounter=0
             threads[:] = []
@@ -113,6 +113,7 @@ class tweetCheck:
                 self.bonCv.acquire()
                 bon = botornot.BotOrNot(**auth)
                 results = bon.check_account(userIds)
+                logging.info("results")
                 logging.info(results)
                 self.botOrNotResults.append(results)
                 logging.info("**** TOTAL USERS: "+str(len(self.botOrNotResults)))
@@ -120,7 +121,6 @@ class tweetCheck:
                 self.bonCv.release()
 
             except:
-                logging.info(results)
                 self.bonCv.wait(timeout = 1.0)
 
     def asyncWriter(self, resultsList):
