@@ -1,0 +1,1941 @@
+{
+    "botOrNot": [
+        {
+            "categories": {
+                "content_classification": 0.65,
+                "friend_classification": 0.38,
+                "network_classification": 0.52,
+                "sentiment_classification": 0.43,
+                "temporal_classification": 0.8278391959798995,
+                "user_classification": 0.63
+            },
+            "score": 0.56,
+            "screen_name": "jCar89000",
+            "user_id": "3532804813"
+        },
+        {
+            "categories": {
+                "content_classification": 0.88,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.397821640701592,
+                "sentiment_classification": 0.82,
+                "temporal_classification": 0.79,
+                "user_classification": 0.16
+            },
+            "score": 0.57,
+            "screen_name": "dtrumptvfan",
+            "user_id": "3920277023"
+        },
+        {
+            "categories": {
+                "content_classification": 0.67,
+                "friend_classification": 0.75,
+                "network_classification": 0.888,
+                "sentiment_classification": 0.53,
+                "temporal_classification": 0.41,
+                "user_classification": 0.34
+            },
+            "score": 0.49,
+            "screen_name": "LrBlancoo",
+            "user_id": "717358485030244352"
+        },
+        {
+            "categories": {
+                "content_classification": 0.76,
+                "friend_classification": 0.52,
+                "network_classification": 0.61,
+                "sentiment_classification": 0.76,
+                "temporal_classification": 0.37,
+                "user_classification": 0.53
+            },
+            "score": 0.64,
+            "screen_name": "DavidAvritt",
+            "user_id": "15195038"
+        },
+        {
+            "categories": {
+                "content_classification": 0.56,
+                "friend_classification": 0.58,
+                "network_classification": 0.42,
+                "sentiment_classification": 0.49,
+                "temporal_classification": 0.37,
+                "user_classification": 0.41
+            },
+            "score": 0.48,
+            "screen_name": "CarolHello1",
+            "user_id": "525641456"
+        },
+        {
+            "categories": {
+                "content_classification": 0.73,
+                "friend_classification": 0.76,
+                "network_classification": 0.8539927536231883,
+                "sentiment_classification": 0.73,
+                "temporal_classification": 0.6,
+                "user_classification": 0.35
+            },
+            "score": 0.62,
+            "screen_name": "HydroElections",
+            "user_id": "724050768106500096"
+        },
+        {
+            "categories": {
+                "content_classification": 0.46,
+                "friend_classification": 0.35,
+                "network_classification": 0.24,
+                "sentiment_classification": 0.62,
+                "temporal_classification": 0.24,
+                "user_classification": 0.44
+            },
+            "score": 0.38,
+            "screen_name": "1ubet",
+            "user_id": "3293195288"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.39,
+                "network_classification": 0.38,
+                "sentiment_classification": 0.31,
+                "temporal_classification": 0.28,
+                "user_classification": 0.47
+            },
+            "score": 0.46,
+            "screen_name": "UTHornsRawk",
+            "user_id": "2746979823"
+        },
+        {
+            "categories": {
+                "content_classification": 0.39,
+                "friend_classification": 0.33,
+                "network_classification": 0.61,
+                "sentiment_classification": 0.31,
+                "temporal_classification": 0.2,
+                "user_classification": 0.14
+            },
+            "score": 0.36,
+            "screen_name": "IremTuncel",
+            "user_id": "102824312"
+        },
+        {
+            "categories": {
+                "content_classification": 0.56,
+                "friend_classification": 0.5,
+                "network_classification": 0.28,
+                "sentiment_classification": 0.41,
+                "temporal_classification": 0.3,
+                "user_classification": 0.34
+            },
+            "score": 0.55,
+            "screen_name": "Cary88888888",
+            "user_id": "5950272"
+        },
+        {
+            "categories": {
+                "content_classification": 0.4,
+                "friend_classification": 0.51,
+                "network_classification": 0.3,
+                "sentiment_classification": 0.39,
+                "temporal_classification": 0.17,
+                "user_classification": 0.38
+            },
+            "score": 0.46,
+            "screen_name": "Ramdog1980",
+            "user_id": "369760961"
+        },
+        {
+            "categories": {
+                "content_classification": 0.51,
+                "friend_classification": 0.64,
+                "network_classification": 0.19,
+                "sentiment_classification": 0.38,
+                "temporal_classification": 0.41,
+                "user_classification": 0.3
+            },
+            "score": 0.63,
+            "screen_name": "Scrufey21",
+            "user_id": "490179072"
+        },
+        {
+            "categories": {
+                "content_classification": 0.24,
+                "friend_classification": 0.26,
+                "network_classification": 0.42,
+                "sentiment_classification": 0.26,
+                "temporal_classification": 0.17,
+                "user_classification": 0.67
+            },
+            "score": 0.47,
+            "screen_name": "Libertea2012",
+            "user_id": "607558430"
+        },
+        {
+            "categories": {
+                "content_classification": 0.29,
+                "friend_classification": 0.58,
+                "network_classification": 0.64,
+                "sentiment_classification": 0.19,
+                "temporal_classification": 0.36,
+                "user_classification": 0.54
+            },
+            "score": 0.41,
+            "screen_name": "TheLifeVote",
+            "user_id": "715259009561808896"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.58,
+                "network_classification": 0.54,
+                "sentiment_classification": 0.48,
+                "temporal_classification": 0.48,
+                "user_classification": 0.55
+            },
+            "score": 0.47,
+            "screen_name": "DonaldTrump_Is",
+            "user_id": "4591687480"
+        },
+        {
+            "categories": {
+                "content_classification": 0.75,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8511939992877352,
+                "sentiment_classification": 0.5,
+                "temporal_classification": 0.81,
+                "user_classification": 0.18
+            },
+            "score": 0.43,
+            "screen_name": "youreontv_app",
+            "user_id": "723126358541373440"
+        },
+        {
+            "categories": {
+                "content_classification": 0.43,
+                "friend_classification": 0.4,
+                "network_classification": 0.49,
+                "sentiment_classification": 0.27,
+                "temporal_classification": 0.58,
+                "user_classification": 0.45
+            },
+            "score": 0.43,
+            "screen_name": "marcylauren",
+            "user_id": "16146535"
+        },
+        {
+            "categories": {
+                "content_classification": 0.48,
+                "friend_classification": 0.49,
+                "network_classification": 0.27,
+                "sentiment_classification": 0.56,
+                "temporal_classification": 0.21,
+                "user_classification": 0.34
+            },
+            "score": 0.39,
+            "screen_name": "WelcomeMelania",
+            "user_id": "714785010440515584"
+        },
+        {
+            "categories": {
+                "content_classification": 0.53,
+                "friend_classification": 0.3,
+                "network_classification": 0.2,
+                "sentiment_classification": 0.56,
+                "temporal_classification": 0.41,
+                "user_classification": 0.34
+            },
+            "score": 0.37,
+            "screen_name": "DonaldJTrump016",
+            "user_id": "3311014386"
+        },
+        {
+            "categories": {
+                "content_classification": 0.86,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.89,
+                "temporal_classification": 0.89,
+                "user_classification": 0.14
+            },
+            "score": 0.44,
+            "screen_name": "election2016new",
+            "user_id": "711102413374136320"
+        },
+        {
+            "categories": {
+                "content_classification": 0.43,
+                "friend_classification": 0.56,
+                "network_classification": 0.36,
+                "sentiment_classification": 0.46,
+                "temporal_classification": 0.11,
+                "user_classification": 0.5
+            },
+            "score": 0.55,
+            "screen_name": "TrussElise",
+            "user_id": "3387188439"
+        },
+        {
+            "categories": {
+                "content_classification": 0.29,
+                "friend_classification": 0.34,
+                "network_classification": 0.51,
+                "sentiment_classification": 0.33,
+                "temporal_classification": 0.39,
+                "user_classification": 0.46
+            },
+            "score": 0.37,
+            "screen_name": "hale4jesus",
+            "user_id": "3927572774"
+        },
+        {
+            "categories": {
+                "content_classification": 0.66,
+                "friend_classification": 0.73,
+                "network_classification": 0.46,
+                "sentiment_classification": 0.55,
+                "temporal_classification": 0.52,
+                "user_classification": 0.24
+            },
+            "score": 0.48,
+            "screen_name": "TheDailyDigest",
+            "user_id": "19000908"
+        },
+        {
+            "categories": {
+                "content_classification": 0.43,
+                "friend_classification": 0.45,
+                "network_classification": 0.47,
+                "sentiment_classification": 0.46,
+                "temporal_classification": 0.46,
+                "user_classification": 0.45
+            },
+            "score": 0.48,
+            "screen_name": "ManMet80",
+            "user_id": "612057704"
+        },
+        {
+            "categories": {
+                "content_classification": 0.76,
+                "friend_classification": 0.8,
+                "network_classification": 0.8383333333333333,
+                "sentiment_classification": 0.74,
+                "temporal_classification": 0.6,
+                "user_classification": 0.46
+            },
+            "score": 0.44,
+            "screen_name": "TheBrkNews",
+            "user_id": "2737015671"
+        },
+        {
+            "categories": {
+                "content_classification": 0.7,
+                "friend_classification": 0.46,
+                "network_classification": 0.54,
+                "sentiment_classification": 0.45,
+                "temporal_classification": 0.38,
+                "user_classification": 0.47
+            },
+            "score": 0.59,
+            "screen_name": "tweetpoliticsUS",
+            "user_id": "3299093231"
+        },
+        {
+            "categories": {
+                "content_classification": 0.93,
+                "friend_classification": 0.6,
+                "network_classification": 0.6866170634920635,
+                "sentiment_classification": 0.83,
+                "temporal_classification": 0.74,
+                "user_classification": 0.41
+            },
+            "score": 0.53,
+            "screen_name": "WDYL2016",
+            "user_id": "2414927882"
+        },
+        {
+            "categories": {
+                "content_classification": 0.73,
+                "friend_classification": 0.57,
+                "network_classification": 0.68,
+                "sentiment_classification": 0.53,
+                "temporal_classification": 0.59,
+                "user_classification": 0.78
+            },
+            "score": 0.85,
+            "screen_name": "DonaldTrumpshow",
+            "user_id": "536037471"
+        },
+        {
+            "categories": {
+                "content_classification": 0.38,
+                "friend_classification": 0.67,
+                "network_classification": 0.38,
+                "sentiment_classification": 0.35,
+                "temporal_classification": 0.17,
+                "user_classification": 0.03
+            },
+            "score": 0.42,
+            "screen_name": "Donniegray12",
+            "user_id": "4072327265"
+        },
+        {
+            "categories": {
+                "content_classification": 0.48,
+                "friend_classification": 0.46,
+                "network_classification": 0.33,
+                "sentiment_classification": 0.44,
+                "temporal_classification": 0.17,
+                "user_classification": 0.67
+            },
+            "score": 0.52,
+            "screen_name": "Trump4Hope",
+            "user_id": "1849938847"
+        },
+        {
+            "categories": {
+                "content_classification": 0.64,
+                "friend_classification": 0.55,
+                "network_classification": 0.35,
+                "sentiment_classification": 0.4,
+                "temporal_classification": 0.26,
+                "user_classification": 0.26
+            },
+            "score": 0.53,
+            "screen_name": "jamesnews242",
+            "user_id": "28818582"
+        },
+        {
+            "categories": {
+                "content_classification": 0.755,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.86,
+                "sentiment_classification": 0.94,
+                "temporal_classification": 0.69,
+                "user_classification": 0.16
+            },
+            "score": 0.47,
+            "screen_name": "COTURBO",
+            "user_id": "610168167"
+        },
+        {
+            "categories": {
+                "content_classification": 0.77,
+                "friend_classification": 0.78,
+                "network_classification": 0.805,
+                "sentiment_classification": 0.69,
+                "temporal_classification": 0.31,
+                "user_classification": 0.39666666666666667
+            },
+            "score": 0.72,
+            "screen_name": "CyberAnonymous",
+            "user_id": "128334973"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.75,
+                "network_classification": 0.7,
+                "sentiment_classification": 0.56,
+                "temporal_classification": 0.51,
+                "user_classification": 0.7
+            },
+            "score": 0.59,
+            "screen_name": "goodbetterbuy",
+            "user_id": "726797117583417345"
+        },
+        {
+            "categories": {
+                "content_classification": 0.48,
+                "friend_classification": 0.24,
+                "network_classification": 0.45,
+                "sentiment_classification": 0.5,
+                "temporal_classification": 0.19,
+                "user_classification": 0.46
+            },
+            "score": 0.48,
+            "screen_name": "Race4President",
+            "user_id": "199636296"
+        },
+        {
+            "categories": {
+                "content_classification": 0.42,
+                "friend_classification": 0.38,
+                "network_classification": 0.53,
+                "sentiment_classification": 0.3,
+                "temporal_classification": 0.48,
+                "user_classification": 0.21
+            },
+            "score": 0.33,
+            "screen_name": "elvisinoregon",
+            "user_id": "48866739"
+        },
+        {
+            "categories": {
+                "content_classification": 0.4,
+                "friend_classification": 0.59,
+                "network_classification": 0.51,
+                "sentiment_classification": 0.38,
+                "temporal_classification": 0.46,
+                "user_classification": 0.34
+            },
+            "score": 0.43,
+            "screen_name": "satirist_indian",
+            "user_id": "2305879171"
+        },
+        {
+            "categories": {
+                "content_classification": 0.86,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.61,
+                "sentiment_classification": 0.68,
+                "temporal_classification": 0.76,
+                "user_classification": 0.61
+            },
+            "score": 0.67,
+            "screen_name": "GregJeffery888",
+            "user_id": "3376060913"
+        },
+        {
+            "categories": {
+                "content_classification": 0.67,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.3613466625762789,
+                "temporal_classification": 0.7879518434631023,
+                "user_classification": 0.7838863574969136
+            },
+            "score": 0.87,
+            "screen_name": "EndorsementsGOP",
+            "user_id": "717554036510068736"
+        },
+        {
+            "categories": {
+                "content_classification": 0.33,
+                "friend_classification": 0.6,
+                "network_classification": 0.44,
+                "sentiment_classification": 0.33,
+                "temporal_classification": 0.31,
+                "user_classification": 0.55
+            },
+            "score": 0.51,
+            "screen_name": "TeamTrumpAZ",
+            "user_id": "3271255423"
+        },
+        {
+            "categories": {
+                "content_classification": 0.58,
+                "friend_classification": 0.5,
+                "network_classification": 0.6140714285714285,
+                "sentiment_classification": 0.21166666666666664,
+                "temporal_classification": 0.69,
+                "user_classification": 0.46
+            },
+            "score": 0.59,
+            "screen_name": "klansmen4trump",
+            "user_id": "4493736743"
+        },
+        {
+            "categories": {
+                "content_classification": 0.93,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.8283333333333333,
+                "temporal_classification": 0.8033333333333335,
+                "user_classification": 0.48
+            },
+            "score": 0.62,
+            "screen_name": "trumpednews",
+            "user_id": "4149697303"
+        },
+        {
+            "categories": {
+                "content_classification": 0.22,
+                "friend_classification": 0.36,
+                "network_classification": 0.41,
+                "sentiment_classification": 0.38,
+                "temporal_classification": 0.09,
+                "user_classification": 0.35
+            },
+            "score": 0.34,
+            "screen_name": "redletter99",
+            "user_id": "392783363"
+        },
+        {
+            "categories": {
+                "content_classification": 0.72,
+                "friend_classification": 0.83,
+                "network_classification": 0.66,
+                "sentiment_classification": 0.68,
+                "temporal_classification": 0.44,
+                "user_classification": 0.56
+            },
+            "score": 0.48,
+            "screen_name": "openn_eu",
+            "user_id": "1109519262"
+        },
+        {
+            "categories": {
+                "content_classification": 0.5,
+                "friend_classification": 0.68,
+                "network_classification": 0.58,
+                "sentiment_classification": 0.6,
+                "temporal_classification": 0.41,
+                "user_classification": 0.47
+            },
+            "score": 0.38,
+            "screen_name": "openomroep",
+            "user_id": "108124138"
+        },
+        {
+            "categories": {
+                "content_classification": 0.4,
+                "friend_classification": 0.56,
+                "network_classification": 0.5,
+                "sentiment_classification": 0.38,
+                "temporal_classification": 0.26,
+                "user_classification": 0.31
+            },
+            "score": 0.51,
+            "screen_name": "MiriamRoseMc",
+            "user_id": "415175014"
+        },
+        {
+            "categories": {
+                "content_classification": 0.81,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.9,
+                "sentiment_classification": 0.67,
+                "temporal_classification": 0.71,
+                "user_classification": 0.02
+            },
+            "score": 0.36,
+            "screen_name": "mohammeddki8852",
+            "user_id": "3418588247"
+        },
+        {
+            "categories": {
+                "content_classification": 0.66,
+                "friend_classification": 0.53,
+                "network_classification": 0.71,
+                "sentiment_classification": 0.76,
+                "temporal_classification": 0.53,
+                "user_classification": 0.46
+            },
+            "score": 0.53,
+            "screen_name": "openn_world",
+            "user_id": "2927048097"
+        },
+        {
+            "categories": {
+                "content_classification": 0.68,
+                "friend_classification": 0.74,
+                "network_classification": 0.57,
+                "sentiment_classification": 0.52,
+                "temporal_classification": 0.36,
+                "user_classification": 0.45
+            },
+            "score": 0.54,
+            "screen_name": "berserk_news",
+            "user_id": "2976237925"
+        },
+        {
+            "categories": {
+                "content_classification": 0.68,
+                "friend_classification": 0.72,
+                "network_classification": 0.806923076923077,
+                "sentiment_classification": 0.75,
+                "temporal_classification": 0.36,
+                "user_classification": 0.17
+            },
+            "score": 0.57,
+            "screen_name": "godwin_bot",
+            "user_id": "4260493217"
+        },
+        {
+            "categories": {
+                "content_classification": 0.7,
+                "friend_classification": 0.64,
+                "network_classification": 0.21,
+                "sentiment_classification": 0.75,
+                "temporal_classification": 0.34,
+                "user_classification": 0.47
+            },
+            "score": 0.43,
+            "screen_name": "donaldtrumpfire",
+            "user_id": "3278905076"
+        },
+        {
+            "categories": {
+                "content_classification": 0.74,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.7907826086956521,
+                "sentiment_classification": 0.52,
+                "temporal_classification": 0.76,
+                "user_classification": 0.4
+            },
+            "score": 0.48,
+            "screen_name": "facists4trump",
+            "user_id": "4275416729"
+        },
+        {
+            "categories": {
+                "content_classification": 0.72,
+                "friend_classification": 0.76,
+                "network_classification": 0.65,
+                "sentiment_classification": 0.8,
+                "temporal_classification": 0.63,
+                "user_classification": 0.44
+            },
+            "score": 0.51,
+            "screen_name": "iPoliticallyGQ",
+            "user_id": "718859375146708992"
+        },
+        {
+            "categories": {
+                "content_classification": 0.36,
+                "friend_classification": 0.69,
+                "network_classification": 0.3,
+                "sentiment_classification": 0.15,
+                "temporal_classification": 0.21,
+                "user_classification": 0.34
+            },
+            "score": 0.42,
+            "screen_name": "sage_road",
+            "user_id": "3308267474"
+        },
+        {
+            "categories": {
+                "content_classification": 0.34,
+                "friend_classification": 0.31,
+                "network_classification": 0.25,
+                "sentiment_classification": 0.38,
+                "temporal_classification": 0.68,
+                "user_classification": 0.42
+            },
+            "score": 0.27,
+            "screen_name": "rush_simpson",
+            "user_id": "4076935702"
+        },
+        {
+            "categories": {
+                "content_classification": 0.94,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.52,
+                "sentiment_classification": 0.74,
+                "temporal_classification": 0.72,
+                "user_classification": 0.4
+            },
+            "score": 0.48,
+            "screen_name": "DTrumpFan",
+            "user_id": "3309414913"
+        },
+        {
+            "categories": {
+                "content_classification": 0.36,
+                "friend_classification": 0.24,
+                "network_classification": 0.36,
+                "sentiment_classification": 0.29,
+                "temporal_classification": 0.27,
+                "user_classification": 0.34
+            },
+            "score": 0.26,
+            "screen_name": "Ahurastan",
+            "user_id": "2507917171"
+        },
+        {
+            "categories": {
+                "content_classification": 0.83,
+                "friend_classification": 0.74,
+                "network_classification": 0.53,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.4,
+                "user_classification": 0.2
+            },
+            "score": 0.41,
+            "screen_name": "SlowestPoison",
+            "user_id": "323685593"
+        },
+        {
+            "categories": {
+                "content_classification": 0.22,
+                "friend_classification": 0.37,
+                "network_classification": 0.28,
+                "sentiment_classification": 0.2,
+                "temporal_classification": 0.27,
+                "user_classification": 0.29
+            },
+            "score": 0.3,
+            "screen_name": "JustDonPerla",
+            "user_id": "3654911176"
+        },
+        {
+            "categories": {
+                "content_classification": 0.64,
+                "friend_classification": 0.55,
+                "network_classification": 0.5185488955488955,
+                "sentiment_classification": 0.6,
+                "temporal_classification": 0.53,
+                "user_classification": 0.5433333333333333
+            },
+            "score": 0.64,
+            "screen_name": "JohnFavere",
+            "user_id": "706617905773944832"
+        },
+        {
+            "categories": {
+                "content_classification": 0.61,
+                "friend_classification": 0.35,
+                "network_classification": 0.53,
+                "sentiment_classification": 0.48,
+                "temporal_classification": 0.31,
+                "user_classification": 0.49
+            },
+            "score": 0.44,
+            "screen_name": "wjkkarma1",
+            "user_id": "703832021957619712"
+        },
+        {
+            "categories": {
+                "content_classification": 0.3,
+                "friend_classification": 0.44,
+                "network_classification": 0.26,
+                "sentiment_classification": 0.26,
+                "temporal_classification": 0.31,
+                "user_classification": 0.2
+            },
+            "score": 0.44,
+            "screen_name": "maxyella",
+            "user_id": "1337799019"
+        },
+        {
+            "categories": {
+                "content_classification": 0.81,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.76,
+                "temporal_classification": 0.52,
+                "user_classification": 0.46
+            },
+            "score": 0.69,
+            "screen_name": "realDonnews24",
+            "user_id": "722259394063376384"
+        },
+        {
+            "categories": {
+                "content_classification": 0.7,
+                "friend_classification": 0.65,
+                "network_classification": 0.67,
+                "sentiment_classification": 0.73,
+                "temporal_classification": 0.81,
+                "user_classification": 0.44
+            },
+            "score": 0.63,
+            "screen_name": "TiNaMaRiEred",
+            "user_id": "703036137779036160"
+        },
+        {
+            "categories": {
+                "content_classification": 0.7340000000000001,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.74,
+                "temporal_classification": 0.57,
+                "user_classification": 0.44
+            },
+            "score": 0.58,
+            "screen_name": "TBackers",
+            "user_id": "3044768595"
+        },
+        {
+            "categories": {
+                "content_classification": 0.56,
+                "friend_classification": 0.37,
+                "network_classification": 0.25,
+                "sentiment_classification": 0.37,
+                "temporal_classification": 0.22,
+                "user_classification": 0.42
+            },
+            "score": 0.44,
+            "screen_name": "greychampion",
+            "user_id": "26887881"
+        },
+        {
+            "categories": {
+                "content_classification": 0.4,
+                "friend_classification": 0.32,
+                "network_classification": 0.18,
+                "sentiment_classification": 0.38,
+                "temporal_classification": 0.26,
+                "user_classification": 0.2
+            },
+            "score": 0.29,
+            "screen_name": "Lmk_1952",
+            "user_id": "299893741"
+        },
+        {
+            "categories": {
+                "content_classification": 0.5,
+                "friend_classification": 0.66,
+                "network_classification": 0.41,
+                "sentiment_classification": 0.57,
+                "temporal_classification": 0.59,
+                "user_classification": 0.26
+            },
+            "score": 0.56,
+            "screen_name": "misshome888",
+            "user_id": "50691835"
+        },
+        {
+            "categories": {
+                "content_classification": 0.68,
+                "friend_classification": 0.7,
+                "network_classification": 0.6,
+                "sentiment_classification": 0.48,
+                "temporal_classification": 0.5,
+                "user_classification": 0.2
+            },
+            "score": 0.53,
+            "screen_name": "pilipenko_veron",
+            "user_id": "2535578876"
+        },
+        {
+            "categories": {
+                "content_classification": 0.31,
+                "friend_classification": 0.42,
+                "network_classification": 0.44,
+                "sentiment_classification": 0.37,
+                "temporal_classification": 0.3,
+                "user_classification": 0.46
+            },
+            "score": 0.37,
+            "screen_name": "cruchofcofee",
+            "user_id": "2898756616"
+        },
+        {
+            "categories": {
+                "content_classification": 0.38,
+                "friend_classification": 0.36,
+                "network_classification": 0.43,
+                "sentiment_classification": 0.34,
+                "temporal_classification": 0.28,
+                "user_classification": 0.4
+            },
+            "score": 0.24,
+            "screen_name": "CarmenCammarat2",
+            "user_id": "3430537311"
+        },
+        {
+            "categories": {
+                "content_classification": 0.5,
+                "friend_classification": 0.35,
+                "network_classification": 0.26,
+                "sentiment_classification": 0.26,
+                "temporal_classification": 0.34,
+                "user_classification": 0.29
+            },
+            "score": 0.42,
+            "screen_name": "RoseLeon111",
+            "user_id": "713351264508227584"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.65,
+                "network_classification": 0.45,
+                "sentiment_classification": 0.54,
+                "temporal_classification": 0.45,
+                "user_classification": 0.31
+            },
+            "score": 0.46,
+            "screen_name": "LaurieAnnBaker",
+            "user_id": "54935632"
+        },
+        {
+            "categories": {
+                "content_classification": 0.44,
+                "friend_classification": 0.44,
+                "network_classification": 0.32,
+                "sentiment_classification": 0.3,
+                "temporal_classification": 0.29,
+                "user_classification": 0.34
+            },
+            "score": 0.49,
+            "screen_name": "DonaId_Trump_",
+            "user_id": "702864948691607552"
+        },
+        {
+            "categories": {
+                "content_classification": 0.47,
+                "friend_classification": 0.44,
+                "network_classification": 0.44,
+                "sentiment_classification": 0.35,
+                "temporal_classification": 0.33,
+                "user_classification": 0.26
+            },
+            "score": 0.3,
+            "screen_name": "drzevetchin",
+            "user_id": "2884079135"
+        },
+        {
+            "categories": {
+                "content_classification": 0.6,
+                "friend_classification": 0.31,
+                "network_classification": 0.56,
+                "sentiment_classification": 0.44,
+                "temporal_classification": 0.62,
+                "user_classification": 0.3
+            },
+            "score": 0.57,
+            "screen_name": "ImDonnyMcDonald",
+            "user_id": "718308094829334528"
+        },
+        {
+            "categories": {
+                "content_classification": 0.92,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.74,
+                "temporal_classification": 0.74,
+                "user_classification": 0.64
+            },
+            "score": 0.4,
+            "screen_name": "news_simple",
+            "user_id": "3031655738"
+        },
+        {
+            "categories": {
+                "content_classification": 0.62,
+                "friend_classification": 0.62,
+                "network_classification": 0.33,
+                "sentiment_classification": 0.52,
+                "temporal_classification": 0.47,
+                "user_classification": 0.28
+            },
+            "score": 0.56,
+            "screen_name": "MPrestrepo2334",
+            "user_id": "533444481"
+        },
+        {
+            "categories": {
+                "content_classification": 0.58,
+                "friend_classification": 0.73,
+                "network_classification": 0.71,
+                "sentiment_classification": 0.47,
+                "temporal_classification": 0.57,
+                "user_classification": 0.09
+            },
+            "score": 0.33,
+            "screen_name": "HugeNetwork_EN",
+            "user_id": "494026634"
+        },
+        {
+            "categories": {
+                "content_classification": 0.33,
+                "friend_classification": 0.42,
+                "network_classification": 0.44,
+                "sentiment_classification": 0.27,
+                "temporal_classification": 0.19,
+                "user_classification": 0.23
+            },
+            "score": 0.38,
+            "screen_name": "rumfolo",
+            "user_id": "621524387"
+        },
+        {
+            "categories": {
+                "content_classification": 0.23,
+                "friend_classification": 0.37,
+                "network_classification": 0.45,
+                "sentiment_classification": 0.22,
+                "temporal_classification": 0.29,
+                "user_classification": 0.46
+            },
+            "score": 0.35,
+            "screen_name": "thepoliticalcat",
+            "user_id": "17686959"
+        },
+        {
+            "categories": {
+                "content_classification": 0.33,
+                "friend_classification": 0.22,
+                "network_classification": 0.45,
+                "sentiment_classification": 0.3,
+                "temporal_classification": 0.18,
+                "user_classification": 0.25
+            },
+            "score": 0.33,
+            "screen_name": "ktd101551",
+            "user_id": "3317319301"
+        },
+        {
+            "categories": {
+                "content_classification": 0.5,
+                "friend_classification": 0.22,
+                "network_classification": 0.24,
+                "sentiment_classification": 0.4,
+                "temporal_classification": 0.37,
+                "user_classification": 0.38
+            },
+            "score": 0.36,
+            "screen_name": "LuvGodFamUSA",
+            "user_id": "53981431"
+        },
+        {
+            "categories": {
+                "content_classification": 0.19,
+                "friend_classification": 0.35,
+                "network_classification": 0.4,
+                "sentiment_classification": 0.31,
+                "temporal_classification": 0.25,
+                "user_classification": 0.31
+            },
+            "score": 0.17,
+            "screen_name": "ShellyLeigh123",
+            "user_id": "1586296735"
+        },
+        {
+            "categories": {
+                "content_classification": 0.71,
+                "friend_classification": 0.79,
+                "network_classification": 0.61,
+                "sentiment_classification": 0.5,
+                "temporal_classification": 0.49,
+                "user_classification": 0.42
+            },
+            "score": 0.43,
+            "screen_name": "politicsopenn",
+            "user_id": "3407565077"
+        },
+        {
+            "categories": {
+                "content_classification": 0.4,
+                "friend_classification": 0.36,
+                "network_classification": 0.55,
+                "sentiment_classification": 0.31,
+                "temporal_classification": 0.3,
+                "user_classification": 0.3
+            },
+            "score": 0.43,
+            "screen_name": "SueSabo",
+            "user_id": "384434800"
+        },
+        {
+            "categories": {
+                "content_classification": 0.7,
+                "friend_classification": 0.41,
+                "network_classification": 0.58,
+                "sentiment_classification": 0.61,
+                "temporal_classification": 0.42,
+                "user_classification": 0.61
+            },
+            "score": 0.47,
+            "screen_name": "CallawayBOT",
+            "user_id": "3408262787"
+        },
+        {
+            "categories": {
+                "content_classification": 0.53,
+                "friend_classification": 0.75,
+                "network_classification": 0.56,
+                "sentiment_classification": 0.61,
+                "temporal_classification": 0.29,
+                "user_classification": 0.2
+            },
+            "score": 0.55,
+            "screen_name": "songbirdcd",
+            "user_id": "21216192"
+        },
+        {
+            "categories": {
+                "content_classification": 0.9,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.71,
+                "temporal_classification": 0.58,
+                "user_classification": 0.42
+            },
+            "score": 0.5,
+            "screen_name": "krunox123",
+            "user_id": "478606913"
+        },
+        {
+            "categories": {
+                "content_classification": 0.56,
+                "friend_classification": 0.55,
+                "network_classification": 0.64,
+                "sentiment_classification": 0.66,
+                "temporal_classification": 0.47,
+                "user_classification": 0.57
+            },
+            "score": 0.4,
+            "screen_name": "AliLovelyTweets",
+            "user_id": "2737630237"
+        },
+        {
+            "categories": {
+                "content_classification": 0.45,
+                "friend_classification": 0.7,
+                "network_classification": 0.45,
+                "sentiment_classification": 0.41,
+                "temporal_classification": 0.43,
+                "user_classification": 0.26
+            },
+            "score": 0.46,
+            "screen_name": "T17R_TEdinger",
+            "user_id": "3305171239"
+        },
+        {
+            "categories": {
+                "content_classification": 0.77,
+                "friend_classification": 0.7,
+                "network_classification": 0.55,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.44,
+                "user_classification": 0.53
+            },
+            "score": 0.42,
+            "screen_name": "ClimateRetweet",
+            "user_id": "3291077331"
+        },
+        {
+            "categories": {
+                "content_classification": 0.9,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.62,
+                "temporal_classification": 0.675,
+                "user_classification": 0.01
+            },
+            "score": 0.33,
+            "screen_name": "PoliticalFeed_",
+            "user_id": "2559476538"
+        },
+        {
+            "categories": {
+                "content_classification": 0.4,
+                "friend_classification": 0.31,
+                "network_classification": 0.38,
+                "sentiment_classification": 0.6,
+                "temporal_classification": 0.49,
+                "user_classification": 0.37
+            },
+            "score": 0.29,
+            "screen_name": "PinkPri25886286",
+            "user_id": "715724028447563777"
+        },
+        {
+            "categories": {
+                "content_classification": 0.41,
+                "friend_classification": 0.4,
+                "network_classification": 0.32,
+                "sentiment_classification": 0.39,
+                "temporal_classification": 0.24,
+                "user_classification": 0.37
+            },
+            "score": 0.38,
+            "screen_name": "RiseUpAbove",
+            "user_id": "704060092065423361"
+        },
+        {
+            "categories": {
+                "content_classification": 0.87,
+                "friend_classification": 0.76,
+                "network_classification": 0.62,
+                "sentiment_classification": 0.945,
+                "temporal_classification": 0.63,
+                "user_classification": 0.38
+            },
+            "score": 0.49,
+            "screen_name": "CampaignUSA2016",
+            "user_id": "4502289501"
+        },
+        {
+            "categories": {
+                "content_classification": 0.4,
+                "friend_classification": 0.24,
+                "network_classification": 0.51,
+                "sentiment_classification": 0.39,
+                "temporal_classification": 0.23,
+                "user_classification": 0.29
+            },
+            "score": 0.3,
+            "screen_name": "wendydcoe",
+            "user_id": "1141027980"
+        },
+        {
+            "categories": {
+                "content_classification": 0.34,
+                "friend_classification": 0.3,
+                "network_classification": 0.53,
+                "sentiment_classification": 0.49,
+                "temporal_classification": 0.35,
+                "user_classification": 0.2
+            },
+            "score": 0.35,
+            "screen_name": "BobbiDalton13",
+            "user_id": "3824077212"
+        },
+        {
+            "categories": {
+                "content_classification": 0.91,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.68,
+                "temporal_classification": 0.72,
+                "user_classification": 0.33
+            },
+            "score": 0.56,
+            "screen_name": "news_worldnews",
+            "user_id": "1700243311"
+        },
+        {
+            "categories": {
+                "content_classification": 0.42,
+                "friend_classification": 0.19,
+                "network_classification": 0.19,
+                "sentiment_classification": 0.32,
+                "temporal_classification": 0.06,
+                "user_classification": 0.19
+            },
+            "score": 0.26,
+            "screen_name": "mclay332",
+            "user_id": "979485488"
+        },
+        {
+            "categories": {
+                "content_classification": 0.46,
+                "friend_classification": 0.57,
+                "network_classification": 0.58,
+                "sentiment_classification": 0.41,
+                "temporal_classification": 0.45,
+                "user_classification": 0.37
+            },
+            "score": 0.49,
+            "screen_name": "JohnPena03",
+            "user_id": "4459753935"
+        },
+        {
+            "categories": {
+                "content_classification": 0.66,
+                "friend_classification": 0.49,
+                "network_classification": 0.39,
+                "sentiment_classification": 0.58,
+                "temporal_classification": 0.4,
+                "user_classification": 0.52
+            },
+            "score": 0.56,
+            "screen_name": "Chhota_Bhim",
+            "user_id": "3243261234"
+        },
+        {
+            "categories": {
+                "content_classification": 0.56,
+                "friend_classification": 0.7,
+                "network_classification": 0.68,
+                "sentiment_classification": 0.49,
+                "temporal_classification": 0.56,
+                "user_classification": 0.53
+            },
+            "score": 0.6,
+            "screen_name": "iVoteForBest",
+            "user_id": "2425268995"
+        },
+        {
+            "categories": {
+                "content_classification": 0.45,
+                "friend_classification": 0.45,
+                "network_classification": 0.24,
+                "sentiment_classification": 0.17,
+                "temporal_classification": 0.16,
+                "user_classification": 0.37
+            },
+            "score": 0.29,
+            "screen_name": "tivids",
+            "user_id": "3519034157"
+        },
+        {
+            "categories": {
+                "content_classification": 0.55,
+                "friend_classification": 0.61,
+                "network_classification": 0.44,
+                "sentiment_classification": 0.55,
+                "temporal_classification": 0.32,
+                "user_classification": 0.64
+            },
+            "score": 0.53,
+            "screen_name": "Murlgirl1",
+            "user_id": "4870992551"
+        },
+        {
+            "categories": {
+                "content_classification": 0.28,
+                "friend_classification": 0.43,
+                "network_classification": 0.62,
+                "sentiment_classification": 0.29,
+                "temporal_classification": 0.18,
+                "user_classification": 0.31
+            },
+            "score": 0.33,
+            "screen_name": "jojos444",
+            "user_id": "3592477283"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.72,
+                "network_classification": 0.53,
+                "sentiment_classification": 0.5,
+                "temporal_classification": 0.56,
+                "user_classification": 0.48
+            },
+            "score": 0.47,
+            "screen_name": "TheCoffeeHeaven",
+            "user_id": "4855439824"
+        },
+        {
+            "categories": {
+                "content_classification": 0.46,
+                "friend_classification": 0.59,
+                "network_classification": 0.65,
+                "sentiment_classification": 0.53,
+                "temporal_classification": 0.54,
+                "user_classification": 0.37
+            },
+            "score": 0.52,
+            "screen_name": "wrs1260",
+            "user_id": "4011800885"
+        },
+        {
+            "categories": {
+                "content_classification": 0.73,
+                "friend_classification": 0.74,
+                "network_classification": 0.6,
+                "sentiment_classification": 0.52,
+                "temporal_classification": 0.7,
+                "user_classification": 0.51
+            },
+            "score": 0.47,
+            "screen_name": "trumpforwin",
+            "user_id": "701556562238828544"
+        },
+        {
+            "categories": {
+                "content_classification": 0.33,
+                "friend_classification": 0.45,
+                "network_classification": 0.36,
+                "sentiment_classification": 0.2,
+                "temporal_classification": 0.24,
+                "user_classification": 0.51
+            },
+            "score": 0.5,
+            "screen_name": "TheresaMechele",
+            "user_id": "928618363"
+        },
+        {
+            "categories": {
+                "content_classification": 0.37,
+                "friend_classification": 0.57,
+                "network_classification": 0.18,
+                "sentiment_classification": 0.6,
+                "temporal_classification": 0.41,
+                "user_classification": 0.28
+            },
+            "score": 0.31,
+            "screen_name": "Poo2D2",
+            "user_id": "727204731949604864"
+        },
+        {
+            "categories": {
+                "content_classification": 0.5,
+                "friend_classification": 0.52,
+                "network_classification": 0.32,
+                "sentiment_classification": 0.54,
+                "temporal_classification": 0.63,
+                "user_classification": 0.55
+            },
+            "score": 0.46,
+            "screen_name": "spiderella79",
+            "user_id": "711373685840617472"
+        },
+        {
+            "categories": {
+                "content_classification": 0.58,
+                "friend_classification": 0.64,
+                "network_classification": 0.45,
+                "sentiment_classification": 0.77,
+                "temporal_classification": 0.64,
+                "user_classification": 0.66
+            },
+            "score": 0.69,
+            "screen_name": "POLSSacramento",
+            "user_id": "2962671712"
+        },
+        {
+            "categories": {
+                "content_classification": 0.71,
+                "friend_classification": 0.49,
+                "network_classification": 0.61,
+                "sentiment_classification": 0.44,
+                "temporal_classification": 0.49,
+                "user_classification": 0.21
+            },
+            "score": 0.29,
+            "screen_name": "ashishpanchal14",
+            "user_id": "238278490"
+        },
+        {
+            "categories": {
+                "content_classification": 0.26,
+                "friend_classification": 0.39,
+                "network_classification": 0.46,
+                "sentiment_classification": 0.29,
+                "temporal_classification": 0.19,
+                "user_classification": 0.29
+            },
+            "score": 0.44,
+            "screen_name": "KAIJUKING23",
+            "user_id": "3438469581"
+        },
+        {
+            "categories": {
+                "content_classification": 0.7,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.24,
+                "temporal_classification": 0.715,
+                "user_classification": 0.48
+            },
+            "score": 0.42,
+            "screen_name": "Pres_Edits",
+            "user_id": "722398765328502785"
+        },
+        {
+            "categories": {
+                "content_classification": 0.39,
+                "friend_classification": 0.29,
+                "network_classification": 0.49,
+                "sentiment_classification": 0.3,
+                "temporal_classification": 0.34,
+                "user_classification": 0.19
+            },
+            "score": 0.43,
+            "screen_name": "GarrettRuby",
+            "user_id": "861508788"
+        },
+        {
+            "categories": {
+                "content_classification": 0.28,
+                "friend_classification": 0.25,
+                "network_classification": 0.42,
+                "sentiment_classification": 0.3,
+                "temporal_classification": 0.34,
+                "user_classification": 0.13
+            },
+            "score": 0.29,
+            "screen_name": "melinda_lu18",
+            "user_id": "705137822693527552"
+        },
+        {
+            "categories": {
+                "content_classification": 0.815,
+                "friend_classification": 0.72,
+                "network_classification": 0.71,
+                "sentiment_classification": 0.76,
+                "temporal_classification": 0.68,
+                "user_classification": 0.25
+            },
+            "score": 0.29,
+            "screen_name": "Stefx00",
+            "user_id": "459136932"
+        },
+        {
+            "categories": {
+                "content_classification": 0.37,
+                "friend_classification": 0.35,
+                "network_classification": 0.45,
+                "sentiment_classification": 0.39,
+                "temporal_classification": 0.28,
+                "user_classification": 0.36
+            },
+            "score": 0.35,
+            "screen_name": "grannycoo",
+            "user_id": "3028228054"
+        },
+        {
+            "categories": {
+                "content_classification": 0.2,
+                "friend_classification": 0.33,
+                "network_classification": 0.28,
+                "sentiment_classification": 0.32,
+                "temporal_classification": 0.22,
+                "user_classification": 0.34
+            },
+            "score": 0.24,
+            "screen_name": "dblack15nc",
+            "user_id": "3321633224"
+        },
+        {
+            "categories": {
+                "content_classification": 0.47,
+                "friend_classification": 0.36,
+                "network_classification": 0.35,
+                "sentiment_classification": 0.305,
+                "temporal_classification": 0.34,
+                "user_classification": 0.63
+            },
+            "score": 0.44,
+            "screen_name": "iAmFreedomMan",
+            "user_id": "3034782866"
+        },
+        {
+            "categories": {
+                "content_classification": 0.42,
+                "friend_classification": 0.28,
+                "network_classification": 0.27,
+                "sentiment_classification": 0.39,
+                "temporal_classification": 0.35,
+                "user_classification": 0.56
+            },
+            "score": 0.42,
+            "screen_name": "lovealaska1105",
+            "user_id": "4854822338"
+        },
+        {
+            "categories": {
+                "content_classification": 0.35,
+                "friend_classification": 0.37,
+                "network_classification": 0.39,
+                "sentiment_classification": 0.14,
+                "temporal_classification": 0.16,
+                "user_classification": 0.39
+            },
+            "score": 0.32,
+            "screen_name": "l75475412",
+            "user_id": "2163043872"
+        },
+        {
+            "categories": {
+                "content_classification": 0.96,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.89,
+                "temporal_classification": 0.7,
+                "user_classification": 0.51
+            },
+            "score": 0.59,
+            "screen_name": "HillaryTapes",
+            "user_id": "2571323442"
+        },
+        {
+            "categories": {
+                "content_classification": 0.73,
+                "friend_classification": 0.76,
+                "network_classification": 0.88,
+                "sentiment_classification": 0.73,
+                "temporal_classification": 0.54,
+                "user_classification": 0.41
+            },
+            "score": 0.5,
+            "screen_name": "mshcnn",
+            "user_id": "1584100699"
+        },
+        {
+            "categories": {
+                "content_classification": 0.47,
+                "friend_classification": 0.43,
+                "network_classification": 0.23,
+                "sentiment_classification": 0.35,
+                "temporal_classification": 0.14,
+                "user_classification": 0.3
+            },
+            "score": 0.41,
+            "screen_name": "estera8763",
+            "user_id": "3302017177"
+        },
+        {
+            "categories": {
+                "content_classification": 0.43,
+                "friend_classification": 0.24,
+                "network_classification": 0.37,
+                "sentiment_classification": 0.37,
+                "temporal_classification": 0.24,
+                "user_classification": 0.28
+            },
+            "score": 0.17,
+            "screen_name": "trenmt8",
+            "user_id": "3646723880"
+        },
+        {
+            "categories": {
+                "content_classification": 0.41,
+                "friend_classification": 0.33,
+                "network_classification": 0.52,
+                "sentiment_classification": 0.26,
+                "temporal_classification": 0.36,
+                "user_classification": 0.47
+            },
+            "score": 0.45,
+            "screen_name": "HorseShort",
+            "user_id": "399745111"
+        },
+        {
+            "categories": {
+                "content_classification": 0.64,
+                "friend_classification": 0.37,
+                "network_classification": 0.86,
+                "sentiment_classification": 0.54,
+                "temporal_classification": 0.63,
+                "user_classification": 0.76
+            },
+            "score": 0.61,
+            "screen_name": "grassrootscg",
+            "user_id": "3242606876"
+        },
+        {
+            "categories": {
+                "content_classification": 0.75,
+                "friend_classification": 0.6,
+                "network_classification": 0.9001703374337781,
+                "sentiment_classification": 0.75,
+                "temporal_classification": 0.59,
+                "user_classification": 0.3
+            },
+            "score": 0.32,
+            "screen_name": "khalidrafiq138",
+            "user_id": "2773297820"
+        },
+        {
+            "categories": {
+                "content_classification": 0.85,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.82,
+                "sentiment_classification": 0.86,
+                "temporal_classification": 0.57,
+                "user_classification": 0.24
+            },
+            "score": 0.45,
+            "screen_name": "EasyITCommunity",
+            "user_id": "3225196095"
+        },
+        {
+            "categories": {
+                "content_classification": 0.37,
+                "friend_classification": 0.26,
+                "network_classification": 0.47,
+                "sentiment_classification": 0.25,
+                "temporal_classification": 0.15,
+                "user_classification": 0.27
+            },
+            "score": 0.24,
+            "screen_name": "joanse",
+            "user_id": "32782882"
+        },
+        {
+            "categories": {
+                "content_classification": 0.33,
+                "friend_classification": 0.57,
+                "network_classification": 0.38,
+                "sentiment_classification": 0.36,
+                "temporal_classification": 0.14,
+                "user_classification": 0.17
+            },
+            "score": 0.49,
+            "screen_name": "ramos1944",
+            "user_id": "37644319"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.43,
+                "network_classification": 0.4,
+                "sentiment_classification": 0.49,
+                "temporal_classification": 0.2,
+                "user_classification": 0.42
+            },
+            "score": 0.45,
+            "screen_name": "MrHinNH",
+            "user_id": "4190307435"
+        },
+        {
+            "categories": {
+                "content_classification": 0.81,
+                "friend_classification": 0.53,
+                "network_classification": 0.86,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.56,
+                "user_classification": 0.31
+            },
+            "score": 0.39,
+            "screen_name": "mshbizins",
+            "user_id": "1584070627"
+        },
+        {
+            "categories": {
+                "content_classification": 0.83,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.67,
+                "user_classification": 0.38
+            },
+            "score": 0.64,
+            "screen_name": "Hillarynews77",
+            "user_id": "725920957320159232"
+        },
+        {
+            "categories": {
+                "content_classification": 0.63,
+                "friend_classification": 0.62,
+                "network_classification": 0.64,
+                "sentiment_classification": 0.56,
+                "temporal_classification": 0.53,
+                "user_classification": 0.29
+            },
+            "score": 0.29,
+            "screen_name": "kTiNoJ",
+            "user_id": "278370845"
+        },
+        {
+            "categories": {
+                "content_classification": 0.5,
+                "friend_classification": 0.42,
+                "network_classification": 0.805,
+                "sentiment_classification": 0.22333333333333333,
+                "temporal_classification": 0.61,
+                "user_classification": 0.2
+            },
+            "score": 0.3,
+            "screen_name": "the_lastestnews",
+            "user_id": "269031207"
+        },
+        {
+            "categories": {
+                "content_classification": 0.48,
+                "friend_classification": 0.73,
+                "network_classification": 0.48,
+                "sentiment_classification": 0.47,
+                "temporal_classification": 0.42,
+                "user_classification": 0.42
+            },
+            "score": 0.5,
+            "screen_name": "eva48w4",
+            "user_id": "702895208497856512"
+        },
+        {
+            "categories": {
+                "content_classification": 0.24,
+                "friend_classification": 0.39,
+                "network_classification": 0.47,
+                "sentiment_classification": 0.35,
+                "temporal_classification": 0.09,
+                "user_classification": 0.11
+            },
+            "score": 0.42,
+            "screen_name": "lonelyvoice",
+            "user_id": "20926282"
+        },
+        {
+            "categories": {
+                "content_classification": 0.15,
+                "friend_classification": 0.36,
+                "network_classification": 0.24,
+                "sentiment_classification": 0.26,
+                "temporal_classification": 0.39,
+                "user_classification": 0.14
+            },
+            "score": 0.29,
+            "screen_name": "kids1627",
+            "user_id": "16210388"
+        },
+        {
+            "categories": {
+                "content_classification": 0.51,
+                "friend_classification": 0.41,
+                "network_classification": 0.56,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.33,
+                "user_classification": 0.49
+            },
+            "score": 0.44,
+            "screen_name": "TrumpsVoters",
+            "user_id": "781195479052800001"
+        },
+        {
+            "categories": {
+                "content_classification": 0.33,
+                "friend_classification": 0.47,
+                "network_classification": 0.26,
+                "sentiment_classification": 0.36,
+                "temporal_classification": 0.23,
+                "user_classification": 0.16
+            },
+            "score": 0.3,
+            "screen_name": "CarlsbadDreamin",
+            "user_id": "407574944"
+        },
+        {
+            "categories": {
+                "content_classification": 0.48,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.39,
+                "temporal_classification": 0.5,
+                "user_classification": 0.38
+            },
+            "score": 0.53,
+            "screen_name": "iTrumpClub",
+            "user_id": "737670729567633409"
+        },
+        {
+            "categories": {
+                "content_classification": 0.59,
+                "friend_classification": 0.6,
+                "network_classification": 0.39,
+                "sentiment_classification": 0.42,
+                "temporal_classification": 0.58,
+                "user_classification": 0.28
+            },
+            "score": 0.53,
+            "screen_name": "perriganps",
+            "user_id": "3959778976"
+        },
+        {
+            "categories": {
+                "content_classification": 0.53,
+                "friend_classification": 0.57,
+                "network_classification": 0.43,
+                "sentiment_classification": 0.39,
+                "temporal_classification": 0.22,
+                "user_classification": 0.22
+            },
+            "score": 0.5,
+            "screen_name": "Ruthperricone",
+            "user_id": "1859409636"
+        },
+        {
+            "categories": {
+                "content_classification": 0.86,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.71,
+                "temporal_classification": 0.65,
+                "user_classification": 0.17
+            },
+            "score": 0.26,
+            "screen_name": "quotejenius",
+            "user_id": "2372399574"
+        },
+        {
+            "categories": {
+                "content_classification": 0.3,
+                "friend_classification": 0.24,
+                "network_classification": 0.48,
+                "sentiment_classification": 0.22,
+                "temporal_classification": 0.11,
+                "user_classification": 0.4
+            },
+            "score": 0.37,
+            "screen_name": "cciedotnyc",
+            "user_id": "3314529347"
+        }
+    ]
+}

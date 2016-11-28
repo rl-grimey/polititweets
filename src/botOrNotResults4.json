@@ -1,0 +1,2812 @@
+{
+    "botOrNot": [
+        {
+            "categories": {
+                "content_classification": 0.36,
+                "friend_classification": 0.31,
+                "network_classification": 0.43,
+                "sentiment_classification": 0.42,
+                "temporal_classification": 0.3,
+                "user_classification": 0.24
+            },
+            "score": 0.28,
+            "screen_name": "AVOBBAEKHYUN",
+            "user_id": "740255186476634112"
+        },
+        {
+            "categories": {
+                "content_classification": 0.27,
+                "friend_classification": 0.13,
+                "network_classification": 0.29,
+                "sentiment_classification": 0.28,
+                "temporal_classification": 0.16,
+                "user_classification": 0.18
+            },
+            "score": 0.21,
+            "screen_name": "dbfd3",
+            "user_id": "2898857677"
+        },
+        {
+            "categories": {
+                "content_classification": 0.59,
+                "friend_classification": 0.53,
+                "network_classification": 0.81,
+                "sentiment_classification": 0.68,
+                "temporal_classification": 0.78,
+                "user_classification": 0.63
+            },
+            "score": 0.73,
+            "screen_name": "misshacolliinss",
+            "user_id": "737420765755281408"
+        },
+        {
+            "categories": {
+                "content_classification": 0.5,
+                "friend_classification": 0.34,
+                "network_classification": 0.59,
+                "sentiment_classification": 0.44,
+                "temporal_classification": 0.45,
+                "user_classification": 0.36
+            },
+            "score": 0.63,
+            "screen_name": "DinahDime27",
+            "user_id": "2914359977"
+        },
+        {
+            "categories": {
+                "content_classification": 0.8933333333333334,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.73,
+                "temporal_classification": 0.821,
+                "user_classification": 0.35
+            },
+            "score": 0.65,
+            "screen_name": "thefreddychrist",
+            "user_id": "3837410543"
+        },
+        {
+            "categories": {
+                "content_classification": 0.93,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.55,
+                "sentiment_classification": 0.87,
+                "temporal_classification": 0.66,
+                "user_classification": 0.55
+            },
+            "score": 0.4,
+            "screen_name": "mark_diener",
+            "user_id": "4389719309"
+        },
+        {
+            "categories": {
+                "content_classification": 0.38,
+                "friend_classification": 0.4,
+                "network_classification": 0.2,
+                "sentiment_classification": 0.29,
+                "temporal_classification": 0.39,
+                "user_classification": 0.45
+            },
+            "score": 0.21,
+            "screen_name": "coffeecoldcream",
+            "user_id": "3837591618"
+        },
+        {
+            "categories": {
+                "content_classification": 0.22,
+                "friend_classification": 0.22,
+                "network_classification": 0.09,
+                "sentiment_classification": 0.16,
+                "temporal_classification": 0.21,
+                "user_classification": 0.03
+            },
+            "score": 0.15,
+            "screen_name": "dunwith_theband",
+            "user_id": "737462013987815426"
+        },
+        {
+            "categories": {
+                "content_classification": 0.77,
+                "friend_classification": 0.64,
+                "network_classification": 0.7748795104749051,
+                "sentiment_classification": 0.46,
+                "temporal_classification": 0.63,
+                "user_classification": 0.26
+            },
+            "score": 0.58,
+            "screen_name": "NewsObs",
+            "user_id": "2883006195"
+        },
+        {
+            "categories": {
+                "content_classification": 0.66,
+                "friend_classification": 0.64,
+                "network_classification": 0.165,
+                "sentiment_classification": 0.59,
+                "temporal_classification": 0.66,
+                "user_classification": 0.45
+            },
+            "score": 0.48,
+            "screen_name": "oramos196",
+            "user_id": "741472574744317952"
+        },
+        {
+            "categories": {
+                "content_classification": 0.55,
+                "friend_classification": 0.43,
+                "network_classification": 0.56,
+                "sentiment_classification": 0.38,
+                "temporal_classification": 0.26,
+                "user_classification": 0.88
+            },
+            "score": 0.77,
+            "screen_name": "Marina27789",
+            "user_id": "4359261195"
+        },
+        {
+            "categories": {
+                "content_classification": 0.74,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.52,
+                "temporal_classification": 0.3,
+                "user_classification": 0.95
+            },
+            "score": 0.63,
+            "screen_name": "smthavll",
+            "user_id": "3884424195"
+        },
+        {
+            "categories": {
+                "content_classification": 0.81,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.9298484848484848,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.43,
+                "user_classification": 0.92
+            },
+            "score": 0.675,
+            "screen_name": "cldimezn",
+            "user_id": "3884669187"
+        },
+        {
+            "categories": {
+                "content_classification": 0.81,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.9298484848484848,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.37233333333333335,
+                "user_classification": 0.92
+            },
+            "score": 0.715,
+            "screen_name": "angirgnl",
+            "user_id": "3884672476"
+        },
+        {
+            "categories": {
+                "content_classification": 0.81,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.9298484848484848,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.58,
+                "user_classification": 0.95
+            },
+            "score": 0.675,
+            "screen_name": "vdnasrdr",
+            "user_id": "3884809216"
+        },
+        {
+            "categories": {
+                "content_classification": 0.39,
+                "friend_classification": 0.47,
+                "network_classification": 0.16,
+                "sentiment_classification": 0.14,
+                "temporal_classification": 0.32,
+                "user_classification": 0.12
+            },
+            "score": 0.17,
+            "screen_name": "hellonwheels10",
+            "user_id": "3884902093"
+        },
+        {
+            "categories": {
+                "content_classification": 0.36,
+                "friend_classification": 0.05,
+                "network_classification": 0.42,
+                "sentiment_classification": 0.63,
+                "temporal_classification": 0.6,
+                "user_classification": 0.22
+            },
+            "score": 0.18,
+            "screen_name": "BobVLeigh",
+            "user_id": "2873260504"
+        },
+        {
+            "categories": {
+                "content_classification": 0.29,
+                "friend_classification": 0.2,
+                "network_classification": 0.45,
+                "sentiment_classification": 0.25,
+                "temporal_classification": 0.55,
+                "user_classification": 0.27
+            },
+            "score": 0.18,
+            "screen_name": "ayoajayy",
+            "user_id": "742057324681043968"
+        },
+        {
+            "categories": {
+                "content_classification": 0.81,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.9298484848484848,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.49,
+                "user_classification": 0.95
+            },
+            "score": 0.665,
+            "screen_name": "myrakloh",
+            "user_id": "3884322382"
+        },
+        {
+            "categories": {
+                "content_classification": 0.44,
+                "friend_classification": 0.38,
+                "network_classification": 0.57,
+                "sentiment_classification": 0.57,
+                "temporal_classification": 0.51,
+                "user_classification": 0.38
+            },
+            "score": 0.49,
+            "screen_name": "Sarahmarrow42",
+            "user_id": "4353122549"
+        },
+        {
+            "categories": {
+                "content_classification": 0.81,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.9298484848484848,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.32333333333333336,
+                "user_classification": 0.92
+            },
+            "score": 0.675,
+            "screen_name": "fblapsd",
+            "user_id": "3884122534"
+        },
+        {
+            "categories": {
+                "content_classification": 0.71,
+                "friend_classification": 0.84,
+                "network_classification": 0.895,
+                "sentiment_classification": 0.53,
+                "temporal_classification": 0.56,
+                "user_classification": 0.55
+            },
+            "score": 0.6,
+            "screen_name": "ForbiddenDrugs",
+            "user_id": "2875778136"
+        },
+        {
+            "categories": {
+                "content_classification": 0.46,
+                "friend_classification": 0.46,
+                "network_classification": 0.21,
+                "sentiment_classification": 0.44,
+                "temporal_classification": 0.57,
+                "user_classification": 0.29
+            },
+            "score": 0.35,
+            "screen_name": "ENV7Y",
+            "user_id": "4356803293"
+        },
+        {
+            "categories": {
+                "content_classification": 0.11,
+                "friend_classification": 0.31,
+                "network_classification": 0.13,
+                "sentiment_classification": 0.05,
+                "temporal_classification": 0.23,
+                "user_classification": 0.3
+            },
+            "score": 0.25,
+            "screen_name": "RMFTreal",
+            "user_id": "741931973183082496"
+        },
+        {
+            "categories": {
+                "content_classification": 0.44,
+                "friend_classification": 0.36,
+                "network_classification": 0.37,
+                "sentiment_classification": 0.34,
+                "temporal_classification": 0.49,
+                "user_classification": 0.12
+            },
+            "score": 0.35,
+            "screen_name": "K19700410",
+            "user_id": "741947448663281664"
+        },
+        {
+            "categories": {
+                "content_classification": 0.81,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.9298484848484848,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.47,
+                "user_classification": 0.88
+            },
+            "score": 0.685,
+            "screen_name": "nriqrozz",
+            "user_id": "3884166747"
+        },
+        {
+            "categories": {
+                "content_classification": 0.68,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.71,
+                "temporal_classification": 0.74,
+                "user_classification": 0.12
+            },
+            "score": 0.33,
+            "screen_name": "offshorecoronet",
+            "user_id": "2876520042"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.48,
+                "temporal_classification": 0.5995,
+                "user_classification": 0.47
+            },
+            "score": 0.4,
+            "screen_name": "sharingnewsIDN",
+            "user_id": "4356484219"
+        },
+        {
+            "categories": {
+                "content_classification": 0.94,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.62,
+                "temporal_classification": 0.74,
+                "user_classification": 0.44
+            },
+            "score": 0.4,
+            "screen_name": "abetsacts",
+            "user_id": "2876253668"
+        },
+        {
+            "categories": {
+                "content_classification": 0.24,
+                "friend_classification": 0.3,
+                "network_classification": 0.23,
+                "sentiment_classification": 0.19,
+                "temporal_classification": 0.07,
+                "user_classification": 0.4
+            },
+            "score": 0.33,
+            "screen_name": "Taipan30",
+            "user_id": "3885160459"
+        },
+        {
+            "categories": {
+                "content_classification": 0.56,
+                "friend_classification": 0.33,
+                "network_classification": 0.72,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.83,
+                "user_classification": 0.59
+            },
+            "score": 0.56,
+            "screen_name": "AshleyTompkinss",
+            "user_id": "742136613946286084"
+        },
+        {
+            "categories": {
+                "content_classification": 0.26,
+                "friend_classification": 0.24,
+                "network_classification": 0.19,
+                "sentiment_classification": 0.4,
+                "temporal_classification": 0.09,
+                "user_classification": 0.12
+            },
+            "score": 0.23,
+            "screen_name": "PhilHall8574448",
+            "user_id": "4353617122"
+        },
+        {
+            "categories": {
+                "content_classification": 0.905,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.597720917151377,
+                "sentiment_classification": 0.83,
+                "temporal_classification": 0.78,
+                "user_classification": 0.46
+            },
+            "score": 0.7,
+            "screen_name": "retibew",
+            "user_id": "2872064387"
+        },
+        {
+            "categories": {
+                "content_classification": 0.01,
+                "friend_classification": 0.34,
+                "network_classification": 0.16,
+                "sentiment_classification": 0.36,
+                "temporal_classification": 0.41,
+                "user_classification": 0.05
+            },
+            "score": 0.17,
+            "screen_name": "PykedExperience",
+            "user_id": "742132823621046272"
+        },
+        {
+            "categories": {
+                "content_classification": 0.77,
+                "friend_classification": 0.47,
+                "network_classification": 0.5661150793650794,
+                "sentiment_classification": 0.92,
+                "temporal_classification": 1.0,
+                "user_classification": 0.73
+            },
+            "score": 0.5,
+            "screen_name": "RaphaelKlarfeld",
+            "user_id": "742144729920327682"
+        },
+        {
+            "categories": {
+                "content_classification": 0.59,
+                "friend_classification": 0.34,
+                "network_classification": 0.56,
+                "sentiment_classification": 0.42,
+                "temporal_classification": 0.51,
+                "user_classification": 0.51
+            },
+            "score": 0.46,
+            "screen_name": "Bommellicious",
+            "user_id": "3872856556"
+        },
+        {
+            "categories": {
+                "content_classification": 0.6,
+                "friend_classification": 0.52,
+                "network_classification": 0.49,
+                "sentiment_classification": 0.37,
+                "temporal_classification": 0.55,
+                "user_classification": 0.7
+            },
+            "score": 0.53,
+            "screen_name": "pythagorea03",
+            "user_id": "742026969613635584"
+        },
+        {
+            "categories": {
+                "content_classification": 0.19,
+                "friend_classification": 0.36,
+                "network_classification": 0.26,
+                "sentiment_classification": 0.28,
+                "temporal_classification": 0.16,
+                "user_classification": 0.28
+            },
+            "score": 0.18,
+            "screen_name": "mbrow181",
+            "user_id": "4347977060"
+        },
+        {
+            "categories": {
+                "content_classification": 0.18,
+                "friend_classification": 0.05,
+                "network_classification": 0.24,
+                "sentiment_classification": 0.11,
+                "temporal_classification": 0.4,
+                "user_classification": 0.25
+            },
+            "score": 0.14,
+            "screen_name": "Kekeli_",
+            "user_id": "4391816559"
+        },
+        {
+            "categories": {
+                "content_classification": 0.57,
+                "friend_classification": 0.55,
+                "network_classification": 0.42,
+                "sentiment_classification": 0.53,
+                "temporal_classification": 0.38,
+                "user_classification": 0.45
+            },
+            "score": 0.38,
+            "screen_name": "MaryWChamber",
+            "user_id": "4376269574"
+        },
+        {
+            "categories": {
+                "content_classification": 0.34,
+                "friend_classification": 0.31,
+                "network_classification": 0.1,
+                "sentiment_classification": 0.26,
+                "temporal_classification": 0.33,
+                "user_classification": 0.44
+            },
+            "score": 0.32,
+            "screen_name": "DabbinKween710",
+            "user_id": "739699492891435009"
+        },
+        {
+            "categories": {
+                "content_classification": 0.2,
+                "friend_classification": 0.04,
+                "network_classification": 0.1,
+                "sentiment_classification": 0.61,
+                "temporal_classification": 0.36,
+                "user_classification": 0.23
+            },
+            "score": 0.11,
+            "screen_name": "WhyNotHamsters",
+            "user_id": "2901986581"
+        },
+        {
+            "categories": {
+                "content_classification": 0.5,
+                "friend_classification": 0.35,
+                "network_classification": 0.39,
+                "sentiment_classification": 0.51,
+                "temporal_classification": 0.47,
+                "user_classification": 0.63
+            },
+            "score": 0.42,
+            "screen_name": "nlindenlaub1",
+            "user_id": "2875947721"
+        },
+        {
+            "categories": {
+                "content_classification": 0.22,
+                "friend_classification": 0.17,
+                "network_classification": 0.2,
+                "sentiment_classification": 0.29,
+                "temporal_classification": 0.36,
+                "user_classification": 0.11
+            },
+            "score": 0.16,
+            "screen_name": "humzahk1",
+            "user_id": "739234385614934016"
+        },
+        {
+            "categories": {
+                "content_classification": 0.83,
+                "friend_classification": 0.55,
+                "network_classification": 0.8807908204989174,
+                "sentiment_classification": 0.69,
+                "temporal_classification": 0.94,
+                "user_classification": 0.65
+            },
+            "score": 0.69,
+            "screen_name": "nicholedavari",
+            "user_id": "739303604763295744"
+        },
+        {
+            "categories": {
+                "content_classification": 0.07,
+                "friend_classification": 0.19,
+                "network_classification": 0.14,
+                "sentiment_classification": 0.21,
+                "temporal_classification": 0.16,
+                "user_classification": 0.17
+            },
+            "score": 0.18,
+            "screen_name": "IAmDylanTheBest",
+            "user_id": "739314331955822593"
+        },
+        {
+            "categories": {
+                "content_classification": 0.19,
+                "friend_classification": 0.29,
+                "network_classification": 0.36,
+                "sentiment_classification": 0.4,
+                "temporal_classification": 0.13,
+                "user_classification": 0.1
+            },
+            "score": 0.22,
+            "screen_name": "icorrectyou2",
+            "user_id": "2875928079"
+        },
+        {
+            "categories": {
+                "content_classification": 0.69,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.08,
+                "sentiment_classification": 0.65,
+                "temporal_classification": 0.74,
+                "user_classification": 0.44
+            },
+            "score": 0.55,
+            "screen_name": "TauseefK67",
+            "user_id": "3860500813"
+        },
+        {
+            "categories": {
+                "content_classification": 0.55,
+                "friend_classification": 0.4,
+                "network_classification": 0.61,
+                "sentiment_classification": 0.65,
+                "temporal_classification": 0.52,
+                "user_classification": 0.33
+            },
+            "score": 0.43,
+            "screen_name": "dillydingding",
+            "user_id": "737294652554895360"
+        },
+        {
+            "categories": {
+                "content_classification": 0.3,
+                "friend_classification": 0.25,
+                "network_classification": 0.57,
+                "sentiment_classification": 0.54,
+                "temporal_classification": 0.47,
+                "user_classification": 0.18
+            },
+            "score": 0.24,
+            "screen_name": "ChrisCa49174135",
+            "user_id": "737296191642345473"
+        },
+        {
+            "categories": {
+                "content_classification": 0.42,
+                "friend_classification": 0.24,
+                "network_classification": 0.44,
+                "sentiment_classification": 0.63,
+                "temporal_classification": 0.47,
+                "user_classification": 0.44
+            },
+            "score": 0.29,
+            "screen_name": "meme_kring",
+            "user_id": "2919151959"
+        },
+        {
+            "categories": {
+                "content_classification": 0.69,
+                "friend_classification": 0.38,
+                "network_classification": 0.8640000000000001,
+                "sentiment_classification": 0.77,
+                "temporal_classification": 0.93,
+                "user_classification": 0.69
+            },
+            "score": 0.5,
+            "screen_name": "JasonPolk5",
+            "user_id": "3835564698"
+        },
+        {
+            "categories": {
+                "content_classification": 0.37,
+                "friend_classification": 0.2,
+                "network_classification": 0.18,
+                "sentiment_classification": 0.34,
+                "temporal_classification": 0.18,
+                "user_classification": 0.04
+            },
+            "score": 0.26,
+            "screen_name": "NotWalaaIbrahim",
+            "user_id": "740643591744282628"
+        },
+        {
+            "categories": {
+                "content_classification": 0.42,
+                "friend_classification": 0.4,
+                "network_classification": 0.38,
+                "sentiment_classification": 0.46,
+                "temporal_classification": 0.41,
+                "user_classification": 0.56
+            },
+            "score": 0.56,
+            "screen_name": "AntonioCiutto",
+            "user_id": "4376473395"
+        },
+        {
+            "categories": {
+                "content_classification": 0.17,
+                "friend_classification": 0.27,
+                "network_classification": 0.25,
+                "sentiment_classification": 0.34,
+                "temporal_classification": 0.23,
+                "user_classification": 0.25
+            },
+            "score": 0.33,
+            "screen_name": "cheerydodie",
+            "user_id": "739507209181134849"
+        },
+        {
+            "categories": {
+                "content_classification": 0.36,
+                "friend_classification": 0.27,
+                "network_classification": 0.13,
+                "sentiment_classification": 0.3,
+                "temporal_classification": 0.11,
+                "user_classification": 0.04
+            },
+            "score": 0.25,
+            "screen_name": "howarddevans1",
+            "user_id": "2901060972"
+        },
+        {
+            "categories": {
+                "content_classification": 0.1,
+                "friend_classification": 0.07,
+                "network_classification": 0.1,
+                "sentiment_classification": 0.23,
+                "temporal_classification": 0.19,
+                "user_classification": 0.05
+            },
+            "score": 0.13,
+            "screen_name": "radassthetic",
+            "user_id": "739796174798913537"
+        },
+        {
+            "categories": {
+                "content_classification": 0.23,
+                "friend_classification": 0.06,
+                "network_classification": 0.1,
+                "sentiment_classification": 0.3,
+                "temporal_classification": 0.15,
+                "user_classification": 0.05
+            },
+            "score": 0.12,
+            "screen_name": "_majorKE",
+            "user_id": "739812133597220864"
+        },
+        {
+            "categories": {
+                "content_classification": 0.66,
+                "friend_classification": 0.73,
+                "network_classification": 0.09,
+                "sentiment_classification": 0.62,
+                "temporal_classification": 0.51,
+                "user_classification": 0.6
+            },
+            "score": 0.65,
+            "screen_name": "A233564dcZabr",
+            "user_id": "4372415975"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.23,
+                "network_classification": 0.62,
+                "sentiment_classification": 0.69,
+                "temporal_classification": 0.49,
+                "user_classification": 0.08
+            },
+            "score": 0.23,
+            "screen_name": "itsbastisatuito",
+            "user_id": "3855970874"
+        },
+        {
+            "categories": {
+                "content_classification": 0.87,
+                "friend_classification": 0.49,
+                "network_classification": 0.49,
+                "sentiment_classification": 0.43,
+                "temporal_classification": 0.8333333333333335,
+                "user_classification": 0.36
+            },
+            "score": 0.48,
+            "screen_name": "Robbybob2Susan",
+            "user_id": "2908377862"
+        },
+        {
+            "categories": {
+                "content_classification": 0.17,
+                "friend_classification": 0.26,
+                "network_classification": 0.28,
+                "sentiment_classification": 0.23,
+                "temporal_classification": 0.19,
+                "user_classification": 0.12
+            },
+            "score": 0.26,
+            "screen_name": "HHN_Meatloaf",
+            "user_id": "738514203921682433"
+        },
+        {
+            "categories": {
+                "content_classification": 0.24,
+                "friend_classification": 0.34,
+                "network_classification": 0.12,
+                "sentiment_classification": 0.0,
+                "temporal_classification": 0.3,
+                "user_classification": 0.07
+            },
+            "score": 0.17,
+            "screen_name": "NnFK3QkgRhhPhFi",
+            "user_id": "739774972432764930"
+        },
+        {
+            "categories": {
+                "content_classification": 0.81,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.9298484848484848,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.46,
+                "user_classification": 0.87
+            },
+            "score": 0.665,
+            "screen_name": "inslzard",
+            "user_id": "3884121521"
+        },
+        {
+            "categories": {
+                "content_classification": 0.24,
+                "friend_classification": 0.13,
+                "network_classification": 0.28,
+                "sentiment_classification": 0.3,
+                "temporal_classification": 0.43,
+                "user_classification": 0.27
+            },
+            "score": 0.17,
+            "screen_name": "flanders1969",
+            "user_id": "3866676912"
+        },
+        {
+            "categories": {
+                "content_classification": 0.35,
+                "friend_classification": 0.24,
+                "network_classification": 0.57,
+                "sentiment_classification": 0.41,
+                "temporal_classification": 0.43,
+                "user_classification": 0.36
+            },
+            "score": 0.14,
+            "screen_name": "spookydanisaur",
+            "user_id": "3867867965"
+        },
+        {
+            "categories": {
+                "content_classification": 0.16,
+                "friend_classification": 0.17,
+                "network_classification": 0.27,
+                "sentiment_classification": 0.24,
+                "temporal_classification": 0.28,
+                "user_classification": 0.03
+            },
+            "score": 0.11,
+            "screen_name": "ReefahhhhXO",
+            "user_id": "740097940581011460"
+        },
+        {
+            "categories": {
+                "content_classification": 0.82,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8511939992877352,
+                "sentiment_classification": 0.86,
+                "temporal_classification": 0.64,
+                "user_classification": 0.35
+            },
+            "score": 0.45,
+            "screen_name": "labrachowhound",
+            "user_id": "2909518986"
+        },
+        {
+            "categories": {
+                "content_classification": 0.51,
+                "friend_classification": 0.33,
+                "network_classification": 0.25,
+                "sentiment_classification": 0.49,
+                "temporal_classification": 0.24,
+                "user_classification": 0.09
+            },
+            "score": 0.34,
+            "screen_name": "MissTee51",
+            "user_id": "742109294921928704"
+        },
+        {
+            "categories": {
+                "content_classification": 0.17,
+                "friend_classification": 0.08,
+                "network_classification": 0.12,
+                "sentiment_classification": 0.22,
+                "temporal_classification": 0.28,
+                "user_classification": 0.06
+            },
+            "score": 0.09,
+            "screen_name": "AzirahXoxo",
+            "user_id": "3876338063"
+        },
+        {
+            "categories": {
+                "content_classification": 0.53,
+                "friend_classification": 0.31,
+                "network_classification": 0.52,
+                "sentiment_classification": 0.44,
+                "temporal_classification": 0.69,
+                "user_classification": 0.38
+            },
+            "score": 0.43,
+            "screen_name": "line32er",
+            "user_id": "3832401973"
+        },
+        {
+            "categories": {
+                "content_classification": 0.46,
+                "friend_classification": 0.29,
+                "network_classification": 0.35,
+                "sentiment_classification": 0.43,
+                "temporal_classification": 0.11,
+                "user_classification": 0.32
+            },
+            "score": 0.35,
+            "screen_name": "ChasMichealmic1",
+            "user_id": "737882547871469570"
+        },
+        {
+            "categories": {
+                "content_classification": 0.93,
+                "friend_classification": 0.8,
+                "network_classification": 0.7526428571428572,
+                "sentiment_classification": 0.75,
+                "temporal_classification": 0.81,
+                "user_classification": 0.43
+            },
+            "score": 0.55,
+            "screen_name": "Turner_testing",
+            "user_id": "2913403180"
+        },
+        {
+            "categories": {
+                "content_classification": 0.47,
+                "friend_classification": 0.38,
+                "network_classification": 0.26,
+                "sentiment_classification": 0.34,
+                "temporal_classification": 0.56,
+                "user_classification": 0.4
+            },
+            "score": 0.42,
+            "screen_name": "LeslieLeslie430",
+            "user_id": "2913094875"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.26,
+                "network_classification": 0.48,
+                "sentiment_classification": 0.53,
+                "temporal_classification": 0.25,
+                "user_classification": 0.18
+            },
+            "score": 0.23,
+            "screen_name": "tmelrd",
+            "user_id": "738164007584964608"
+        },
+        {
+            "categories": {
+                "content_classification": 0.14,
+                "friend_classification": 0.31,
+                "network_classification": 0.08,
+                "sentiment_classification": 0.26,
+                "temporal_classification": 0.12,
+                "user_classification": 0.1
+            },
+            "score": 0.17,
+            "screen_name": "memepieceofshit",
+            "user_id": "738194528172003328"
+        },
+        {
+            "categories": {
+                "content_classification": 0.48,
+                "friend_classification": 0.5,
+                "network_classification": 0.41,
+                "sentiment_classification": 0.48,
+                "temporal_classification": 0.64,
+                "user_classification": 0.32
+            },
+            "score": 0.34,
+            "screen_name": "GabeTheShadow80",
+            "user_id": "740647204784906240"
+        },
+        {
+            "categories": {
+                "content_classification": 0.55,
+                "friend_classification": 0.44,
+                "network_classification": 0.03,
+                "sentiment_classification": 0.57,
+                "temporal_classification": 0.57,
+                "user_classification": 0.18
+            },
+            "score": 0.46,
+            "screen_name": "davidw195672",
+            "user_id": "2909960504"
+        },
+        {
+            "categories": {
+                "content_classification": 0.57,
+                "friend_classification": 0.53,
+                "network_classification": 0.55,
+                "sentiment_classification": 0.55,
+                "temporal_classification": 0.54,
+                "user_classification": 0.85
+            },
+            "score": 0.56,
+            "screen_name": "EverRetweet",
+            "user_id": "738325793705709568"
+        },
+        {
+            "categories": {
+                "content_classification": 0.37,
+                "friend_classification": 0.21,
+                "network_classification": 0.33,
+                "sentiment_classification": 0.21,
+                "temporal_classification": 0.3,
+                "user_classification": 0.21
+            },
+            "score": 0.15,
+            "screen_name": "SiegeEthelfelda",
+            "user_id": "4396779135"
+        },
+        {
+            "categories": {
+                "content_classification": 0.68,
+                "friend_classification": 0.48,
+                "network_classification": 0.9610547528645532,
+                "sentiment_classification": 0.57,
+                "temporal_classification": 0.68,
+                "user_classification": 0.48
+            },
+            "score": 0.51,
+            "screen_name": "ShortessLexi",
+            "user_id": "2921665103"
+        },
+        {
+            "categories": {
+                "content_classification": 0.9,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8031867345231665,
+                "sentiment_classification": 0.97,
+                "temporal_classification": 0.81,
+                "user_classification": 0.97
+            },
+            "score": 0.68,
+            "screen_name": "king85000313",
+            "user_id": "737292162518253569"
+        },
+        {
+            "categories": {
+                "content_classification": 0.62,
+                "friend_classification": 0.33,
+                "network_classification": 0.37,
+                "sentiment_classification": 0.65,
+                "temporal_classification": 0.86,
+                "user_classification": 0.51
+            },
+            "score": 0.3,
+            "screen_name": "lndmidland",
+            "user_id": "737321216344723457"
+        },
+        {
+            "categories": {
+                "content_classification": 0.6,
+                "friend_classification": 0.48,
+                "network_classification": 0.33,
+                "sentiment_classification": 0.24,
+                "temporal_classification": 0.27,
+                "user_classification": 0.16
+            },
+            "score": 0.35,
+            "screen_name": "infopatriot447",
+            "user_id": "739607056039182336"
+        },
+        {
+            "categories": {
+                "content_classification": 0.82,
+                "friend_classification": 0.56,
+                "network_classification": 0.51,
+                "sentiment_classification": 0.7,
+                "temporal_classification": 0.29,
+                "user_classification": 0.37
+            },
+            "score": 0.42,
+            "screen_name": "darkman8563",
+            "user_id": "739432644648284160"
+        },
+        {
+            "categories": {
+                "content_classification": 0.56,
+                "friend_classification": 0.76,
+                "network_classification": 0.45,
+                "sentiment_classification": 0.54,
+                "temporal_classification": 0.16,
+                "user_classification": 0.78
+            },
+            "score": 0.77,
+            "screen_name": "ILoveJesus1776",
+            "user_id": "738195472167391232"
+        },
+        {
+            "categories": {
+                "content_classification": 0.6,
+                "friend_classification": 0.61,
+                "network_classification": 0.45,
+                "sentiment_classification": 0.55,
+                "temporal_classification": 0.54,
+                "user_classification": 0.36
+            },
+            "score": 0.48,
+            "screen_name": "bikalwagle",
+            "user_id": "737187424632082436"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.21,
+                "network_classification": 0.42,
+                "sentiment_classification": 0.74,
+                "temporal_classification": 0.59,
+                "user_classification": 0.62
+            },
+            "score": 0.33,
+            "screen_name": "MillerPieter",
+            "user_id": "4399799903"
+        },
+        {
+            "categories": {
+                "content_classification": 0.8466666666666666,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 1.0,
+                "sentiment_classification": 0.84,
+                "temporal_classification": 0.41,
+                "user_classification": 0.62
+            },
+            "score": 0.42,
+            "screen_name": "wendytcammac",
+            "user_id": "737145482045100032"
+        },
+        {
+            "categories": {
+                "content_classification": 0.8,
+                "friend_classification": 0.3,
+                "network_classification": 0.56,
+                "sentiment_classification": 0.66,
+                "temporal_classification": 0.45,
+                "user_classification": 0.46
+            },
+            "score": 0.34,
+            "screen_name": "crichelle66",
+            "user_id": "2922129750"
+        },
+        {
+            "categories": {
+                "content_classification": 0.31,
+                "friend_classification": 0.49,
+                "network_classification": 0.5,
+                "sentiment_classification": 0.43,
+                "temporal_classification": 0.36,
+                "user_classification": 0.54
+            },
+            "score": 0.37,
+            "screen_name": "JimWCallahan1",
+            "user_id": "738198103455617025"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8031867345231665,
+                "sentiment_classification": 0.37,
+                "temporal_classification": 0.65,
+                "user_classification": 0.39
+            },
+            "score": 0.3,
+            "screen_name": "ComuCoerente",
+            "user_id": "2903184030"
+        },
+        {
+            "categories": {
+                "content_classification": 0.32,
+                "friend_classification": 0.34,
+                "network_classification": 0.25,
+                "sentiment_classification": 0.28,
+                "temporal_classification": 0.09,
+                "user_classification": 0.3
+            },
+            "score": 0.26,
+            "screen_name": "horizonwalled",
+            "user_id": "708907794766958592"
+        },
+        {
+            "categories": {
+                "content_classification": 0.15,
+                "friend_classification": 0.37,
+                "network_classification": 0.14,
+                "sentiment_classification": 0.18,
+                "temporal_classification": 0.19,
+                "user_classification": 0.05
+            },
+            "score": 0.15,
+            "screen_name": "OppressedEurope",
+            "user_id": "708940239289585664"
+        },
+        {
+            "categories": {
+                "content_classification": 0.26,
+                "friend_classification": 0.17,
+                "network_classification": 0.25,
+                "sentiment_classification": 0.29,
+                "temporal_classification": 0.4,
+                "user_classification": 0.38
+            },
+            "score": 0.11,
+            "screen_name": "dylanplenty1234",
+            "user_id": "738208152038952960"
+        },
+        {
+            "categories": {
+                "content_classification": 0.08,
+                "friend_classification": 0.1,
+                "network_classification": 0.06,
+                "sentiment_classification": 0.1,
+                "temporal_classification": 0.15,
+                "user_classification": 0.01
+            },
+            "score": 0.09,
+            "screen_name": "heather_desanto",
+            "user_id": "3438722117"
+        },
+        {
+            "categories": {
+                "content_classification": 0.47,
+                "friend_classification": 0.51,
+                "network_classification": 0.52,
+                "sentiment_classification": 0.42,
+                "temporal_classification": 0.48,
+                "user_classification": 0.41
+            },
+            "score": 0.35,
+            "screen_name": "DonkeyyNews",
+            "user_id": "738227829297418240"
+        },
+        {
+            "categories": {
+                "content_classification": 0.27,
+                "friend_classification": 0.49,
+                "network_classification": 0.49,
+                "sentiment_classification": 0.27,
+                "temporal_classification": 0.606,
+                "user_classification": 0.68
+            },
+            "score": 0.45,
+            "screen_name": "large_nexus31",
+            "user_id": "3313515148"
+        },
+        {
+            "categories": {
+                "content_classification": 0.45,
+                "friend_classification": 0.61,
+                "network_classification": 0.43,
+                "sentiment_classification": 0.6,
+                "temporal_classification": 0.34,
+                "user_classification": 0.38
+            },
+            "score": 0.43,
+            "screen_name": "YayaBauman",
+            "user_id": "708843617117347840"
+        },
+        {
+            "categories": {
+                "content_classification": 0.24,
+                "friend_classification": 0.35,
+                "network_classification": 0.54,
+                "sentiment_classification": 0.51,
+                "temporal_classification": 0.51,
+                "user_classification": 0.37
+            },
+            "score": 0.31,
+            "screen_name": "CourtneyMerging",
+            "user_id": "3438683170"
+        },
+        {
+            "categories": {
+                "content_classification": 0.565,
+                "friend_classification": 0.54,
+                "network_classification": 0.51,
+                "sentiment_classification": 0.19,
+                "temporal_classification": 0.25,
+                "user_classification": 0.84
+            },
+            "score": 0.83,
+            "screen_name": "PeiCrthers277",
+            "user_id": "4384498037"
+        },
+        {
+            "categories": {
+                "content_classification": 0.39,
+                "friend_classification": 0.35,
+                "network_classification": 0.34,
+                "sentiment_classification": 0.31,
+                "temporal_classification": 0.47,
+                "user_classification": 0.24
+            },
+            "score": 0.21,
+            "screen_name": "googooeugene",
+            "user_id": "3438638392"
+        },
+        {
+            "categories": {
+                "content_classification": 0.14,
+                "friend_classification": 0.26,
+                "network_classification": 0.27,
+                "sentiment_classification": 0.28,
+                "temporal_classification": 0.17,
+                "user_classification": 0.45
+            },
+            "score": 0.16,
+            "screen_name": "mostlyLukenNial",
+            "user_id": "3314733900"
+        },
+        {
+            "categories": {
+                "content_classification": 0.7,
+                "friend_classification": 0.59,
+                "network_classification": 0.54,
+                "sentiment_classification": 0.55,
+                "temporal_classification": 0.29,
+                "user_classification": 0.41
+            },
+            "score": 0.33,
+            "screen_name": "sheikhediron",
+            "user_id": "3838692052"
+        },
+        {
+            "categories": {
+                "content_classification": 0.31,
+                "friend_classification": 0.29,
+                "network_classification": 0.18,
+                "sentiment_classification": 0.29,
+                "temporal_classification": 0.3,
+                "user_classification": 0.3
+            },
+            "score": 0.24,
+            "screen_name": "BettyLe4771200",
+            "user_id": "740167732897812481"
+        },
+        {
+            "categories": {
+                "content_classification": 0.28,
+                "friend_classification": 0.18,
+                "network_classification": 0.11,
+                "sentiment_classification": 0.44,
+                "temporal_classification": 0.5,
+                "user_classification": 0.36
+            },
+            "score": 0.29,
+            "screen_name": "buckaruart",
+            "user_id": "3322152337"
+        },
+        {
+            "categories": {
+                "content_classification": 0.27,
+                "friend_classification": 0.25,
+                "network_classification": 0.17,
+                "sentiment_classification": 0.32,
+                "temporal_classification": 0.31,
+                "user_classification": 0.39
+            },
+            "score": 0.3,
+            "screen_name": "JackieLee65",
+            "user_id": "707034225258532864"
+        },
+        {
+            "categories": {
+                "content_classification": 0.48,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.49,
+                "sentiment_classification": 0.2825,
+                "temporal_classification": 0.84,
+                "user_classification": 0.5
+            },
+            "score": 0.42,
+            "screen_name": "Mihai44Mihai",
+            "user_id": "4838059204"
+        },
+        {
+            "categories": {
+                "content_classification": 0.63,
+                "friend_classification": 0.51,
+                "network_classification": 0.35,
+                "sentiment_classification": 0.53,
+                "temporal_classification": 0.33,
+                "user_classification": 0.51
+            },
+            "score": 0.53,
+            "screen_name": "OurHiddenHistry",
+            "user_id": "706993895339663360"
+        },
+        {
+            "categories": {
+                "content_classification": 0.6,
+                "friend_classification": 0.67,
+                "network_classification": 0.49,
+                "sentiment_classification": 0.83,
+                "temporal_classification": 0.45,
+                "user_classification": 0.42
+            },
+            "score": 0.51,
+            "screen_name": "DavidDwest450",
+            "user_id": "4838720359"
+        },
+        {
+            "categories": {
+                "content_classification": 0.24,
+                "friend_classification": 0.41,
+                "network_classification": 0.44,
+                "sentiment_classification": 0.27,
+                "temporal_classification": 0.31,
+                "user_classification": 0.06
+            },
+            "score": 0.26,
+            "screen_name": "Arianag__b_agb",
+            "user_id": "3323408318"
+        },
+        {
+            "categories": {
+                "content_classification": 0.95,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.45833333333333326,
+                "sentiment_classification": 0.95,
+                "temporal_classification": 0.8,
+                "user_classification": 0.51
+            },
+            "score": 0.51,
+            "screen_name": "J_Harley_J",
+            "user_id": "3323377639"
+        },
+        {
+            "categories": {
+                "content_classification": 0.27,
+                "friend_classification": 0.28,
+                "network_classification": 0.15,
+                "sentiment_classification": 0.46,
+                "temporal_classification": 0.55,
+                "user_classification": 0.14
+            },
+            "score": 0.24,
+            "screen_name": "RetroJayyz",
+            "user_id": "4837114901"
+        },
+        {
+            "categories": {
+                "content_classification": 0.39,
+                "friend_classification": 0.55,
+                "network_classification": 0.43,
+                "sentiment_classification": 0.5,
+                "temporal_classification": 0.41,
+                "user_classification": 0.57
+            },
+            "score": 0.53,
+            "screen_name": "DoctorPhilosopy",
+            "user_id": "707040767638831104"
+        },
+        {
+            "categories": {
+                "content_classification": 0.77,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.4,
+                "sentiment_classification": 0.73,
+                "temporal_classification": 0.83,
+                "user_classification": 0.04
+            },
+            "score": 0.41,
+            "screen_name": "MayorOlukoya",
+            "user_id": "3314007119"
+        },
+        {
+            "categories": {
+                "content_classification": 0.7,
+                "friend_classification": 0.34,
+                "network_classification": 0.58,
+                "sentiment_classification": 0.48,
+                "temporal_classification": 0.58,
+                "user_classification": 0.29
+            },
+            "score": 0.52,
+            "screen_name": "FonsecaReza",
+            "user_id": "3313987452"
+        },
+        {
+            "categories": {
+                "content_classification": 0.2,
+                "friend_classification": 0.25,
+                "network_classification": 0.25,
+                "sentiment_classification": 0.35,
+                "temporal_classification": 0.51,
+                "user_classification": 0.08
+            },
+            "score": 0.22,
+            "screen_name": "svmmrstorm",
+            "user_id": "3313970665"
+        },
+        {
+            "categories": {
+                "content_classification": 0.57,
+                "friend_classification": 0.53,
+                "network_classification": 0.56,
+                "sentiment_classification": 0.23,
+                "temporal_classification": 0.28,
+                "user_classification": 0.64
+            },
+            "score": 0.58,
+            "screen_name": "FaithfulMamas",
+            "user_id": "707988049112621056"
+        },
+        {
+            "categories": {
+                "content_classification": 0.08,
+                "friend_classification": 0.19,
+                "network_classification": 0.05,
+                "sentiment_classification": 0.19,
+                "temporal_classification": 0.13,
+                "user_classification": 0.19
+            },
+            "score": 0.2,
+            "screen_name": "IanBowman02",
+            "user_id": "4837822759"
+        },
+        {
+            "categories": {
+                "content_classification": 0.58,
+                "friend_classification": 0.47,
+                "network_classification": 0.6509999999999999,
+                "sentiment_classification": 0.7,
+                "temporal_classification": 0.55,
+                "user_classification": 0.73
+            },
+            "score": 0.43,
+            "screen_name": "donaldsucksdick",
+            "user_id": "3433374399"
+        },
+        {
+            "categories": {
+                "content_classification": 0.47,
+                "friend_classification": 0.08,
+                "network_classification": 0.48,
+                "sentiment_classification": 0.51,
+                "temporal_classification": 0.22,
+                "user_classification": 0.28
+            },
+            "score": 0.28,
+            "screen_name": "tutueme",
+            "user_id": "2899574474"
+        },
+        {
+            "categories": {
+                "content_classification": 0.21,
+                "friend_classification": 0.34,
+                "network_classification": 0.29,
+                "sentiment_classification": 0.3,
+                "temporal_classification": 0.31,
+                "user_classification": 0.43
+            },
+            "score": 0.18,
+            "screen_name": "gustavoj1312",
+            "user_id": "3438622589"
+        },
+        {
+            "categories": {
+                "content_classification": 0.08,
+                "friend_classification": 0.29,
+                "network_classification": 0.09,
+                "sentiment_classification": 0.31,
+                "temporal_classification": 0.41,
+                "user_classification": 0.13
+            },
+            "score": 0.1,
+            "screen_name": "amazingfanny_",
+            "user_id": "3312577524"
+        },
+        {
+            "categories": {
+                "content_classification": 0.59,
+                "friend_classification": 0.78,
+                "network_classification": 0.53,
+                "sentiment_classification": 0.75,
+                "temporal_classification": 0.48,
+                "user_classification": 0.58
+            },
+            "score": 0.45,
+            "screen_name": "KWTFborg",
+            "user_id": "2899662607"
+        },
+        {
+            "categories": {
+                "content_classification": 0.55,
+                "friend_classification": 0.39,
+                "network_classification": 0.2,
+                "sentiment_classification": 0.33,
+                "temporal_classification": 0.1,
+                "user_classification": 0.47
+            },
+            "score": 0.27,
+            "screen_name": "pgallobussola1",
+            "user_id": "740621612261736449"
+        },
+        {
+            "categories": {
+                "content_classification": 0.27,
+                "friend_classification": 0.39,
+                "network_classification": 0.38,
+                "sentiment_classification": 0.28,
+                "temporal_classification": 0.43,
+                "user_classification": 0.18
+            },
+            "score": 0.32,
+            "screen_name": "Tenn_for_TRUMP",
+            "user_id": "4827732590"
+        },
+        {
+            "categories": {
+                "content_classification": 0.14,
+                "friend_classification": 0.09,
+                "network_classification": 0.08,
+                "sentiment_classification": 0.18,
+                "temporal_classification": 0.5,
+                "user_classification": 0.11
+            },
+            "score": 0.12,
+            "screen_name": "LizzyGallella",
+            "user_id": "3436258619"
+        },
+        {
+            "categories": {
+                "content_classification": 0.27,
+                "friend_classification": 0.2,
+                "network_classification": 0.26,
+                "sentiment_classification": 0.63,
+                "temporal_classification": 0.13,
+                "user_classification": 0.42
+            },
+            "score": 0.17,
+            "screen_name": "mtzyplik",
+            "user_id": "708323255782940676"
+        },
+        {
+            "categories": {
+                "content_classification": 0.55,
+                "friend_classification": 0.32,
+                "network_classification": 0.35,
+                "sentiment_classification": 0.46,
+                "temporal_classification": 0.42,
+                "user_classification": 0.83
+            },
+            "score": 0.36,
+            "screen_name": "revowear_us",
+            "user_id": "708721751446986752"
+        },
+        {
+            "categories": {
+                "content_classification": 0.11,
+                "friend_classification": 0.15,
+                "network_classification": 0.17,
+                "sentiment_classification": 0.2,
+                "temporal_classification": 0.21,
+                "user_classification": 0.14
+            },
+            "score": 0.15,
+            "screen_name": "MaliaMosser",
+            "user_id": "3312787674"
+        },
+        {
+            "categories": {
+                "content_classification": 0.21,
+                "friend_classification": 0.38,
+                "network_classification": 0.16,
+                "sentiment_classification": 0.32,
+                "temporal_classification": 0.31,
+                "user_classification": 0.39
+            },
+            "score": 0.22,
+            "screen_name": "melster1969",
+            "user_id": "741280542025453568"
+        },
+        {
+            "categories": {
+                "content_classification": 0.62,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.7,
+                "temporal_classification": 0.5886666666666667,
+                "user_classification": 0.55
+            },
+            "score": 0.33,
+            "screen_name": "putlockermovie8",
+            "user_id": "2872831676"
+        },
+        {
+            "categories": {
+                "content_classification": 0.04,
+                "friend_classification": 0.23,
+                "network_classification": 0.28,
+                "sentiment_classification": 0.17,
+                "temporal_classification": 0.21,
+                "user_classification": 0.15
+            },
+            "score": 0.08,
+            "screen_name": "J_Perez24M",
+            "user_id": "3312575550"
+        },
+        {
+            "categories": {
+                "content_classification": 0.73,
+                "friend_classification": 0.55,
+                "network_classification": 0.69,
+                "sentiment_classification": 0.75,
+                "temporal_classification": 0.7,
+                "user_classification": 0.52
+            },
+            "score": 0.63,
+            "screen_name": "sim_eu_28",
+            "user_id": "742102013597618178"
+        },
+        {
+            "categories": {
+                "content_classification": 0.63,
+                "friend_classification": 0.68,
+                "network_classification": 0.6866666666666668,
+                "sentiment_classification": 0.69,
+                "temporal_classification": 0.56,
+                "user_classification": 0.6
+            },
+            "score": 0.54,
+            "screen_name": "Jameshairstyles",
+            "user_id": "3312322053"
+        },
+        {
+            "categories": {
+                "content_classification": 0.1,
+                "friend_classification": 0.23,
+                "network_classification": 0.08,
+                "sentiment_classification": 0.14,
+                "temporal_classification": 0.11,
+                "user_classification": 0.52
+            },
+            "score": 0.29,
+            "screen_name": "realantwess_",
+            "user_id": "747099079486758912"
+        },
+        {
+            "categories": {
+                "content_classification": 0.11,
+                "friend_classification": 0.26,
+                "network_classification": 0.16,
+                "sentiment_classification": 0.26,
+                "temporal_classification": 0.37,
+                "user_classification": 0.29
+            },
+            "score": 0.18,
+            "screen_name": "stahl756_jon",
+            "user_id": "709167296787259392"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.28,
+                "network_classification": 0.45,
+                "sentiment_classification": 0.52,
+                "temporal_classification": 0.54,
+                "user_classification": 0.38
+            },
+            "score": 0.31,
+            "screen_name": "enyaismyqueen",
+            "user_id": "3315238940"
+        },
+        {
+            "categories": {
+                "content_classification": 0.28,
+                "friend_classification": 0.12,
+                "network_classification": 0.14,
+                "sentiment_classification": 0.12,
+                "temporal_classification": 0.09,
+                "user_classification": 0.02
+            },
+            "score": 0.06,
+            "screen_name": "lahnakay",
+            "user_id": "3314679835"
+        },
+        {
+            "categories": {
+                "content_classification": 0.28,
+                "friend_classification": 0.45,
+                "network_classification": 0.32,
+                "sentiment_classification": 0.42,
+                "temporal_classification": 0.37,
+                "user_classification": 0.24
+            },
+            "score": 0.29,
+            "screen_name": "Tony336Quintero",
+            "user_id": "709014158604410880"
+        },
+        {
+            "categories": {
+                "content_classification": 0.26,
+                "friend_classification": 0.55,
+                "network_classification": 0.43,
+                "sentiment_classification": 0.29,
+                "temporal_classification": 0.63,
+                "user_classification": 0.31
+            },
+            "score": 0.23,
+            "screen_name": "zhasse160",
+            "user_id": "709189817062416384"
+        },
+        {
+            "categories": {
+                "content_classification": 0.09,
+                "friend_classification": 0.19,
+                "network_classification": 0.16,
+                "sentiment_classification": 0.26,
+                "temporal_classification": 0.11,
+                "user_classification": 0.09
+            },
+            "score": 0.17,
+            "screen_name": "BayleeLeavitt4",
+            "user_id": "3312560372"
+        },
+        {
+            "categories": {
+                "content_classification": 0.08,
+                "friend_classification": 0.36,
+                "network_classification": 0.37,
+                "sentiment_classification": 0.23,
+                "temporal_classification": 0.38,
+                "user_classification": 0.09
+            },
+            "score": 0.16,
+            "screen_name": "horanhappiest",
+            "user_id": "3433487631"
+        },
+        {
+            "categories": {
+                "content_classification": 0.35,
+                "friend_classification": 0.42,
+                "network_classification": 0.24,
+                "sentiment_classification": 0.3,
+                "temporal_classification": 0.3,
+                "user_classification": 0.35
+            },
+            "score": 0.26,
+            "screen_name": "MariaRob0922",
+            "user_id": "707733160335962112"
+        },
+        {
+            "categories": {
+                "content_classification": 0.7716666666666666,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.71,
+                "sentiment_classification": 0.72,
+                "temporal_classification": 0.66,
+                "user_classification": 0.54
+            },
+            "score": 0.745,
+            "screen_name": "baked_zombie",
+            "user_id": "707756739597176832"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.55,
+                "network_classification": 0.13,
+                "sentiment_classification": 0.57,
+                "temporal_classification": 0.81,
+                "user_classification": 0.52
+            },
+            "score": 0.43,
+            "screen_name": "kellyykordeii",
+            "user_id": "3318844560"
+        },
+        {
+            "categories": {
+                "content_classification": 0.605,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.55,
+                "temporal_classification": 0.66,
+                "user_classification": 0.95
+            },
+            "score": 0.745,
+            "screen_name": "FsalSalazar",
+            "user_id": "707639852360011776"
+        },
+        {
+            "categories": {
+                "content_classification": 0.36,
+                "friend_classification": 0.33,
+                "network_classification": 0.35,
+                "sentiment_classification": 0.39,
+                "temporal_classification": 0.44,
+                "user_classification": 0.64
+            },
+            "score": 0.5,
+            "screen_name": "texans_rubio",
+            "user_id": "3319398852"
+        },
+        {
+            "categories": {
+                "content_classification": 0.47,
+                "friend_classification": 0.33,
+                "network_classification": 0.32,
+                "sentiment_classification": 0.48,
+                "temporal_classification": 0.57,
+                "user_classification": 0.38
+            },
+            "score": 0.37,
+            "screen_name": "michaeltrista",
+            "user_id": "3319378478"
+        },
+        {
+            "categories": {
+                "content_classification": 0.15,
+                "friend_classification": 0.15,
+                "network_classification": 0.23,
+                "sentiment_classification": 0.29,
+                "temporal_classification": 0.14,
+                "user_classification": 0.19
+            },
+            "score": 0.14,
+            "screen_name": "thegirlyderp",
+            "user_id": "3434877238"
+        },
+        {
+            "categories": {
+                "content_classification": 0.04,
+                "friend_classification": 0.41,
+                "network_classification": 0.08,
+                "sentiment_classification": 0.24,
+                "temporal_classification": 0.18,
+                "user_classification": 0.02
+            },
+            "score": 0.19,
+            "screen_name": "DontStopHoppin",
+            "user_id": "3434992199"
+        },
+        {
+            "categories": {
+                "content_classification": 0.475,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.87,
+                "temporal_classification": 0.9,
+                "user_classification": 0.51
+            },
+            "score": 0.38,
+            "screen_name": "sprunks62",
+            "user_id": "707718352203083776"
+        },
+        {
+            "categories": {
+                "content_classification": 0.56,
+                "friend_classification": 0.36,
+                "network_classification": 0.5,
+                "sentiment_classification": 0.84,
+                "temporal_classification": 0.38,
+                "user_classification": 0.58
+            },
+            "score": 0.44,
+            "screen_name": "Blessin78471402",
+            "user_id": "3432356272"
+        },
+        {
+            "categories": {
+                "content_classification": 0.645,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.5,
+                "temporal_classification": 0.61,
+                "user_classification": 0.32
+            },
+            "score": 0.41,
+            "screen_name": "Comercio_Mexico",
+            "user_id": "3432367572"
+        },
+        {
+            "categories": {
+                "content_classification": 0.32,
+                "friend_classification": 0.48,
+                "network_classification": 0.14,
+                "sentiment_classification": 0.09,
+                "temporal_classification": 0.44,
+                "user_classification": 0.38
+            },
+            "score": 0.28,
+            "screen_name": "larrynelson5112",
+            "user_id": "4840585307"
+        },
+        {
+            "categories": {
+                "content_classification": 0.52,
+                "friend_classification": 0.68,
+                "network_classification": 0.4,
+                "sentiment_classification": 0.69,
+                "temporal_classification": 0.58,
+                "user_classification": 0.71
+            },
+            "score": 0.54,
+            "screen_name": "PatriciaWabuda5",
+            "user_id": "3321231578"
+        },
+        {
+            "categories": {
+                "content_classification": 0.79,
+                "friend_classification": 0.38,
+                "network_classification": 0.67,
+                "sentiment_classification": 0.825,
+                "temporal_classification": 0.58,
+                "user_classification": 0.49
+            },
+            "score": 0.48,
+            "screen_name": "LiliStangenberg",
+            "user_id": "707670009829412864"
+        },
+        {
+            "categories": {
+                "content_classification": 0.4,
+                "friend_classification": 0.42,
+                "network_classification": 0.3,
+                "sentiment_classification": 0.44,
+                "temporal_classification": 0.46,
+                "user_classification": 0.51
+            },
+            "score": 0.34,
+            "screen_name": "atepoulos",
+            "user_id": "3313603500"
+        },
+        {
+            "categories": {
+                "content_classification": 0.44,
+                "friend_classification": 0.26,
+                "network_classification": 0.41,
+                "sentiment_classification": 0.39,
+                "temporal_classification": 0.76,
+                "user_classification": 0.28
+            },
+            "score": 0.26,
+            "screen_name": "FerreiraMino",
+            "user_id": "3438686878"
+        },
+        {
+            "categories": {
+                "content_classification": 0.24,
+                "friend_classification": 0.23,
+                "network_classification": 0.12,
+                "sentiment_classification": 0.23,
+                "temporal_classification": 0.26,
+                "user_classification": 0.1
+            },
+            "score": 0.13,
+            "screen_name": "Kettyyyyyyyy",
+            "user_id": "4393143856"
+        },
+        {
+            "categories": {
+                "content_classification": 0.54,
+                "friend_classification": 0.17,
+                "network_classification": 0.11,
+                "sentiment_classification": 0.54,
+                "temporal_classification": 0.12,
+                "user_classification": 0.19
+            },
+            "score": 0.29,
+            "screen_name": "TWF449",
+            "user_id": "4835897421"
+        },
+        {
+            "categories": {
+                "content_classification": 0.61,
+                "friend_classification": 0.43,
+                "network_classification": 0.7,
+                "sentiment_classification": 0.62,
+                "temporal_classification": 0.64,
+                "user_classification": 0.45
+            },
+            "score": 0.71,
+            "screen_name": "OKPARACHIMEZIE1",
+            "user_id": "3434107024"
+        },
+        {
+            "categories": {
+                "content_classification": 0.63,
+                "friend_classification": 0.57,
+                "network_classification": 0.21,
+                "sentiment_classification": 0.56,
+                "temporal_classification": 0.43,
+                "user_classification": 0.36
+            },
+            "score": 0.38,
+            "screen_name": "CharlieBobarlee",
+            "user_id": "738339349062930433"
+        },
+        {
+            "categories": {
+                "content_classification": 0.67,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8348909423909423,
+                "sentiment_classification": 0.92,
+                "temporal_classification": 0.61,
+                "user_classification": 0.53
+            },
+            "score": 0.71,
+            "screen_name": "hasan8317",
+            "user_id": "707821537097867264"
+        },
+        {
+            "categories": {
+                "content_classification": 0.21,
+                "friend_classification": 0.66,
+                "network_classification": 0.28,
+                "sentiment_classification": 0.76,
+                "temporal_classification": 0.5,
+                "user_classification": 0.2
+            },
+            "score": 0.25,
+            "screen_name": "m35010407",
+            "user_id": "707816408206409728"
+        },
+        {
+            "categories": {
+                "content_classification": 0.72,
+                "friend_classification": 0.68,
+                "network_classification": 0.885,
+                "sentiment_classification": 0.66,
+                "temporal_classification": 0.42,
+                "user_classification": 0.39
+            },
+            "score": 0.43,
+            "screen_name": "quoteoid",
+            "user_id": "739535107057287172"
+        },
+        {
+            "categories": {
+                "content_classification": 0.47,
+                "friend_classification": 0.55,
+                "network_classification": 0.21,
+                "sentiment_classification": 0.38,
+                "temporal_classification": 0.52,
+                "user_classification": 0.32
+            },
+            "score": 0.37,
+            "screen_name": "PatrioticNeko",
+            "user_id": "740250388079775744"
+        },
+        {
+            "categories": {
+                "content_classification": 0.58,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.46,
+                "temporal_classification": 0.5,
+                "user_classification": 0.41
+            },
+            "score": 0.35,
+            "screen_name": "Ytmonsterz",
+            "user_id": "3318436032"
+        },
+        {
+            "categories": {
+                "content_classification": 0.15,
+                "friend_classification": 0.37,
+                "network_classification": 0.17,
+                "sentiment_classification": 0.24,
+                "temporal_classification": 0.3,
+                "user_classification": 0.26
+            },
+            "score": 0.14,
+            "screen_name": "kingfloraa27",
+            "user_id": "3318384976"
+        },
+        {
+            "categories": {
+                "content_classification": 0.77,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.83,
+                "temporal_classification": 0.59,
+                "user_classification": 0.26
+            },
+            "score": 0.38,
+            "screen_name": "Soulsoscattered",
+            "user_id": "2921471676"
+        },
+        {
+            "categories": {
+                "content_classification": 0.5,
+                "friend_classification": 0.43,
+                "network_classification": 0.42,
+                "sentiment_classification": 0.51,
+                "temporal_classification": 0.59,
+                "user_classification": 0.5
+            },
+            "score": 0.45,
+            "screen_name": "JamesEKay2",
+            "user_id": "707902230318477312"
+        },
+        {
+            "categories": {
+                "content_classification": 0.29,
+                "friend_classification": 0.26,
+                "network_classification": 0.15,
+                "sentiment_classification": 0.31,
+                "temporal_classification": 0.26,
+                "user_classification": 0.27
+            },
+            "score": 0.16,
+            "screen_name": "JaydenTheSpeed",
+            "user_id": "707802004731645952"
+        },
+        {
+            "categories": {
+                "content_classification": 0.41,
+                "friend_classification": 0.3,
+                "network_classification": 0.51,
+                "sentiment_classification": 0.24,
+                "temporal_classification": 0.13,
+                "user_classification": 0.26
+            },
+            "score": 0.22,
+            "screen_name": "NudratNawaz",
+            "user_id": "706784131674320896"
+        },
+        {
+            "categories": {
+                "content_classification": 0.63,
+                "friend_classification": 0.3,
+                "network_classification": 0.9380856180856181,
+                "sentiment_classification": 0.72,
+                "temporal_classification": 0.665,
+                "user_classification": 0.61
+            },
+            "score": 0.45,
+            "screen_name": "king_ahmed94",
+            "user_id": "3831748934"
+        },
+        {
+            "categories": {
+                "content_classification": 0.23,
+                "friend_classification": 0.09,
+                "network_classification": 0.12,
+                "sentiment_classification": 0.47,
+                "temporal_classification": 0.33,
+                "user_classification": 0.05
+            },
+            "score": 0.21,
+            "screen_name": "JenniferWroten",
+            "user_id": "3321939804"
+        },
+        {
+            "categories": {
+                "content_classification": 0.42,
+                "friend_classification": 0.5,
+                "network_classification": 0.42,
+                "sentiment_classification": 0.41,
+                "temporal_classification": 0.53,
+                "user_classification": 0.53
+            },
+            "score": 0.48,
+            "screen_name": "Bennett_Blil",
+            "user_id": "3321870213"
+        },
+        {
+            "categories": {
+                "content_classification": 0.49,
+                "friend_classification": 0.31,
+                "network_classification": 0.2,
+                "sentiment_classification": 0.3,
+                "temporal_classification": 0.15,
+                "user_classification": 0.38
+            },
+            "score": 0.36,
+            "screen_name": "LoraineVetter1",
+            "user_id": "4839626770"
+        },
+        {
+            "categories": {
+                "content_classification": 0.23,
+                "friend_classification": 0.23,
+                "network_classification": 0.08,
+                "sentiment_classification": 0.46,
+                "temporal_classification": 0.3,
+                "user_classification": 0.18
+            },
+            "score": 0.17,
+            "screen_name": "_LukeOrr_",
+            "user_id": "706724525715525632"
+        },
+        {
+            "categories": {
+                "content_classification": 0.67,
+                "friend_classification": 0.63,
+                "network_classification": 0.51,
+                "sentiment_classification": 0.87,
+                "temporal_classification": 0.52,
+                "user_classification": 0.51
+            },
+            "score": 0.41,
+            "screen_name": "spongebob_cult",
+            "user_id": "3439162252"
+        },
+        {
+            "categories": {
+                "content_classification": 0.18,
+                "friend_classification": 0.33,
+                "network_classification": 0.46,
+                "sentiment_classification": 0.77,
+                "temporal_classification": 0.64,
+                "user_classification": 0.63
+            },
+            "score": 0.46,
+            "screen_name": "robertbravooooo",
+            "user_id": "4836617469"
+        },
+        {
+            "categories": {
+                "content_classification": 0.35,
+                "friend_classification": 0.62,
+                "network_classification": 0.51,
+                "sentiment_classification": 0.19,
+                "temporal_classification": 0.44,
+                "user_classification": 0.5
+            },
+            "score": 0.42,
+            "screen_name": "TheRealKLawson",
+            "user_id": "4836051556"
+        },
+        {
+            "categories": {
+                "content_classification": 0.15,
+                "friend_classification": 0.23,
+                "network_classification": 0.37,
+                "sentiment_classification": 0.55,
+                "temporal_classification": 0.26,
+                "user_classification": 0.21
+            },
+            "score": 0.28,
+            "screen_name": "BOOMSHIVA13",
+            "user_id": "3321477780"
+        },
+        {
+            "categories": {
+                "content_classification": 0.15,
+                "friend_classification": 0.25,
+                "network_classification": 0.31,
+                "sentiment_classification": 0.37,
+                "temporal_classification": 0.36,
+                "user_classification": 0.27
+            },
+            "score": 0.17,
+            "screen_name": "mlooknamerican",
+            "user_id": "707269460005036032"
+        },
+        {
+            "categories": {
+                "content_classification": 0.21,
+                "friend_classification": 0.15,
+                "network_classification": 0.2,
+                "sentiment_classification": 0.46,
+                "temporal_classification": 0.07,
+                "user_classification": 0.03
+            },
+            "score": 0.17,
+            "screen_name": "realcarlosflore",
+            "user_id": "3313213597"
+        },
+        {
+            "categories": {
+                "content_classification": 0.86,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.7833333333333333,
+                "sentiment_classification": 0.82,
+                "temporal_classification": 0.815,
+                "user_classification": 0.26
+            },
+            "score": 0.63,
+            "screen_name": "pambele63",
+            "user_id": "3432238287"
+        },
+        {
+            "categories": {
+                "content_classification": 0.16,
+                "friend_classification": 0.13,
+                "network_classification": 0.14,
+                "sentiment_classification": 0.17,
+                "temporal_classification": 0.22,
+                "user_classification": 0.21
+            },
+            "score": 0.13,
+            "screen_name": "juliothepanda",
+            "user_id": "3313277689"
+        },
+        {
+            "categories": {
+                "content_classification": 0.38,
+                "friend_classification": 0.58,
+                "network_classification": 0.5661150793650794,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.7,
+                "user_classification": 0.64
+            },
+            "score": 0.3,
+            "screen_name": "librarie270753",
+            "user_id": "708791567872630784"
+        },
+        {
+            "categories": {
+                "content_classification": 0.8133333333333335,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.87,
+                "temporal_classification": 0.51,
+                "user_classification": 0.43
+            },
+            "score": 0.6,
+            "screen_name": "andremcaldwell",
+            "user_id": "4840371112"
+        },
+        {
+            "categories": {
+                "content_classification": 0.24,
+                "friend_classification": 0.22,
+                "network_classification": 0.2,
+                "sentiment_classification": 0.38,
+                "temporal_classification": 0.22,
+                "user_classification": 0.15
+            },
+            "score": 0.16,
+            "screen_name": "Ed_Brace",
+            "user_id": "4818334127"
+        },
+        {
+            "categories": {
+                "content_classification": 0.43,
+                "friend_classification": 0.36,
+                "network_classification": 0.31,
+                "sentiment_classification": 0.52,
+                "temporal_classification": 0.58,
+                "user_classification": 0.3
+            },
+            "score": 0.37,
+            "screen_name": "coltonfetz_",
+            "user_id": "3432944153"
+        },
+        {
+            "categories": {
+                "content_classification": 0.48,
+                "friend_classification": 0.37,
+                "network_classification": 0.24,
+                "sentiment_classification": 0.62,
+                "temporal_classification": 0.45,
+                "user_classification": 0.65
+            },
+            "score": 0.52,
+            "screen_name": "StewardAimee",
+            "user_id": "4840263075"
+        },
+        {
+            "categories": {
+                "content_classification": 0.15,
+                "friend_classification": 0.08,
+                "network_classification": 0.04,
+                "sentiment_classification": 0.23,
+                "temporal_classification": 0.02,
+                "user_classification": 0.1
+            },
+            "score": 0.12,
+            "screen_name": "camilaigmez",
+            "user_id": "3314520336"
+        },
+        {
+            "categories": {
+                "content_classification": 0.11,
+                "friend_classification": 0.12,
+                "network_classification": 0.27,
+                "sentiment_classification": 0.07,
+                "temporal_classification": 0.37,
+                "user_classification": 0.12
+            },
+            "score": 0.12,
+            "screen_name": "vzm__",
+            "user_id": "3325848181"
+        },
+        {
+            "categories": {
+                "content_classification": 0.61,
+                "friend_classification": 0.36,
+                "network_classification": 0.44,
+                "sentiment_classification": 0.39,
+                "temporal_classification": 0.27,
+                "user_classification": 0.23
+            },
+            "score": 0.24,
+            "screen_name": "AsshatDrumpf",
+            "user_id": "706775240701939713"
+        },
+        {
+            "categories": {
+                "content_classification": 0.36,
+                "friend_classification": 0.08,
+                "network_classification": 0.52,
+                "sentiment_classification": 0.56,
+                "temporal_classification": 0.6,
+                "user_classification": 0.2
+            },
+            "score": 0.23,
+            "screen_name": "abigailwhelans",
+            "user_id": "3432274696"
+        },
+        {
+            "categories": {
+                "content_classification": 0.23,
+                "friend_classification": 0.4,
+                "network_classification": 0.25,
+                "sentiment_classification": 0.35,
+                "temporal_classification": 0.1,
+                "user_classification": 0.06
+            },
+            "score": 0.13,
+            "screen_name": "AlecTaco",
+            "user_id": "706679553037570049"
+        },
+        {
+            "categories": {
+                "content_classification": 0.24,
+                "friend_classification": 0.34,
+                "network_classification": 0.08,
+                "sentiment_classification": 0.18,
+                "temporal_classification": 0.36,
+                "user_classification": 0.13
+            },
+            "score": 0.22,
+            "screen_name": "twerk4meASH",
+            "user_id": "3327575360"
+        },
+        {
+            "categories": {
+                "content_classification": 0.96,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.96,
+                "temporal_classification": 0.7879518434631023,
+                "user_classification": 0.7838863574969136
+            },
+            "score": 0.9,
+            "screen_name": "CZCU24",
+            "user_id": "742122630363414528"
+        },
+        {
+            "categories": {
+                "content_classification": 0.32,
+                "friend_classification": 0.24,
+                "network_classification": 0.8,
+                "sentiment_classification": 0.6,
+                "temporal_classification": 0.48,
+                "user_classification": 0.39
+            },
+            "score": 0.39,
+            "screen_name": "tanderson651",
+            "user_id": "2883475178"
+        },
+        {
+            "categories": {
+                "content_classification": 0.6,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.26,
+                "temporal_classification": 0.59,
+                "user_classification": 0.19
+            },
+            "score": 0.21,
+            "screen_name": "EWugate",
+            "user_id": "3881683769"
+        },
+        {
+            "categories": {
+                "content_classification": 0.31,
+                "friend_classification": 0.26,
+                "network_classification": 0.17,
+                "sentiment_classification": 0.24,
+                "temporal_classification": 0.23,
+                "user_classification": 0.06
+            },
+            "score": 0.31,
+            "screen_name": "John_Doe_PDX",
+            "user_id": "742096633463115776"
+        },
+        {
+            "categories": {
+                "content_classification": 0.17,
+                "friend_classification": 0.31,
+                "network_classification": 0.26,
+                "sentiment_classification": 0.03,
+                "temporal_classification": 0.39,
+                "user_classification": 0.17
+            },
+            "score": 0.13,
+            "screen_name": "JuanAllmoney",
+            "user_id": "739535161289773056"
+        },
+        {
+            "categories": {
+                "content_classification": 0.97,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.397821640701592,
+                "sentiment_classification": 0.82,
+                "temporal_classification": 0.86,
+                "user_classification": 0.19
+            },
+            "score": 0.42,
+            "screen_name": "365AppleNews",
+            "user_id": "2841219993"
+        },
+        {
+            "categories": {
+                "content_classification": 0.63,
+                "friend_classification": 0.4,
+                "network_classification": 0.24,
+                "sentiment_classification": 0.51,
+                "temporal_classification": 0.45,
+                "user_classification": 0.49
+            },
+            "score": 0.41,
+            "screen_name": "tishtoshtu",
+            "user_id": "4337682745"
+        },
+        {
+            "categories": {
+                "content_classification": 0.53,
+                "friend_classification": 0.81,
+                "network_classification": 0.8031867345231665,
+                "sentiment_classification": 0.47,
+                "temporal_classification": 0.64,
+                "user_classification": 0.12
+            },
+            "score": 0.29,
+            "screen_name": "shyietonia",
+            "user_id": "4329473628"
+        },
+        {
+            "categories": {
+                "content_classification": 0.67,
+                "friend_classification": 0.52,
+                "network_classification": 0.58,
+                "sentiment_classification": 0.68,
+                "temporal_classification": 0.62,
+                "user_classification": 0.51
+            },
+            "score": 0.47,
+            "screen_name": "FederationThe",
+            "user_id": "3860794218"
+        },
+        {
+            "categories": {
+                "content_classification": 0.76,
+                "friend_classification": 0.54,
+                "network_classification": 0.74,
+                "sentiment_classification": 0.64,
+                "temporal_classification": 0.39,
+                "user_classification": 0.27
+            },
+            "score": 0.59,
+            "screen_name": "MotherLax",
+            "user_id": "2843109238"
+        },
+        {
+            "categories": {
+                "content_classification": 0.64,
+                "friend_classification": 0.7931471336512232,
+                "network_classification": 0.8402460533482703,
+                "sentiment_classification": 0.22,
+                "temporal_classification": 0.69,
+                "user_classification": 0.1
+            },
+            "score": 0.35,
+            "screen_name": "sexyieniye",
+            "user_id": "4329441552"
+        },
+        {
+            "categories": {
+                "content_classification": 0.23,
+                "friend_classification": 0.16,
+                "network_classification": 0.08,
+                "sentiment_classification": 0.18,
+                "temporal_classification": 0.44,
+                "user_classification": 0.35
+            },
+            "score": 0.15,
+            "screen_name": "IntelligntPanda",
+            "user_id": "4329259699"
+        },
+        {
+            "categories": {
+                "content_classification": 0.46,
+                "friend_classification": 0.44,
+                "network_classification": 0.16,
+                "sentiment_classification": 0.6,
+                "temporal_classification": 0.54,
+                "user_classification": 0.62
+            },
+            "score": 0.32,
+            "screen_name": "rickj6601",
+            "user_id": "2841116446"
+        },
+        {
+            "categories": {
+                "content_classification": 0.06,
+                "friend_classification": 0.17,
+                "network_classification": 0.12,
+                "sentiment_classification": 0.25,
+                "temporal_classification": 0.19,
+                "user_classification": 0.05
+            },
+            "score": 0.09,
+            "screen_name": "liylahh",
+            "user_id": "3861002052"
+        },
+        {
+            "categories": {
+                "content_classification": 0.12,
+                "friend_classification": 0.17,
+                "network_classification": 0.24,
+                "sentiment_classification": 0.21,
+                "temporal_classification": 0.19,
+                "user_classification": 0.22
+            },
+            "score": 0.19,
+            "screen_name": "MLE_Allen",
+            "user_id": "2870057278"
+        },
+        {
+            "categories": {
+                "content_classification": 0.17,
+                "friend_classification": 0.21,
+                "network_classification": 0.19,
+                "sentiment_classification": 0.39,
+                "temporal_classification": 0.3,
+                "user_classification": 0.25
+            },
+            "score": 0.3,
+            "screen_name": "IsaccG5",
+            "user_id": "3886164677"
+        },
+        {
+            "categories": {
+                "content_classification": 0.32,
+                "friend_classification": 0.27,
+                "network_classification": 0.08,
+                "sentiment_classification": 0.5,
+                "temporal_classification": 0.29,
+                "user_classification": 0.31
+            },
+            "score": 0.18,
+            "screen_name": "Nekoette_Chan",
+            "user_id": "4338025034"
+        },
+        {
+            "categories": {
+                "content_classification": 0.53,
+                "friend_classification": 0.41,
+                "network_classification": 0.56,
+                "sentiment_classification": 0.23,
+                "temporal_classification": 0.36,
+                "user_classification": 0.61
+            },
+            "score": 0.43,
+            "screen_name": "ruizoscc",
+            "user_id": "3893620413"
+        },
+        {
+            "categories": {
+                "content_classification": 0.09,
+                "friend_classification": 0.21,
+                "network_classification": 0.13,
+                "sentiment_classification": 0.23,
+                "temporal_classification": 0.06,
+                "user_classification": 0.16
+            },
+            "score": 0.21,
+            "screen_name": "tsukked",
+            "user_id": "737402092420276224"
+        }
+    ]
+}
