@@ -4,25 +4,21 @@ digraph {
 
 	node[shape="box", style="rounded", height="1.5", width="2"]
 		"candidate_stream_1.txt"; "candidate_stream_2.txt"; "candidate_stream_n.txt";
-	node[shape="box", style="", height="4.5"]
-		HPC;
+	HPC[shape="box", style="", height="4.5", color="#6495ed", label="aggregate-users.py\nvia Neon HPC"]
 	node[shape="box", style="rounded", height="1"]
 		"candidate_users_aggregated_1.csv"; "candidate_users_aggregated_2.csv"; "candidate_users_aggregated_n.csv";
-	node[shape="box", style="", height="2"]
-		"combine_users.py";	
+	"combine-users.py"[shape="box", style="", height="2", color="#6495ed"]
 	node[shape="box", style="rounded", height="3"]
 		"all_users_all_days_(by candidate).csv";
 
-	"candidate_stream_1.txt" -> { HPC };
+	"candidate_stream_1.txt":e -> HPC;
 	"candidate_stream_2.txt" -> { HPC };
-	"candidate_stream_n.txt" -> { HPC };
-	HPC -> { "candidate_users_aggregated_1.csv" "candidate_users_aggregated_2.csv" "candidate_users_aggregated_n.csv" };
-	"candidate_users_aggregated_1.csv" -> { "combine_users.py" };
-	"candidate_users_aggregated_2.csv" -> { "combine_users.py" };
-	"candidate_users_aggregated_n.csv" -> { "combine_users.py" };
-	"combine_users.py" -> { "all_users_all_days_(by candidate).csv" };
-	"all_users_all_days_(by candidate).csv";
+	"candidate_stream_n.txt":e -> { HPC };
+	HPC -> { "candidate_users_aggregated_1.csv":nw "candidate_users_aggregated_2.csv" "candidate_users_aggregated_n.csv":nw };
+	"candidate_users_aggregated_1.csv" -> { "combine-users.py" };
+	"candidate_users_aggregated_2.csv" -> { "combine-users.py" };
+	"candidate_users_aggregated_n.csv" -> { "combine-users.py" };
+	"combine-users.py" -> { "all_users_all_days_(by candidate).csv" };
+	"all_users_all_days_(by candidate).csv"[shape="Mrecord", label="{ { all_users_all_days_(by candidate).csv | # CorruptedLines } | { userID | StreamTweetsDay | UserTweetsAll | TimestampTweet | Following | Followers | Account Created  } }"];
 
-	{ rank=same, "candidate_stream_1.txt", "candidate_stream_2.txt", "candidate_stream_n.txt" };
-	{ rank=same, "candidate_users_aggregated_1.csv", "candidate_users_aggregated_2.csv", "candidate_users_aggregated_n.csv" }
 }
