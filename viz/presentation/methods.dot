@@ -1,0 +1,42 @@
+digraph {
+	label="Methods";
+
+	node[group=left]
+	subgraph cluster_done {
+		label="Done";
+
+		twitter[shape="box", width=6, label="Twitter"]
+		stream[shape="box", style="rounded", height=1, label="Stream of Tweets\n-Zubair"]
+		aggregate[shape="box", color="#6495ed"]
+		filter[shape="box", color="#6495ed"]
+		classify[shape="box", color="#6495ed"]
+
+		twitter:w -> stream:n;
+		twitter -> classify;
+		stream -> aggregate;
+		aggregate -> filter;
+		filter -> classify;
+		classify -> twitter;
+
+		{ rank=same; stream; aggregate; filter; classify; }
+	}
+
+	node[group=right]
+	subgraph cluster_future {
+		label="To be continued";
+		height=4
+		//rankdir=LR;
+
+		place[style="invis"];
+		place -> extract[style="invis"];
+		extract[shape="box", color="red"]
+		tokenize[shape="box", color="red"]
+		extract -> tokenize;
+
+		{ rank=same; extract; tokenize; }
+	}
+
+	stream:s -> extract:s[constraint=false];
+	classify:e -> extract:w[constraint=false];
+
+}

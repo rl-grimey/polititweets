@@ -1,0 +1,17 @@
+digraph {
+	label="Filtering";
+	rankdir=LR;
+
+	"all_users_all_days_(by candidate).csv"[shape="box", style="rounded", height="3"]
+	"all_users.csv"[shape="box", style="rounded", height="2"]
+	"filter-users.py"[shape="box", label="filter-users.py\n\n-use heuristics from Thomas et Al.\n-calculate fields to filter on", color="#6495ed"]
+	"combine_users.py"[shape="box", color="#6495ed"]
+	"filtered_users.csv"[shape="Mrecord", label="{ filtered_users.csv | { userID | streamTweets | allTweets | friends | followers | created | accountDuration } }"]
+
+
+	"all_users_all_days_(by candidate).csv" -> "combine_users.py";
+	"combine_users.py" -> "all_users.csv";
+	"all_users.csv" -> "filter-users.py";
+	"filter-users.py" -> "filtered_users.csv";
+
+}

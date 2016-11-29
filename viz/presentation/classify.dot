@@ -1,0 +1,65 @@
+digraph ladder {  ranksep=".1"; nodesep=".1"; 
+
+
+
+# Column labels
+  File [shape=none]
+  HPC [shape=none, label="Neon HPC"]
+  API [shape=none, label="Bot or Not\nAPI"]
+  Tweepy [shape=none]
+  Twitter [shape=none]
+  { rank=same; File; HPC; API; Tweepy; Twitter }
+
+# Define the defaults
+  node [shape=point fontsize=10, style="invis"]
+  edge [dir=none fontsize=10]
+
+# # Columns
+File -> a1[style="invis"];
+a1 -> a2 -> a3 -> a4 -> a5 -> a6 -> a7 -> a8  [weight=1000]; 
+Twitter -> e1[style="invis"];
+e1 -> e2 -> e3 -> e4 -> e5 -> e6 -> e7 -> e8 [weight=1000];
+
+## Column headings
+{
+  rank=same;
+  edge[style="invis"];
+  File -> HPC -> API -> Tweepy -> Twitter;
+}
+
+# Other columns
+HPC -> b1[style="invis"];
+b1 -> b2 -> b3 -> b4 -> b5 -> b6 -> b7 -> b8 [weight=1000];
+API -> c1[style="invis"];
+c1 -> c2 -> c3 -> c4 -> c5 -> c6 -> c7 -> c8 [weight=1000];
+Tweepy -> d1[style="invis"];
+d1 -> d2 -> d3 -> d4 -> d5 -> d6 -> d7 -> d8 [weight=1000];
+
+## Rank em
+{ rank=same; a1; b1; c1; d1; e1; }
+{ rank=same; a2; b2; c2; d2; e2; }
+{ rank=same; a3; b3; c3; d3; e3; }
+{ rank=same; a4; b4; c4; d4; e4; }
+{ rank=same; a5; b5; c5; d5; e5; }
+{ rank=same; a6; b6; c6; d6; e6; }
+{ rank=same; a7; b7; c7; d7; e7; }
+{ rank=same; a8; b8; c8; d8; e8; }
+
+# Edges
+a1 -> b1[dir=forward, label="Read in"]; 
+b2 -> c2[dir=forward, label="Our scripts (parallel: * 10)"]; 
+c3 -> d3[dir=forward, label="OAuth key"]; 
+d4 -> e4[dir=forward, label="Authentication"];
+c5 -> d5[dir=back, label="Verification"];
+d5 -> e5; 
+c6 -> d6;
+d6 -> e6[dir=forward, label="RESTful calls for N users"];
+c7 -> d7 -> e7;
+b7 -> c7[dir=back, label="Classifications"];
+a8 -> b8[dir=back, label="Write out", weight=1000]; 
+
+# labeling
+a1[shape="box", style="rounded", label="filtered_users.csv"]
+a8[shape="box", style="rounded", label="classified_users.csv"]
+
+}
