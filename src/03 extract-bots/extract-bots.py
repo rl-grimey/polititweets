@@ -224,9 +224,10 @@ class tweetParser:
 		combined = parDirAgg + fNameAgg
 
 
-		with open(combined, 'w+b') as f:
+		with open(combined, 'w') as f:
 			for line in tweets:
-				f.write(json.dumps(line))
+				f.write(json.dumps(line) + '\n')
+			#f.writelines([json.dumps(line) for line in tweets])
 
 			print ('\tWrittern to txt!')
 
