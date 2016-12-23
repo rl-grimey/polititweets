@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Collusion Network on Twitter</title>
+
+<style>
+  #chartTitle {
+    font: 11px sans-serif;
+    width: 960px;
+    margin:auto;
+  }
+  #chart {
+    margin: auto;
+    position: relative;
+  }
+
+  .botTweets {
+    shape-rendering: crispEdges;
+    opacity: 0.5;
+    fill: #74a9cf; /*#4099FF;*/
+  }
+  .tooltip {
+    position: absolute;
+    text-align: center;
+    font: 11px sans-serif;
+    width: 275px;
+    padding: 2px;
+    background: #DDD;
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+  }
+  .y-axis {
+    font-size: 11px;
+  }
+  .labels {
+    font-size: 10px;
+  }
+</style>
+<body>
+
+<div id="chartTitle">
+  <div id="chart"></div>
+</div>
+
+
+<!-- load the d3.js library -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+// set the dimensions and margins of the graph
+var margin = {top: 30, right: 50, bottom: 30, left: 280},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+// parse the date / time
+var parseTime = d3.timeParse('%Y-%m-%d %H:%M:%S.%L');
+
+// set the ranges
+var x = d3.scaleTime().range([0, width]);
+var y = d3.scaleBand()
+    .rangeRound([0, height])
+    .padding(0.2);
+
+var svg = d3.select("#chart").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+// Get the data
+d3.csv("top-10-bot-tweets.csv", function(error, data) {
+  if (error) throw error;
+
+
+  // format the data
+  data.forEach(function(d) {
+      // Dates
+      d.timestamp = parseTime(d.timestamp);
+
+      // Values
+      d.favorite_count = +d.count;
+      d.hash = +d.hash;
+      d.retweet = +d.retweet;
+      d.retweet_count = +d.retweet_count;
+      d.userID = +d.userID;
+  });
+
+  var bots = d3.nest()
+    .key(function(d) { return d.token_str; })
+    .entries(data);
+
+  // Get rid of one token str that slipped in
+  bots = bots.slice(0, 9);
+  // order
+  //bots = bots.sort(function(a, b) { return d3.ascending(a.key - b.key); });
+  console.log(bots);
+
+  // Scale the range of the data
+  x.domain([d3.min(data, function(d) { return d.timestamp; }),
+            d3.max(data, function(d) { return d.timestamp; })]);
+  y.domain(bots.map(function(d) { return d.key; }));
+
+  var botTweets = svg.selectAll('g')
+      .data(bots)
+      .attr('class', 'botTweets')
+      .enter().append('g')
+      .attr('transform', function(d) {
+        return 'translate(0, ' + y(d.key) + ')';
+      });
+
+  botTweets.selectAll('.rect')
+    .data(function(d) { return d.values; })
+    .enter().append('rect')
+    .attr('class', function(d) {
+      return 'botTweets hash' + d.hash;
+    })
+    .attr('x', function(d) { return x(d.timestamp); })
+    .attr('width', 2)
+    .attr('height', y.bandwidth())
+    .on('mouseover', highlightSameTweets)
+    .on('mouseout', resetTweets);
+
+  botTweets.append('text')
+    .attr('class', 'labels')
+    .attr('x', function(d) { return x(d3.max(d.values, function(d) { return d.timestamp; })) + 5; })
+    .attr('dy', (y.bandwidth() / 2) + 3)
+    .style('font-size', '11px')
+    .text(function(d, i) {
+      var temp = "#" + (i+1) +". ";
+      return temp + d.values.length + " tweets"; });
+
+  // Add the X Axis
+  svg.append("g")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%b")));
+  svg.append("text")      // text label for the x axis
+          .attr("transform", "translate(" + (width / 2) + " ," + (height + margin.bottom) + ")")
+          .style("text-anchor", "middle")
+          .style("font-weight", "bold")
+          .text("Time of Tweet");
+
+  // Add the Y Axis
+  svg.append("g")
+    .attr('class', 'y-axis')
+    .call(d3.axisLeft(y))
+    .selectAll('.tick text')
+    .call(wrap, 250);
+  svg.append("text")      // label
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0 - margin.left)
+        .attr("x",0 - (height / 2))
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .style("font-weight", "bold")
+        .text("Duplicated Token Sets (Templates)");
+
+  // chart title
+  svg.append("text")
+        .attr("x", (width / 2))
+        .attr("y", 0 - (margin.top / 2))
+        .attr("text-anchor", "middle")
+        .style("font-size", "16px")
+        .style("font-weight", "bold")
+        //.style("text-decoration", "underline")
+        .text("Top 10 Tweeted Templates");
+
+});
+
+function wrap(text, width) {
+  text.each(function() {
+    var text = d3.select(this),
+        words = text.text().split(/\s+/).reverse(),
+        word,
+        line = [],
+        lineNumber = 0,
+        lineHeight = 1.1, // ems
+        y = text.attr("y"),
+        dy = parseFloat(text.attr("dy")),
+        tspan = text.text(null).append("tspan").attr("x", 0).attr("dx", -5).attr("y", y).attr("dy", dy + "em");
+    while (word = words.pop()) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = text.append("tspan").attr("x", 0).attr("dx", -5).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+      }
+    }
+  });
+}
+
+// Interaction functions
+function highlightSameTweets(d) {
+  // Highlight other tweets with same hash
+  var hash = d3.select(this).attr('class').slice(10);
+  svg.selectAll('.' + hash)
+    .transition(250)
+    .style('opacity', 0.9);
+
+  var textTokens = d.text.split(' ');
+  var link = textTokens.pop();
+
+  tooltipDiv.transition(250)
+    .style('opacity', 0.9);
+  tooltipDiv.html("<p style='color:#000'>" + textTokens.join(' ') + "<span style='color:red'>" + link + '</span></p>')
+    .style('left', (d3.event.pageX) + 'px')
+    .style('top', (d3.event.pageY) + 'px');
+}
+function resetTweets(d) {
+  var hash = d3.select(this).attr('class').slice(10);
+  svg.selectAll('.' + hash)
+    .transition(500)
+    .style('opacity', 0.25);
+
+  tooltipDiv.transition(500)
+    .style('opacity', 0);
+}
+
+// Init tooltip
+var tooltipDiv = d3.select('body').append('div')
+    .attr('class', 'tooltip')
+    .style('opacity', 0);
+</script>
+</body>
