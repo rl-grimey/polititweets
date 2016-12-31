@@ -90,18 +90,18 @@ To better understand the climate of the disseminated messages, we aggregate the 
 
 > from 69876 bot tweets using hashtags
 
-  # | Hashtag          | Occurrence |
--- | ---------------- | ----------
-1  | trump2016        | 7867
-2  | trump            | 5280
-3  | clinton          | 5019
-4  | thenewsclub      | 4883
-5  | donaldtrump      | 3451
-6  | redstate         | 2609
-7  | boycottstarbucks | 2495
-8  | trumptrain       | 2194
-9  | hillarytapes     | 1839
-10 | news             | 1400
+|  # | Hashtag          | Occurrence |
+| --- | ---------------- | ---------- |
+| 1  | trump2016        | 7867 |
+| 2  | trump            | 5280 |
+| 3  | clinton          | 5019 |
+| 4  | thenewsclub      | 4883 |
+| 5  | donaldtrump      | 3451 |
+| 6  | redstate         | 2609 |
+| 7  | boycottstarbucks | 2495 |
+| 8  | trumptrain       | 2194 |
+| 9  | hillarytapes     | 1839 |
+| 10 | news             | 1400 |
 
 Of the URL entities that still resolve, we find two common patterns, pre-shortened URLS and resolving to a mixture of legitimate news sites and extremely slanted opinion sites. As mentioned many of the URLs are pre-shortened prior to being tweeted.This provides a level of obfuscation and possibly information hiding. We suspect this may help conceal the source of the 'headline'. We find other URLs resolve to blog-like websites without the possibility of user interaction. We are unsure of the reasoning these sites are practicing obfuscation, however one-way communications seems to ensure message delivery without opposing interference.
 
@@ -111,18 +111,18 @@ Of the URL entities that still resolve, we find two common patterns, pre-shorten
 
 > from 74736 bot tweeted links
 
-  # | Resolved URLs                  | Occurrence
--- | ------------------------------ | ----------
-1  | <http://cnnpolitics.com>       | 2535
-2  | <http://cnn.it/20ndgad>        | 2494
-3  | <http://growapair.gq>          | 1362
-4  | <http://bit.ly/1rcvg6d>        | 807
-5  | <http://ift.tt/1jjvmta>        | 760
-6  | <http://on.fb.me/1l1mvpu>      | 749
-7  | <http://ift.tt/1h21yzd>        | 565
-8  | <http://ift.tt/1kfdkrh>        | 432
-9  | <http://www.apple.co/1h1p4do>  | 309
-10 | <https://youtu.be/gw8c2cq-vpg> | 301
+|   # | Resolved URLs                  | Occurrence |
+| -- | ------------------------------ | ---------- |
+| 1  | <http://cnnpolitics.com>       | 2535 |
+| 2  | <http://cnn.it/20ndgad>        | 2494 |
+| 3  | <http://growapair.gq>          | 1362 |
+| 4  | <http://bit.ly/1rcvg6d>        | 807 |
+| 5  | <http://ift.tt/1jjvmta>        | 760 |
+| 6  | <http://on.fb.me/1l1mvpu>      | 749 |
+| 7  | <http://ift.tt/1h21yzd>        | 565 |
+| 8  | <http://ift.tt/1kfdkrh>        | 432 |
+| 9  | <http://www.apple.co/1h1p4do>  | 309 |
+| 10 | <https://youtu.be/gw8c2cq-vpg> | 301 |
 
 **Most Tweeted Domains by Bots**
 
@@ -130,18 +130,18 @@ Of the URL entities that still resolve, we find two common patterns, pre-shorten
 
 > from 53652 URLs
 
- #   | Tweet Link Domain         | Occurrence
--- | ------------------------- | ----------
-1  | ift.tt/                   | 8931
-2  | api.youreon.media/        | 8336
-3  | bit.ly/                   | 5155
-4  | twitter.com/              | 5070
-5  | tnc.news/                 | 2966
-6  | dlvr.it/                  | 1478
-7  | cnn.it/                   | 1235
-8  | nyti.ms/                  | 1116
-9  | www.whodoyoulike2016.com/ | 1112
-10 | prt.news/                 | 963
+| #   | Tweet Link Domain         | Occurrence |
+| -- | ------------------------- | ---------- |
+| 1  | ift.tt/                   | 8931 |
+| 2  | api.youreon.media/        | 8336 |
+| 3  | bit.ly/                   | 5155 |
+| 4  | twitter.com/              | 5070 |
+| 5  | tnc.news/                 | 2966 |
+| 6  | dlvr.it/                  | 1478 |
+| 7  | cnn.it/                   | 1235 |
+| 8  | nyti.ms/                  | 1116 |
+| 9  | www.whodoyoulike2016.com/ | 1112  |
+| 10 | prt.news/                 | 963 |
 
 Our investigations into user mentions did not prove to be fruitful. So far as we can surmise, the distribution of user mentions is typical in comparison to other work.
 
