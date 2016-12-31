@@ -90,7 +90,7 @@ To better understand the climate of the disseminated messages, we aggregate the 
 
 > from 69876 bot tweets using hashtags
 
-   | Hashtag          | Occurrence
+  # | Hashtag          | Occurrence |
 -- | ---------------- | ----------
 1  | trump2016        | 7867
 2  | trump            | 5280
@@ -111,7 +111,7 @@ Of the URL entities that still resolve, we find two common patterns, pre-shorten
 
 > from 74736 bot tweeted links
 
-   | Resolved URLs                  | Occurrence
+  # | Resolved URLs                  | Occurrence
 -- | ------------------------------ | ----------
 1  | <http://cnnpolitics.com>       | 2535
 2  | <http://cnn.it/20ndgad>        | 2494
@@ -130,7 +130,7 @@ Of the URL entities that still resolve, we find two common patterns, pre-shorten
 
 > from 53652 URLs
 
-   | Tweet Link Domain         | Occurrence
+ #   | Tweet Link Domain         | Occurrence
 -- | ------------------------- | ----------
 1  | ift.tt/                   | 8931
 2  | api.youreon.media/        | 8336
@@ -164,7 +164,7 @@ To identify replication we create tokens from each tweet; removing user mentions
 
 Armed with a tweet's tokens and resulting hash, we quantify the repetition of bots by measuring the frequency of each hash. We find evidence of automation in the most tweeted hashes in the duplication of single token sets and near duplicates of multiple token sets. The most popular hash was tweeted 1,500 times by one user. However, near every other hash has a low appearance count, making the duplication more evident. We find small portion is responsible for the majority of the duplicated tweets leave a long tail of identified bots that go undetected but are not utilized.
 
-Looking at the top hashes in aggregate allows us to draw comparisons between similar tokens, e.g. 69 of the top 100 hashes are near identical duplicates of each other. We classify token sets as templates of each other if they have at most 2 tokens difference occurring at the same index. Loosely, the template`s preset format contains placeholders which enable a finer grained message.
+Looking at the top hashes in aggregate allows us to draw comparisons between similar tokens, e.g. 69 of the top 100 hashes are near identical duplicates of each other. We classify token sets as templates of each other if they have at most 2 tokens difference occurring at the same index. Loosely, the template's preset format contains placeholders which enable a finer grained message.
 
 ![Top Tweeted Hashes](../viz/paper/timeline/top-10-hashes.png "Most Tweeted Hashes")
 
