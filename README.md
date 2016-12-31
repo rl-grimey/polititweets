@@ -16,3 +16,8 @@ This Git repo contains the work and final output for CS:4980 Topics in Computer 
 ![Example of a Collusion Network, we see many sock-puppets tweeting concurrently.](viz/paper/timeline/collusion-network-on-twitter.png "Collusion Network")
 
 ![Top Tweeted Hashes](viz/paper/timeline/top-10-hashes.png "Most Tweeted Hashes")
+
+
+## Thanks
+
+To everyone who helped with the project. Notably Zubair for providing the data and continued guidance. And to my partner John, who without this wouldn't have been possible. 
