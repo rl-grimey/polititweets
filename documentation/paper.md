@@ -112,7 +112,7 @@ Of the URL entities that still resolve, we find two common patterns, pre-shorten
 > from 74736 bot tweeted links
 
 |   # | Resolved URLs                  | Occurrence |
-| -- | ------------------------------ | ---------- |
+| --- | ------------------------------ | ---------- |
 | 1  | <http://cnnpolitics.com>       | 2535 |
 | 2  | <http://cnn.it/20ndgad>        | 2494 |
 | 3  | <http://growapair.gq>          | 1362 |
@@ -131,7 +131,7 @@ Of the URL entities that still resolve, we find two common patterns, pre-shorten
 > from 53652 URLs
 
 | #   | Tweet Link Domain         | Occurrence |
-| -- | ------------------------- | ---------- |
+| --- | ------------------------- | ---------- |
 | 1  | ift.tt/                   | 8931 |
 | 2  | api.youreon.media/        | 8336 |
 | 3  | bit.ly/                   | 5155 |
