@@ -92,109 +92,6 @@ To better understand the climate of the disseminated messages, we aggregate the 
 > from 69876 bot tweets using hashtags
 
 
-<style  type="text/css" >
-
-        #T_6d6ac284_cd9e_11e6_8148_a4173125e7bdrow0_col1 {
-
-            width:  10em;
-
-             height:  80%;
-
-            background:  linear-gradient(90deg,#d65f5f 100.0%, transparent 0%);
-
-        }
-
-        #T_6d6ac284_cd9e_11e6_8148_a4173125e7bdrow1_col1 {
-
-            width:  10em;
-
-             height:  80%;
-
-            background:  linear-gradient(90deg,#d65f5f 59.9969073759%, transparent 0%);
-
-        }
-
-        #T_6d6ac284_cd9e_11e6_8148_a4173125e7bdrow2_col1 {
-
-            width:  10em;
-
-             height:  80%;
-
-            background:  linear-gradient(90deg,#d65f5f 55.9610329364%, transparent 0%);
-
-        }
-
-        #T_6d6ac284_cd9e_11e6_8148_a4173125e7bdrow3_col1 {
-
-            width:  10em;
-
-             height:  80%;
-
-            background:  linear-gradient(90deg,#d65f5f 53.8580485542%, transparent 0%);
-
-        }
-
-        #T_6d6ac284_cd9e_11e6_8148_a4173125e7bdrow4_col1 {
-
-            width:  10em;
-
-             height:  80%;
-
-            background:  linear-gradient(90deg,#d65f5f 31.7148600588%, transparent 0%);
-
-        }
-
-        #T_6d6ac284_cd9e_11e6_8148_a4173125e7bdrow5_col1 {
-
-            width:  10em;
-
-             height:  80%;
-
-            background:  linear-gradient(90deg,#d65f5f 18.6949126334%, transparent 0%);
-
-        }
-
-        #T_6d6ac284_cd9e_11e6_8148_a4173125e7bdrow6_col1 {
-
-            width:  10em;
-
-             height:  80%;
-
-            background:  linear-gradient(90deg,#d65f5f 16.9321169012%, transparent 0%);
-
-        }
-
-        #T_6d6ac284_cd9e_11e6_8148_a4173125e7bdrow7_col1 {
-
-            width:  10em;
-
-             height:  80%;
-
-            background:  linear-gradient(90deg,#d65f5f 12.2777176434%, transparent 0%);
-
-        }
-
-        #T_6d6ac284_cd9e_11e6_8148_a4173125e7bdrow8_col1 {
-
-            width:  10em;
-
-             height:  80%;
-
-            background:  linear-gradient(90deg,#d65f5f 6.78830988093%, transparent 0%);
-
-        }
-
-        #T_6d6ac284_cd9e_11e6_8148_a4173125e7bdrow9_col1 {
-
-            width:  10em;
-
-             height:  80%;
-
-        }
-
-</style>
-
-
 <table id="T_6d6ac284_cd9e_11e6_8148_a4173125e7bd" None>
 
 
@@ -448,20 +345,6 @@ To better understand the climate of the disseminated messages, we aggregate the 
 
 
 
-| **Hashtag**          | **Occurrence** |
-|------------------|------------|
-| trump2016        |       7867 |
-| trump            |       5280 |
-| clinton          |       5019 |
-| thenewsclub      |       4883 |
-| donaldtrump      |       3451 |
-| redstate         |       2609 |
-| BoycottStarbucks |       2495 |
-| trumptrain       |       2195 |
-| hillarytapes     |       1839 |
-| news             |       1400 |
-| microagression   |       1362 |
-
 Of the URL entities that still resolve, we find two common patterns, pre-shortened URLS and resolving to a mixture of legitimate news sites and extremely slanted opinion sites.  As mentioned many of the URLs are pre-shortened prior to being tweeted.This provides a  level of obfuscation and possibly information hiding. We suspect this may help conceal the source of the 'headline'. We find other URLs resolve to blog-like websites without the possibility of user interaction. We are unsure of the reasoning these sites are practicing obfuscation, however one-way communications seems to ensure message delivery without opposing interference.   
 
 **Most Tweeted URLs by Bots**
@@ -470,66 +353,6 @@ Of the URL entities that still resolve, we find two common patterns, pre-shorten
 
 > from 74736 bot tweeted links
 
-<style type="text/css">
-    #T_abe611c8_cd9c_11e6_8148_a4173125e7bdrow0_col1 {
-        width: 10em;
-        height: 80%;
-        background: linear-gradient(90deg, #d65f5f 99.9%, transparent 0%);
-    }
-
-    #T_abe611c8_cd9c_11e6_8148_a4173125e7bdrow1_col1 {
-        width: 10em;
-        height: 80%;
-        background: linear-gradient(90deg, #d65f5f 98.1647269472%, transparent 0%);
-    }
-
-    #T_abe611c8_cd9c_11e6_8148_a4173125e7bdrow2_col1 {
-        width: 10em;
-        height: 80%;
-        background: linear-gradient(90deg, #d65f5f 47.4932855864%, transparent 0%);
-    }
-
-    #T_abe611c8_cd9c_11e6_8148_a4173125e7bdrow3_col1 {
-        width: 10em;
-        height: 80%;
-        background: linear-gradient(90deg, #d65f5f 22.6499552372%, transparent 0%);
-    }
-
-    #T_abe611c8_cd9c_11e6_8148_a4173125e7bdrow4_col1 {
-        width: 10em;
-        height: 80%;
-        background: linear-gradient(90deg, #d65f5f 20.5461056401%, transparent 0%);
-    }
-
-    #T_abe611c8_cd9c_11e6_8148_a4173125e7bdrow5_col1 {
-        width: 10em;
-        height: 80%;
-        background: linear-gradient(90deg, #d65f5f 20.0537153089%, transparent 0%);
-    }
-
-    #T_abe611c8_cd9c_11e6_8148_a4173125e7bdrow6_col1 {
-        width: 10em;
-        height: 80%;
-        background: linear-gradient(90deg, #d65f5f 11.8173679499%, transparent 0%);
-    }
-
-    #T_abe611c8_cd9c_11e6_8148_a4173125e7bdrow7_col1 {
-        width: 10em;
-        height: 80%;
-        background: linear-gradient(90deg, #d65f5f 5.86392121755%, transparent 0%);
-    }
-
-    #T_abe611c8_cd9c_11e6_8148_a4173125e7bdrow8_col1 {
-        width: 10em;
-        height: 80%;
-        background: linear-gradient(90deg, #d65f5f 0.358102059087%, transparent 0%);
-    }
-
-    #T_abe611c8_cd9c_11e6_8148_a4173125e7bdrow9_col1 {
-        width: 10em;
-        height: 80%;
-    }
-</style>
 
 <table id="T_abe611c8_cd9c_11e6_8148_a4173125e7bd" None>
     <thead>
@@ -665,107 +488,6 @@ Of the URL entities that still resolve, we find two common patterns, pre-shorten
 
 > from 53652 URLs
 
-<style  type="text/css" >
-
-
-    #T_5d2c111c_cd9d_11e6_8148_a4173125e7bdrow0_col1 {
-
-        width:  10em;
-
-         height:  80%;
-
-        background:  linear-gradient(90deg,#d65f5f 100.0%, transparent 0%);
-
-    }
-
-    #T_5d2c111c_cd9d_11e6_8148_a4173125e7bdrow1_col1 {
-
-        width:  10em;
-
-         height:  80%;
-
-        background:  linear-gradient(90deg,#d65f5f 92.5326305221%, transparent 0%);
-
-    }
-
-    #T_5d2c111c_cd9d_11e6_8148_a4173125e7bdrow2_col1 {
-
-        width:  10em;
-
-         height:  80%;
-
-        background:  linear-gradient(90deg,#d65f5f 52.6104417671%, transparent 0%);
-
-    }
-
-    #T_5d2c111c_cd9d_11e6_8148_a4173125e7bdrow3_col1 {
-
-        width:  10em;
-
-         height:  80%;
-
-        background:  linear-gradient(90deg,#d65f5f 51.5436746988%, transparent 0%);
-
-    }
-
-    #T_5d2c111c_cd9d_11e6_8148_a4173125e7bdrow4_col1 {
-
-        width:  10em;
-
-         height:  80%;
-
-        background:  linear-gradient(90deg,#d65f5f 25.1380522088%, transparent 0%);
-
-    }
-
-    #T_5d2c111c_cd9d_11e6_8148_a4173125e7bdrow5_col1 {
-
-        width:  10em;
-
-         height:  80%;
-
-        background:  linear-gradient(90deg,#d65f5f 6.46335341365%, transparent 0%);
-
-    }
-
-    #T_5d2c111c_cd9d_11e6_8148_a4173125e7bdrow6_col1 {
-
-        width:  10em;
-
-         height:  80%;
-
-        background:  linear-gradient(90deg,#d65f5f 3.41365461847%, transparent 0%);
-
-    }
-
-    #T_5d2c111c_cd9d_11e6_8148_a4173125e7bdrow7_col1 {
-
-        width:  10em;
-
-         height:  80%;
-
-        background:  linear-gradient(90deg,#d65f5f 1.92018072289%, transparent 0%);
-
-    }
-
-    #T_5d2c111c_cd9d_11e6_8148_a4173125e7bdrow8_col1 {
-
-        width:  10em;
-
-         height:  80%;
-
-        background:  linear-gradient(90deg,#d65f5f 1.86997991968%, transparent 0%);
-
-    }
-
-    #T_5d2c111c_cd9d_11e6_8148_a4173125e7bdrow9_col1 {
-
-        width:  10em;
-
-         height:  80%;
-
-    }
-</style>
 
 <table id="T_5d2c111c_cd9d_11e6_8148_a4173125e7bd" None>
 
@@ -1032,9 +754,10 @@ After noting the effectiveness of a  small amount of users contributing to such 
 
 To identify replication we create tokens from each tweet; removing user mentions, URL's, extraneous stop words (I, but, for), and punctuation. This left us with the salient portions of a tweet, such that duplicates of a tweet may be identified with the same hash.   
 
-~~***TWEET TO TOKEN CONVERSION HERE***~~
+> **Tweet converted to Token example:**
 
-~~***TWEET TO TOKEN CONVERSION HERE***~~
+    1. "Donald Trump was just mentioned on www.cnn.com" -> `[Donald', 'Trump', 'was', 'just', 'mentioned', 'on']`
+    2. If the link was to Fox, the tokens would still be the same: -> `[Donald', 'Trump', 'was', 'just', 'mentioned', 'on']`
 
 Armed with a tweet's tokens and resulting hash, we quantify the repetition of bots by measuring the frequency of each hash. We find evidence of automation in the most tweeted hashes in the duplication of single token sets and near duplicates of multiple token sets. The most popular hash was tweeted 1,500 times by one user. However, near every other hash has a low appearance count, making the duplication more evident. We find small portion is responsible for the majority of the duplicated tweets leave a long tail of identified bots that go undetected but are not utilized.   
 
@@ -1065,3 +788,38 @@ Our hybrid approach created a repeatable test in order to identify, classify and
 ### Conclusion
 
 The power  to disseminate frequent messages to large audiences through social networks has made the ability to form public opinion from a central location. Such influences as trending topics, allow users to pay attention to what is popular. However, artificially inflated statistics give credence to messages that may not have been noticed or support such statistics had they not been amplified from an automated network.  We found the filtered aggregated approach to be effective in that bot content analysis could prove to aid in future prevention of bot activity in such charge environments. We find that a very small minority contributed to a large amount of tweets. We conclude that the rudimentary problem is not bots but their influence upon content presentation and their ability to affect the outcome things like trending topics. We propose for future work to investigate bot prevention through bot colonization. We suspect the main purpose of the bots are  to support influencing trending topics.   
+
+
+---
+
+
+### References
+
+[1] K. Thomas, C. Grier, V. Paxson, D. Song. Suspended Accounts in Retrospect: An Analysis of Twitter Spam. IMC '11 Proceedings of the 2011 ACM SIGCOMM conference on Internet measurement conference
+Pages 243-258.
+
+[2] E. Ferrara, O. Varol, C. Davis, F. Menczer, A. Flammini. The Rise of Social Bots. Communications of the ACM, Vol. 59 No. 7, Pages 96-104.
+
+[3] A. Bessi, E. Ferrara. Social Bots distort the 2016 U.S. Presidential election online discussion. First Monday, Volume 21, Number 11 - 7 November 2016 http://firstmonday.org/ojs/index.php/fm/article/view/7090/5653. doi: http://dx.doi.org/10.5210/fm.v21i11.7090.
+
+[4] B. Kollanyi, P.N. Howard, and S.C. Woolley, 2016. “Bots and automation over Twitter during the first U.S. Presidential debate,” COMPROP Data Memo 2016.1 (14 October), at http://politicalbots.org/wp-content/uploads/2016/10/Data-Memo-First-Presidential-Debate.pdf, accessed 1 November 2016.
+
+[5] B. Waugh, M. Abdipanah, O. Hashemi, S. Abdul Rahman, D. Cook. The Influence and Deception of Twitter: the authenticity of the narrative and slacktivism in the Australian electoral process. Originally published in the Proceedings of the 14th Australian Information Warfare Conference, Edith Cowan University, Perth, Western Australia, 2nd-4th December, 2013.
+
+[6] M. and H. Forelle, N. Philip , A.  Monroy-Hernandez,  S. Savage.  Political Bots and the Manipulation of Public Opinion in Venezuela (July 25, 2015).
+
+[7] K. Thomas, C. Grier, V. Paxson. Adapting Social Spam Infrastructure for Political Censorship. Proceedings of the USENIX Workshop on Large-scale Exploits and Emergent Threats (LEET), April 2012.
+
+[8] Almuhimedi, Hazim et al. “Tweets are forever: a large-scale quantitative analysis of deleted tweets.” CSCW (2013).
+
+[9] Twitter Following Rules and Best Practices. https://support.twitter.com/articles/68916.
+
+[10] K. Gimpel, N. Schneider, B. O'Connor, D. Das, D. Mills,  J. Eisenstein, M. Heilman,
+D. Yogatama, J. Flanigan, and N. A. Smith. CMU ARK Twitter Part-of-Speech Tagger. In Proceedings of the Annual Meeting of the Association for Computational Linguistics, companion volume, Portland, OR, June 2011.
+
+[11]
+Part-of-Speech Tagging for Twitter: Annotation, Features, and Experiments  
+Kevin Gimpel, Nathan Schneider, Brendan O'Connor, Dipanjan Das, Daniel Mills, Jacob Eisenstein, Michael Heilman, Dani Yogatama, Jeffrey Flanigan, and Noah A. Smith  
+In Proceedings of the Annual Meeting of the Association
+  for Computational Linguistics, companion volume, Portland, OR, June 2011.  
+http://www.ark.cs.cmu.edu/TweetNLP/gimpel+etal.acl11.pdf
