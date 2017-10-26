@@ -1,6 +1,6 @@
 # **The Opinion Machine:** An Aggregated Analysis of Political Spam on Twitter
 
-Read the paper [here!](OpinonMachine.pdf)
+Read the paper [here!](OpinionMachine.pdf)
 
 ### Background
 
